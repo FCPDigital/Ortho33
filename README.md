@@ -7,6 +7,10 @@ Theme prestashop
 ``` bash
 git clone https://github.com/SolalDR/Ortho33.git
 ```
+- Installer les dépendances
+```
+npm install
+```
 - Executer sass en executant le script `sass.sh` à la racine du thème ou en lançant la méthode 
 ``` bash
 sass --watch assets/sass/app.sass:assets/css/theme.css

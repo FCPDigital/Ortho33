@@ -30,15 +30,25 @@
 
 {block name='header_nav'}
   <nav class="header-nav">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
           <!-- Desktop first header -->
           <div class="hidden-sm-down">
-            <div class="col-md-4 col-xs-12">
-              {hook h='displayNav1'}
+            <div class="float-left inline">
+              <a class="navbar-brand" href="{$urls.base_url}">
+                <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+              </a>
+              <a href="tel:+556344605" class="btn btn--no-border btn--green btn--fa btn--size-xl">
+                <i class="fa fa-phone" aria-hidden="true"></i>05 56 34 46 05
+              </a>
+              <a href="{$urls.pages.contact}" class="btn btn--no-border btn--green btn--fa">
+                <i class="fa fa-envelope" aria-hidden="true"></i><span class="underline">Contactez-nous ici</span>
+              </a>  
             </div>
-            <div class="col-md-8 right-nav">
-                {hook h='displayNav2'}
+       
+            <div class="inline float-right">
+              {hook h='displaySearch'}
+              {hook h='displayNav2'}
             </div>
           </div>
           <!-- Responsive first header -->
@@ -58,13 +68,8 @@
 
 {block name='header_top'}
   <div class="header-top">
-    <div class="container">
+    <div class="container-fluid">
        <div class="row">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
-          <a href="{$urls.base_url}">
-            <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
-          </a>
-        </div>
         <div class="col-md-10 col-sm-12 position-static">
           <div class="row">
             {hook h='displayTop'}

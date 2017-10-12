@@ -1,0 +1,28 @@
+$search-height: 45px
+
+.search-bar
+	padding: $pad-small
+	color: $orange
+	border: 1px solid $orange
+	height: $search-height
+	padding-right: $search-height
+	position: relative
+
+	&__field
+		border: 0
+		position: relative
+		top: 2px
+		
+	&__send
+		border: 0
+		display: inline-block
+		overflow: hidden
+		width: 30px
+		height: $search-height
+		font-size: 0
+		position: absolute
+		top: 0px
+		right: $pad-small
+		background-color: transparent
+		.fa 
+			font-size: 20px

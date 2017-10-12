@@ -1,0 +1,14 @@
+{
+  "name": "ortho",
+  "version": "1.0.0",
+  "description": "Theme prestashop",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SolalDR/Ortho33.git"
+  },
+  "author": "Solal Dussout-Revel",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/SolalDR/Ortho33/issues"
+  }
+}
