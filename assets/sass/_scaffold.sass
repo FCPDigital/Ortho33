@@ -12,6 +12,29 @@ body
 
 .float-left
 	float: left
-
 .float-right
 	float: right
+.text-center
+	text-align: center
+
+
+
+$keys: ('small', 'normal', 'medium', 'big')
+$direction: ('top', 'right', 'left', 'bottom')
+$values: ($pad-small, $pad-normal, $pad-medium, $pad-big)
+@for $i from 1 to 5
+	.padding-#{nth($keys, $i)}
+		padding: nth($values, $i)
+	.margin-#{nth($keys, $i)}
+		margin: nth($values, $i)
+	@for $j from 1 to 5
+		.padding-#{nth($direction, $j)}-#{nth($keys, $i)}
+			padding-#{nth($direction, $j)}: nth($values, $i)
+		.margin-#{nth($direction, $j)}-#{nth($keys, $i)}
+			margin-#{nth($direction, $j)}: nth($values, $i)
+
+@media screen and (max-width:$break-point-1)
+	.hidden-sm
+		display: none
+	.no-marge-sm
+		margin: 0 !important

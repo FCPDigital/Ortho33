@@ -28,13 +28,10 @@
       <a rel="nofollow" href="{$cart_url}">
     {/if}
     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-    <span class="hidden-sm-down">{l s='Cart' d='Shop.Theme.Checkout'}</span>
+    <span class="hidden-sm">{l s='Cart' d='Shop.Theme.Checkout'}</span>
     <span class="cart-products-count">({$cart.products_count})</span>
     {if $cart.products_count > 0}
     </a>
     {/if}
-<!--     <div class="header">
-
-</div> -->
   </div>
 </div>

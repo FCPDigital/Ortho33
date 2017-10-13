@@ -1,0 +1,42 @@
+$header-h: 75px
+
+.header-top
+	height: 75px
+	padding: $pad-normal
+	padding-left: 0
+	position: fixed
+	width: 100%
+	height: 75px
+	background-color: white
+	z-index: 2
+	&__burger 
+		display: inline-block
+		font-size: 25px
+
+	&__logo 
+		display: inline-block
+		padding: $pad-normal
+		img
+			display: inline-block
+
+	&--desktop .header-top__logo
+		float: left
+
+	&--responsive .header-top__nav2
+		position: absolute
+		right: $pad-normal
+		top: $pad-normal
+
+
+
+@media screen and (max-width: $break-point-1)
+	.header-top--desktop
+		display: none
+	.header-top--responsive
+		display: block
+
+@media screen and (min-width: $break-point-1)
+	.header-top--desktop
+		display: block
+	.header-top--responsive
+		display: none

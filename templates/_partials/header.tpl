@@ -33,10 +33,10 @@
     <div class="container-fluid">
         <div class="row">
           <!-- Desktop first header -->
-          <div class="hidden-sm-down">
+          <div class="header-top header-top--desktop">
             <div class="float-left inline">
-              <a class="navbar-brand" href="{$urls.base_url}">
-                <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+              <a class="header-top__logo" href="{$urls.base_url}">
+                <img class="" src="{$shop.logo}" alt="{$shop.name}">
               </a>
               <a href="tel:+556344605" class="btn btn--no-border btn--green btn--fa btn--size-xl">
                 <i class="fa fa-phone" aria-hidden="true"></i>05 56 34 46 05
@@ -52,13 +52,17 @@
             </div>
           </div>
           <!-- Responsive first header -->
-          <div class="hidden-md-up text-sm-center mobile">
-            <div class="float-xs-left" id="menu-icon">
-              <i class="material-icons d-inline">&#xE5D2;</i>
+          <div class="text-center header-top header-top--responsive">
+            <div class="header-top__burger float-left padding-small" id="menu-burger">
+              <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
-            <div class="float-xs-right" id="_mobile_cart"></div>
-            <div class="float-xs-right" id="_mobile_user_info"></div>
-            <div class="top-logo" id="_mobile_logo"></div>
+            <a class="header-top__logo" href="{$urls.base_url}">
+              <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+            </a>
+            <div class="inline header-top__nav2">
+              {hook h='displayNav2'}
+            </div>
+            
             <div class="clearfix"></div>
           </div>
         </div>
@@ -67,23 +71,18 @@
 {/block}
 
 {block name='header_top'}
-  <div class="header-top">
-    <div class="container-fluid">
-       <div class="row">
-        <div class="col-md-10 col-sm-12 position-static">
-          <div class="row">
-            {hook h='displayTop'}
-            <div class="clearfix"></div>
-          </div>
-        </div>
+  <div class="header-bottom-container">
+      <div class="header-bottom header-bottom--desktop">
+        {hook h='displayTop'}
       </div>
-      <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
-        <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
-        <div class="js-top-menu-bottom">
-          <div id="_mobile_currency_selector"></div>
-          <div id="_mobile_language_selector"></div>
-          <div id="_mobile_contact_link"></div>
-        </div>
+    
+      <div id="menu-responsive" class="header-responsive header-responsive--hide">
+        <a href=""></a>
+        <a href="" rel="nofollow" id="menu-close">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+        <hr>
+        {hook h='displayTop'}
       </div>
     </div>
   </div>

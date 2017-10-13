@@ -60,18 +60,135 @@ body {
 .float-right {
   float: right; }
 
-.main-menu {
-  display: flex;
-  justify-content: space-between; }
-  .main-menu__item {
-    padding: 0;
-    flex: 2;
-    color: white; }
-    .main-menu__item--small {
-      flex: 1; }
-  .main-menu__link {
-    padding: 20px; }
+.text-center {
+  text-align: center; }
 
+.padding-small {
+  padding: 10px; }
+
+.margin-small {
+  margin: 10px; }
+
+.padding-top-small {
+  padding-top: 10px; }
+
+.margin-top-small {
+  margin-top: 10px; }
+
+.padding-right-small {
+  padding-right: 10px; }
+
+.margin-right-small {
+  margin-right: 10px; }
+
+.padding-left-small {
+  padding-left: 10px; }
+
+.margin-left-small {
+  margin-left: 10px; }
+
+.padding-bottom-small {
+  padding-bottom: 10px; }
+
+.margin-bottom-small {
+  margin-bottom: 10px; }
+
+.padding-normal {
+  padding: 15px; }
+
+.margin-normal {
+  margin: 15px; }
+
+.padding-top-normal {
+  padding-top: 15px; }
+
+.margin-top-normal {
+  margin-top: 15px; }
+
+.padding-right-normal {
+  padding-right: 15px; }
+
+.margin-right-normal {
+  margin-right: 15px; }
+
+.padding-left-normal {
+  padding-left: 15px; }
+
+.margin-left-normal {
+  margin-left: 15px; }
+
+.padding-bottom-normal {
+  padding-bottom: 15px; }
+
+.margin-bottom-normal {
+  margin-bottom: 15px; }
+
+.padding-medium {
+  padding: 40px; }
+
+.margin-medium {
+  margin: 40px; }
+
+.padding-top-medium {
+  padding-top: 40px; }
+
+.margin-top-medium {
+  margin-top: 40px; }
+
+.padding-right-medium {
+  padding-right: 40px; }
+
+.margin-right-medium {
+  margin-right: 40px; }
+
+.padding-left-medium {
+  padding-left: 40px; }
+
+.margin-left-medium {
+  margin-left: 40px; }
+
+.padding-bottom-medium {
+  padding-bottom: 40px; }
+
+.margin-bottom-medium {
+  margin-bottom: 40px; }
+
+.padding-big {
+  padding: 80px; }
+
+.margin-big {
+  margin: 80px; }
+
+.padding-top-big {
+  padding-top: 80px; }
+
+.margin-top-big {
+  margin-top: 80px; }
+
+.padding-right-big {
+  padding-right: 80px; }
+
+.margin-right-big {
+  margin-right: 80px; }
+
+.padding-left-big {
+  padding-left: 80px; }
+
+.margin-left-big {
+  margin-left: 80px; }
+
+.padding-bottom-big {
+  padding-bottom: 80px; }
+
+.margin-bottom-big {
+  margin-bottom: 80px; }
+
+@media screen and (max-width: 1080px) {
+  .hidden-sm {
+    display: none; }
+
+  .no-marge-sm {
+    margin: 0 !important; } }
 .btn {
   border: 1px solid black;
   color: black;
@@ -80,7 +197,9 @@ body {
   font-weight: 600;
   box-sizing: border-box;
   text-decoration: none;
-  border-radius: 0; }
+  border-radius: 0;
+  min-width: 45px;
+  min-height: 45px; }
   .btn a {
     text-decoration: none; }
   .btn--green {
@@ -90,8 +209,8 @@ body {
     color: #ea5b0c;
     border-color: #ea5b0c; }
   .btn--blue {
-    color: #0ea8e7;
-    border-color: #0ea8e7; }
+    color: #6cbAdf;
+    border-color: #6cbAdf; }
   .btn--no-border {
     border-width: 0; }
   .btn--size-sm {
@@ -128,5 +247,121 @@ body {
     background-color: transparent; }
     .search-bar__send .fa {
       font-size: 20px; }
+
+.header-top {
+  height: 75px;
+  padding: 15px;
+  padding-left: 0;
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  background-color: white;
+  z-index: 2; }
+  .header-top__burger {
+    display: inline-block;
+    font-size: 25px; }
+  .header-top__logo {
+    display: inline-block;
+    padding: 15px; }
+    .header-top__logo img {
+      display: inline-block; }
+  .header-top--desktop .header-top__logo {
+    float: left; }
+  .header-top--responsive .header-top__nav2 {
+    position: absolute;
+    right: 15px;
+    top: 15px; }
+
+@media screen and (max-width: 1080px) {
+  .header-top--desktop {
+    display: none; }
+
+  .header-top--responsive {
+    display: block; } }
+@media screen and (min-width: 1080px) {
+  .header-top--desktop {
+    display: block; }
+
+  .header-top--responsive {
+    display: none; } }
+.header-bottom {
+  height: 90px;
+  display: block;
+  padding-top: 75px; }
+  .header-bottom .main-menu {
+    height: 90px;
+    display: flex;
+    justify-content: space-between; }
+    .header-bottom .main-menu__item {
+      max-width: 175px;
+      text-align: center;
+      background-color: red;
+      padding: 0;
+      flex: 2;
+      color: white;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); }
+      .header-bottom .main-menu__item--small {
+        flex: 1; }
+      .header-bottom .main-menu__item:nth-child(1) {
+        flex: 1;
+        background-color: transparent;
+        box-shadow: none; }
+        .header-bottom .main-menu__item:nth-child(1) a {
+          color: #ea5b0c; }
+      .header-bottom .main-menu__item:nth-child(2) {
+        background-color: #af60a2; }
+      .header-bottom .main-menu__item:nth-child(3) {
+        background-color: #6cbAdf; }
+      .header-bottom .main-menu__item:nth-child(4) {
+        background-color: #00a94d; }
+      .header-bottom .main-menu__item:nth-child(5) {
+        background-color: #6455a0; }
+      .header-bottom .main-menu__item:nth-child(6) {
+        background-color: #006F9E; }
+      .header-bottom .main-menu__item:nth-child(7) {
+        background-color: #95c11f; }
+    .header-bottom .main-menu__link {
+      padding: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600; }
+      .header-bottom .main-menu__link:hover {
+        color: white; }
+
+@media screen and (max-width: 1080px) {
+  .header-bottom {
+    display: none; } }
+.header-responsive {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  min-height: 100vh;
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 2; }
+  .header-responsive--display {
+    left: 0; }
+  .header-responsive--hide {
+    left: -430px; }
+  .header-responsive #menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    padding: 10px;
+    z-index: 2; }
+  .header-responsive .main-menu__item {
+    padding: 15px 0; }
+
+@media screen and (min-width: 1080px) {
+  .header-responsive {
+    left: -430px; } }
 
 /*# sourceMappingURL=theme.css.map */

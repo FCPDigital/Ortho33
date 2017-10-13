@@ -1,0 +1,58 @@
+.header-bottom
+	height: 90px
+	display: block
+	padding-top: 75px
+	.main-menu
+		height: 90px
+		display: flex
+		justify-content: space-between
+		&__item
+			max-width: 175px
+			text-align: center
+			background-color: red
+			padding: 0
+			flex: 2
+			color: white
+			display: flex
+			justify-content: center
+			flex-direction: column
+			box-shadow: $shadow
+			&--small
+				flex: 1
+			&--home
+				background-color:white
+			&:nth-child(1)
+				flex: 1
+				background-color: transparent
+				box-shadow: none
+				a 
+					color: $orange
+			&:nth-child(2)
+				background-color: $purple
+			&:nth-child(3)
+				background-color: $blue
+			&:nth-child(4)
+				background-color: $green
+			&:nth-child(5)
+				background-color: $purple2
+			&:nth-child(6)
+				background-color: $blue2
+			&:nth-child(7)
+				background-color: $green2
+
+		&__link
+			padding: 20px
+			text-decoration: none
+			color: white
+			font-weight: 600
+			&:hover
+				color: white
+
+
+
+
+
+@media screen and (max-width: $break-point-1)
+	.header-bottom
+		display: none
+

@@ -26,11 +26,11 @@
   <div class="user-info">
     {if $logged}
       <a
-        class="logout hidden-sm-down btn btn--orange btn--fa"
+        class="logout hidden-sm btn btn--orange btn--fa"
         href="{$logout_url}"
         rel="nofollow"
       >
-        <i class="fa fa-user" aria-hidden="true"></i>
+        <i class="fa fa-user no-marge-sm" aria-hidden="true"></i>
         {l s='Sign out' d='Shop.Theme.Actions'}
       </a>
       <a
@@ -39,8 +39,8 @@
         title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}"
         rel="nofollow"
       >
-        <i class="fa fa-user" aria-hidden="true"></i>
-        <span class="hidden-sm-down">{$customerName}</span>
+        <i class="fa fa-user no-marge-sm" aria-hidden="true" ></i>
+        <span class="hidden-sm">{$customerName}</span>
       </a>
     {else}
       <a
@@ -49,8 +49,8 @@
         rel="nofollow"
         class="btn btn--orange btn--fa"
       >
-        <i class="fa fa-user" aria-hidden="true"></i>
-        <span class="hidden-sm-down">{l s='Sign in' d='Shop.Theme.Actions'}</span>
+        <i class="fa fa-user no-marge-sm" aria-hidden="true"></i>
+        <span class="hidden-sm">{l s='Sign in' d='Shop.Theme.Actions'}</span>
       </a>
     {/if}
   </div>
