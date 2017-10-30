@@ -1,0 +1,149 @@
+$size: 1300px
+$out-pad: 70px
+$in-pad: $pad-medium
+$break: 800px
+
+$img-size: 55%
+
+.carousel
+	margin-bottom: $in-pad
+	position: relative
+	padding-bottom: 20px
+	
+	&__inner
+		position: relative
+		overflow: hidden
+	
+	&__control
+		width: $out-pad
+		position: absolute
+		top: 0
+		background-color: white
+		height: 100%
+		display: inline-block
+		background-repeat: no-repeat
+		background-size: 20px
+		@include transition(.3s)
+		
+		&--left
+			left: 0
+			background-image: url('../img/icon/arrow-left.png')
+			background-position: 0 center
+			&:hover
+				left: -10px
+				width: calc(#{$out-pad} + 10px)
+
+		&--right
+			right: 0
+			background-image: url('../img/icon/arrow-right.png')
+			background-position: 100% center
+			&:hover
+				right: -10px
+				width: calc(#{$out-pad} + 10px)
+
+	&__pointer
+		display: inline-block
+		border: 1px solid black
+		border-radius: 5px
+		width: 10px
+		height: 10px
+		padding: 0
+		margin-right: 10px
+		box-sizing: border-box
+		background-color: white
+		@include transition(.4s)
+		&:last-child
+			margin-right: 0
+		
+		&--active
+			background-color: $orange
+		
+		&-container
+			position: absolute
+			bottom: 0
+			left: $out-pad
+
+.carousel-item
+	width: 100%
+	position: absolute
+	display: none
+	padding: 0 $out-pad
+	box-sizing: border-box
+	@include transition(all .4s)
+	
+	&--active
+		display: block
+		opacity: 1
+		&-in // Between hide and display
+			display: block
+			opacity: 0
+		&-out // Between display and hide
+			display: block
+			opacity: 0
+	
+	&__container
+
+	&__img
+		float: right
+		width: $img-size
+
+	&__content
+		width: 45%
+		padding-right: $in-pad
+
+	&__title
+
+	&__description
+
+
+
+@media screen and (max-width: 1000px)
+	
+	.carousel 
+		padding-bottom: $in-pad
+	
+
+	.carousel-item
+		
+		&__img 
+			position: absolute
+			//width: calc(100% - #{2*$out-pad})
+			height: 100%
+			width: auto
+			left: 50%
+			@include transform(translateX(-50%))
+
+		&__content
+			position: relative
+			top: 20px
+			width: calc(100% - 40px)
+			left: 20px
+			background-color: rgba(255, 255, 255, 0.6)
+			padding: 20px
+			box-sizing: border-box
+	
+	.carousel__pointer-container
+		left: 50%
+		@include transform(translateX(-50%))
+
+
+@media screen and (max-width: 600px)
+	.carousel
+		&-item__content
+			width: calc(100% + 100px)
+			left: -50px
+		&__control
+			bottom: 0
+			height: 50px
+			top: calc(100% - 30px)
+			position: absolute
+			background-color: transparent
+			&--left
+				left: calc(50% - 70px)
+				&:hover
+					left: calc(50% - 80px)
+			&--right
+				right: calc(50% - 70px)
+				&:hover
+					right: calc(50% - 80px)
+

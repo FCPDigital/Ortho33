@@ -41,10 +41,12 @@ assets:
 #        path: assets/css/product.css
 #        media: all
 #        priority: 200
-#  js:
-#    cart:
-#      - id: cat-extra-lib
-#        path: assets/js/cart-lib.js
+  js:
+    all:
+      - id: carousel
+        path: assets/js/carousel.js
+      - id: header
+        path: assets/js/header.js
 
 
 global_settings:

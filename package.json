@@ -10,5 +10,16 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/SolalDR/Ortho33/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "latest",
+    "gulp-rename": "latest",
+    "gulp-csso": "latest",
+    "gulp-sass": "latest",
+    "gulp-concat": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-minify": "latest",
+    "gulp-clean": "latest"
   }
 }
