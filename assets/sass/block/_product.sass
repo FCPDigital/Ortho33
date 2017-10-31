@@ -1,0 +1,51 @@
+.product
+	background-color: #FFF
+	// Default settings ( Product detail )
+	&__img
+		display: block
+
+	&__title
+		font-size: $font-big
+		font-weight: 800
+		a
+			text-decoration: none
+			color: #000
+	&__price
+		color: $red
+		font-size: $font-medium-big
+		font-weight: 600
+	&__show-btn
+		
+	&__cart-btn
+		
+	&__description
+		
+	&__quantity
+		&-label
+		&-input
+		
+	&__sub-title
+
+	&__thumbnail
+		&-container
+		
+	// Product mignature
+	&--miniature
+		text-align: center
+		padding: $pad-normal 5px
+		min-height: 300px
+		margin-bottom: $pad-normal
+		.product
+			&__thumbnail
+				max-width: 60%
+				max-height: 120px
+				margin: auto
+			&__title
+				font-size: $font-medium
+			&__price
+				font-size: $font-normal
+			&__show-btn
+			&__cart-btn
+	
+	// Product list item
+	&--list-item

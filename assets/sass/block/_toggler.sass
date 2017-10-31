@@ -1,0 +1,50 @@
+.toggler 
+	background-color: $grey-dark
+	.container 
+		position: relative
+	
+	&__title
+		margin-top: 35px
+		margin-bottom: 50px
+
+	&__list
+		&-container
+
+		&-item
+			margin-bottom: $pad-normal
+			@include transition(.3s)
+			a
+				text-decoration: none
+				color: black
+				font-weight: 600
+				text-transform: uppercase
+			
+			&--active a, &:hover a
+				color: $orange
+
+	&__displayer
+		background-color: white
+		height: 100%
+		position: absolute
+		padding: 0 50px
+		right: 0
+		transform: translateY(-#{$pad-normal})
+	
+	&__item
+		display: none
+		&-content
+			padding-top: 50px
+			width: 50%
+			float: left
+		&-img
+			&-container
+				width: 50%
+				float: left
+		&--active
+			display: block
+		&-title
+			font-size: $font-big
+			color: $orange
+			font-weight: 700
+			text-transform: uppercase
+		&-description

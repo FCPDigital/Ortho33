@@ -24,6 +24,7 @@
  *}
 
 {if $homeslider.slides}
+<div class="container">
   <div id="carousel" data-ride="carousel" class="carousel" data-interval="{$homeslider.speed}" data-wrap="{(string)$homeslider.wrap}" data-pause="{$homeslider.pause}">
     <ul class="carousel__inner" role="listbox">
       {foreach from=$homeslider.slides item=slide name='homeslider'}
@@ -57,4 +58,5 @@
       {/foreach}
     </div>
   </div>
+</div>
 {/if}

@@ -23,11 +23,13 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {block name='product_miniature_item'}
-  <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
-    <div class="thumbnail-container">
+  <div class="col-sm-3">
+    <article class="product product--miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
+    <div class="product__thumbnail-container">
       {block name='product_thumbnail'}
-        <a href="{$product.url}" class="thumbnail product-thumbnail">
+        <a href="{$product.url}">
           <img
+            class="product__thumbnail"
             src = "{$product.cover.bySize.home_default.url}"
             alt = "{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
             data-full-size-image-url = "{$product.cover.large.url}"
@@ -35,9 +37,10 @@
         </a>
       {/block}
 
-      <div class="product-description">
+
+      <div class="product__description">
         {block name='product_name'}
-          <h1 class="h3 product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h1>
+          <h3 class="product__title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h3>
         {/block}
 
         {block name='product_price_and_shipping'}
@@ -56,7 +59,7 @@
               {hook h='displayProductPriceBlock' product=$product type="before_price"}
 
               <span class="sr-only">{l s='Price' d='Shop.Theme.Catalog'}</span>
-              <span itemprop="price" class="price">{$product.price}</span>
+              <span itemprop="price" class="product__price">{$product.price}</span>
 
               {hook h='displayProductPriceBlock' product=$product type='unit_price'}
 
@@ -77,12 +80,10 @@
           {/foreach}
         </ul>
       {/block}
-
+      
       <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down">
         {block name='quick_view'}
-          <a class="quick-view" href="#" data-link-action="quickview">
-            <i class="material-icons search">&#xE8B6;</i> {l s='Quick view' d='Shop.Theme.Actions'}
-          </a>
+          <a class="btn btn--grey-orange" href="{$product.url}">Voir</a>
         {/block}
 
         {block name='product_variants'}
@@ -91,7 +92,7 @@
           {/if}
         {/block}
       </div>
-
     </div>
   </article>
+</div>
 {/block}
