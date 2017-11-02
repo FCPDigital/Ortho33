@@ -11,6 +11,7 @@ TogglerManage = {
 function Toggler(el){
 	this.selectors = el.querySelectorAll('a[data-toggle-id]');
 	this._current = el.querySelector('.toggler__item--active');
+	this._currentSel = el.querySelector('.toggler__list-item--active'); 
 	console.log(this.selectors)
 	for(var i=0; i<this.selectors.length; i++){
 		this.onclick(this.selectors[i]);
@@ -47,7 +48,9 @@ Toggler.prototype = {
 		var self = this;
 		el.addEventListener('click', function(e){
 			e.preventDefault();
-			console.log(displayer)
+			self._currentSel.className = self._currentSel.className.replace('toggler__list-item--active', '');
+			this.parentNode.className += " toggler__list-item--active";
+			self._currentSel = this.parentNode 
 			self.current = displayer
 		})
 	}

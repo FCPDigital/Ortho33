@@ -62,6 +62,9 @@ body {
   visibility: hidden;
   font-size: 0; }
 
+.clr {
+  clear: both; }
+
 .float-left {
   float: left; }
 
@@ -6303,6 +6306,16 @@ button.close {
       font-weight: 700;
       text-transform: uppercase; }
 
+@media screen and (max-width: 750px) {
+  .toggler__displayer {
+    position: relative;
+    padding: 20px 50px; }
+
+  .toggler__item-content {
+    width: 100%; }
+  .toggler__item-img-container {
+    width: 100%;
+    padding-left: 0; } }
 .header-top {
   height: 75px;
   padding: 20px;
