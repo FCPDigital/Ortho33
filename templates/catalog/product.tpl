@@ -49,7 +49,7 @@
 
   <section id="main" itemscope itemtype="https://schema.org/Product">
     <meta itemprop="url" content="{$product.url}">
-
+    {$rootCategory}
     <div class="row">
       <div class="col-md-6">
         {block name='page_content_container'}

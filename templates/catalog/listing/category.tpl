@@ -25,11 +25,13 @@
 {extends file='catalog/listing/product-list.tpl'}
 
 {block name='product_list_header'}
+  {$category.rootCategory}
   <div class="text-sm-center hidden-md-up">
     <h1 class="list__title">{$category.name}</h1>
   </div>
 
   {if $category.description}
+
   <div id="category-description" class="list__description">
     {$category.description nofilter}
   </div>
@@ -40,6 +42,7 @@
 {block name="subcategories_list"}
   <div class="row list">
     {foreach from=$subcategories item=category}
+
       <a href="{$category.url}" class="list__item-link col-sm-3">
         <div class="list__item">
           <h3 class="list__item-title">{$category.name}</h3>
