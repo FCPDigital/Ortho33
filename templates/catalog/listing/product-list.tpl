@@ -22,36 +22,42 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-{extends file=$layout}
+{extends file='layouts/layout-full-width.tpl'}
 
 {block name='content'}
-  <section id="main">
+  <section class="container">
 
     {block name='product_list_header'}
-      <h2 class="h2">{$listing.label}</h2>
+      <h2 class="list__title">{$listing.label}</h2>
     {/block}
 
-    <section id="products">
-      {if $listing.products|count}
+    <section id="list" class="margin-bottom-big">
+      {if isset($subcategories) && $subcategories|count} 
+        
+        {* Listes des catégories enfante *}
+        {block name="subcategories_list"}{/block}
+      
+      {elseif $listing.products|count}
 
-        <div id="">
-          {block name='product_list_top'}
-            {include file='catalog/_partials/products-top.tpl' listing=$listing}
-          {/block}
-        </div>
-
+        
+        {* Outils de sélection de filtres *}
+        {*block name='product_list_top'}
+          {include file='catalog/_partials/products-top.tpl' listing=$listing}
+        {/block*}
+      
+        {* Listes des filtres actifs *}
         {block name='product_list_active_filters'}
           <div id="" class="hidden-sm-down">
             {$listing.rendered_active_filters nofilter}
           </div>
         {/block}
 
-        <div id="">
-          {block name='product_list'}
-            {include file='catalog/_partials/products.tpl' listing=$listing}
-          {/block}
-        </div>
-
+        {* Listes des produits *}
+        {block name='product_list'}
+          {include file='catalog/_partials/products.tpl' listing=$listing type='list-item'}
+        {/block}
+        
+        {* Affichage bas de pages *}
         <div id="js-product-list-bottom">
           {block name='product_list_bottom'}
             {include file='catalog/_partials/products-bottom.tpl' listing=$listing}
@@ -64,6 +70,5 @@
 
       {/if}
     </section>
-
   </section>
 {/block}

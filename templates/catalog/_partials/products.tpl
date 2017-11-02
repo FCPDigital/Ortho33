@@ -26,7 +26,7 @@
   <div class="products row">
     {foreach from=$listing.products item="product"}
       {block name='product_miniature'}
-        {include file='catalog/_partials/miniatures/product.tpl' product=$product}
+        {include file='catalog/_partials/miniatures/product.tpl' product=$product type=$type}
       {/block}
     {/foreach}
   </div>
@@ -38,7 +38,7 @@
   <div class="hidden-md-up text-xs-right up">
     <a href="#header" class="btn btn-secondary">
       {l s='Back to top' d='Shop.Theme.Actions'}
-      <i class="material-icons">&#xE316;</i>
+      <i class="fa fa-arrow-up margin-left-small" aria-hidden="true"></i>
     </a>
   </div>
 </div>

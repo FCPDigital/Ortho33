@@ -23,13 +23,20 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {block name='product_miniature_item'}
-  <div class="col-sm-3">
-    <article class="product product--miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
-    <div class="product__thumbnail-container">
+  {$type = (isset($type) && $type == 'list-item') ? 'list-item' : 'miniature' }
+  {if $type === 'list-item'}
+    {$size = 12}
+  {elseif $type === 'miniature'}
+    {$size = 3}
+  {/if}
+  
+  <div class="col-sm-{$size}">
+    <article class="product product--{$type}" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
+    <div class="product__thumbnail-container {if $type==='list-item'}row{/if}">
       {block name='product_thumbnail'}
         <a href="{$product.url}">
           <img
-            class="product__thumbnail"
+            class="product__thumbnail {if $type==='list-item'}col-sm-3{/if}"
             src = "{$product.cover.bySize.home_default.url}"
             alt = "{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
             data-full-size-image-url = "{$product.cover.large.url}"
@@ -37,6 +44,7 @@
         </a>
       {/block}
 
+      {if $type==='list-item'}<div class="product__item-block col-sm-9">{/if}
 
       <div class="product__description">
         {block name='product_name'}
@@ -67,7 +75,14 @@
             </div>
           {/if}
         {/block}
-
+        
+        {if $type === 'list-item'}
+        <div class="product__content">
+          {$product.description_short nofilter}  
+        </div>
+        {/if}
+        
+        
         {block name='product_reviews'}
           {hook h='displayProductListReviews' product=$product}
         {/block}
@@ -92,6 +107,9 @@
           {/if}
         {/block}
       </div>
+
+      {if $type==='list-item'}</div>{/if}
+    
     </div>
   </article>
 </div>
