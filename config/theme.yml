@@ -47,6 +47,8 @@ assets:
         path: assets/js/carousel.js
       - id: header
         path: assets/js/header.js
+      - id: toggler
+        path: assets/js/toggler.js
 
 
 global_settings:

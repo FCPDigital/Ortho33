@@ -8,4 +8,5 @@
 window.addEventListener("load", function(){
 	HeaderManage.init();
 	CarouselManage.init();
+	TogglerManage.init();
 }, false)

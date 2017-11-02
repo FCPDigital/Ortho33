@@ -37,9 +37,11 @@
       </div>
     </div>
   </div>
-
-  <a class="btn btn--no-border float-right btn--arrow-right" href="{$allBestSellers}">
-    {l s='All best sellers' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
-  </a>
+  <div class="actions text-right">
+    <a class="btn btn--no-border btn--arrow-right" href="{$allBestSellers}">
+      {l s='All best sellers' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
+    </a>
+  </div>
+ 
 
 </section>

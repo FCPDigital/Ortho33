@@ -1,5 +1,7 @@
 .toggler 
 	background-color: $grey-dark
+	margin-top: 80px
+	margin-bottom: 50px
 	.container 
 		position: relative
 	
@@ -8,6 +10,7 @@
 		margin-bottom: 50px
 
 	&__list
+		margin-bottom: 50px
 		&-container
 
 		&-item
@@ -33,13 +36,15 @@
 	&__item
 		display: none
 		&-content
-			padding-top: 50px
+			padding-top: $pad-small
 			width: 50%
 			float: left
 		&-img
+			width: 100%
 			&-container
 				width: 50%
 				float: left
+				padding-left: $pad-normal
 		&--active
 			display: block
 		&-title
