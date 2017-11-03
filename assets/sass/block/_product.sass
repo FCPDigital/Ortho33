@@ -1,5 +1,6 @@
 .product
 	background-color: #FFF
+	position: relative
 	// Default settings ( Product detail )
 	&__img
 		display: block
@@ -24,12 +25,12 @@
 		@include transform(rotate(-20deg))
 
 	&__title
-		font-size: $font-big
+		font-size: $font-medium
 		font-weight: 800
 		a
 			text-decoration: none
 			color: #000
-			
+
 	&__price
 		color: $red
 		font-size: $font-medium-big

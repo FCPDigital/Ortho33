@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(jquery-ui/jquery-ui.min.css);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -62,6 +63,9 @@ body {
 .link-invisible {
   text-decoration: none;
   color: black; }
+
+.page-index .arianne {
+  display: none; }
 
 .clr {
   clear: both; }
@@ -6040,6 +6044,28 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.product-add-to-cart {
+  margin-top: 35px; }
+  .product-add-to-cart .control-label {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 12px; }
+  .product-add-to-cart .qty {
+    display: inline-block;
+    float: left;
+    margin-right: 10px; }
+    .product-add-to-cart .qty input {
+      height: 45px;
+      width: 50px;
+      text-align: right;
+      padding-right: 10px;
+      color: #6cbAdf;
+      font-weight: 600; }
+
+.product-variants {
+  display: flex; }
+
 .btn {
   border: 1px solid black;
   color: black;
@@ -6066,6 +6092,10 @@ button.close {
   .btn--blue {
     color: #6cbAdf;
     border-color: #6cbAdf; }
+    .btn--blue-bg {
+      color: white;
+      background-color: #6cbAdf;
+      border-color: #6cbAdf; }
   .btn--no-border {
     border-width: 0; }
   .btn--size-sm {
@@ -6233,7 +6263,8 @@ button.close {
     background-color: #ea5b0c; }
 
 .product {
-  background-color: #FFF; }
+  background-color: #FFF;
+  position: relative; }
   .product__img {
     display: block; }
   .product__item-block {
@@ -6256,7 +6287,7 @@ button.close {
     -moz-transform: rotate(-20deg);
     transform: rotate(-20deg); }
   .product__title {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800; }
     .product__title a {
       text-decoration: none;
@@ -6439,6 +6470,29 @@ button.close {
   color: #4234FF !important; }
 .category_test .border-heritance {
   border-color: #4234FF !important; }
+
+.tabs.ui-tabs {
+  padding: 0;
+  border-radius: 0;
+  border: 0; }
+  .tabs.ui-tabs .nav-tabs {
+    padding: 0;
+    border: 0;
+    background: white;
+    border-radius: 0; }
+  .tabs.ui-tabs .ui-tabs-panel {
+    padding: 10px 0; }
+  .tabs.ui-tabs .nav-item {
+    border: 1px solid #ababab;
+    border-radius: 0; }
+
+.modal-body figure img {
+  width: 100%; }
+
+.thumb-container {
+  display: inline-block; }
+  .thumb-container .thumb {
+    width: 100px; }
 
 header {
   height: 180px; }

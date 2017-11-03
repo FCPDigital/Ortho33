@@ -43,6 +43,10 @@ assets:
 #        priority: 200
   js:
     all:
+      - id: jquery
+        path: assets/js/jquery.js
+      - id: jquery-ui
+        path: assets/js/jquery-ui.min.js
       - id: carousel
         path: assets/js/carousel.js
       - id: header
@@ -80,6 +84,8 @@ global_settings:
         - ps_linklist
         - ps_customeraccountlinks
         - ps_contactinfo
+      displayFooterProduct:
+        - ps_crossselling
       displayLeftColumn:
         - ps_categorytree
         - ps_facetedsearch

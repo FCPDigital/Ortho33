@@ -9,4 +9,7 @@ window.addEventListener("load", function(){
 	HeaderManage.init();
 	CarouselManage.init();
 	TogglerManage.init();
+	$( function() {
+		$( ".tabs" ).tabs();
+	});
 }, false)
