@@ -27,11 +27,11 @@
     {foreach from=$breadcrumb.links item=path name=breadcrumb}
       {block name='arianne_item'}
         <li class="arianne__item">
-          <a itemprop="item" href="{$path.url}">
+          <a class="color-heritance" itemprop="item" href="{$path.url}">
             <span itemprop="name">{$path.title}</span>
           </a>
           <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
-          <span class="arianne__separator">></span>
+          <span class="arianne__separator color-heritance">></span>
         </li>
       {/block}
     {/foreach}

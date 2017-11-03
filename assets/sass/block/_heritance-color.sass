@@ -1,0 +1,10 @@
+$categories: ( 'default': #000000, 'women': #FF0000, 'test': #4234FF )
+
+@each $category, $i in $categories
+	.category_#{$category}
+		.color-heritance
+			color: $i !important
+		.border-heritance
+			border-color: $i !important
+	
+

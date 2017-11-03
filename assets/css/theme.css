@@ -6396,6 +6396,21 @@ button.close {
     display: inline-block;
     margin: 0 5px; }
 
+.category_default .color-heritance {
+  color: #000000 !important; }
+.category_default .border-heritance {
+  border-color: #000000 !important; }
+
+.category_women .color-heritance {
+  color: #FF0000 !important; }
+.category_women .border-heritance {
+  border-color: #FF0000 !important; }
+
+.category_test .color-heritance {
+  color: #4234FF !important; }
+.category_test .border-heritance {
+  border-color: #4234FF !important; }
+
 header {
   height: 180px; }
 

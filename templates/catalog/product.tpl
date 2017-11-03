@@ -45,11 +45,13 @@
   {/if}
 {/block}
 
+{block name='body_classes'}{$rootCategory}{/block}
+
 {block name='content'}
 
   <section id="main" itemscope itemtype="https://schema.org/Product">
     <meta itemprop="url" content="{$product.url}">
-    {$rootCategory}
+    
     <div class="row">
       <div class="col-md-6">
         {block name='page_content_container'}
@@ -78,7 +80,7 @@
         <div class="col-md-6">
           {block name='page_header_container'}
             {block name='page_header'}
-              <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+              <h1 class="h1 color-heritance" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
           {/block}
           {block name='product_prices'}

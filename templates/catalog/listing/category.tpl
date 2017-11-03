@@ -24,10 +24,11 @@
  *}
 {extends file='catalog/listing/product-list.tpl'}
 
+{block name='body_classes'}{$category.rootCategory}{/block}
+
 {block name='product_list_header'}
-  {$category.rootCategory}
   <div class="text-sm-center hidden-md-up">
-    <h1 class="list__title">{$category.name}</h1>
+    <h1 class="list__title color-heritance">{$category.name}</h1>
   </div>
 
   {if $category.description}
@@ -44,8 +45,8 @@
     {foreach from=$subcategories item=category}
 
       <a href="{$category.url}" class="list__item-link col-sm-3">
-        <div class="list__item">
-          <h3 class="list__item-title">{$category.name}</h3>
+        <div class="list__item border-heritance">
+          <h3 class="list__item-title color-heritance">{$category.name}</h3>
           <img class="list__item-img" src="{$category.image.large.url}" alt="{$category.image.legend}">
         </div>
       </a>
