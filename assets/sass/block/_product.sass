@@ -4,16 +4,42 @@
 	&__img
 		display: block
 
+	&__item-block
+		position: static
+		
+	&__discount
+		position: absolute
+		top: 15px
+		left: 25px
+		width: $pad-big
+		height: $pad-big
+		background-color: $orange
+		color: white
+		font-weight: 800
+		display: flex
+		text-align: center
+		flex-direction: column
+		justify-content: center
+		border-radius: 100%
+		@include transform(rotate(-20deg))
+
 	&__title
 		font-size: $font-big
 		font-weight: 800
 		a
 			text-decoration: none
 			color: #000
+			
 	&__price
 		color: $red
 		font-size: $font-medium-big
 		font-weight: 600
+		&--old
+			text-decoration: line-through
+			color: $red
+		&--reduce
+			color: $orange
+
 	&__show-btn
 		
 	&__cart-btn
@@ -35,32 +61,50 @@
 		padding: $pad-normal 5px
 		min-height: 300px
 		margin-bottom: $pad-normal
+
 		.product
+		
 			&__thumbnail
 				max-width: 60%
 				max-height: 120px
 				margin: auto
+		
 			&__title
 				font-size: $font-medium
+		
 			&__price
 				font-size: $font-normal
+				&--old 
+					font-size: $font-small
+				
 			&__show-btn
+			
 			&__cart-btn
 	
+
 	// Product list item
 	&--list-item
 		text-align: left
 		margin-bottom: $pad-normal
 		border: 1px solid black
+
 		.product
+		
 			&__thumbnail
 				margin: auto
 				&-container
 					padding: $pad-medium 0
+		
 			&__title
 				font-size: $font-medium
 				margin-top: 0
+	
 			&__price
 				font-size: $font-medium-big
+				&--old 
+					font-size: $font-normal
+					margin-right: $pad-small
+				
 			&__show-btn
+
 			&__cart-btn

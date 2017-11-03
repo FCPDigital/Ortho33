@@ -58,16 +58,18 @@
                 {hook h='displayProductPriceBlock' product=$product type="old_price"}
 
                 <span class="sr-only">{l s='Regular price' d='Shop.Theme.Catalog'}</span>
-                <span class="regular-price">{$product.regular_price}</span>
+                <span class="product__price product__price--old">{$product.regular_price}</span>
                 {if $product.discount_type === 'percentage'}
-                  <span class="discount-percentage">{$product.discount_percentage}</span>
+                  <span class="product__discount">{$product.discount_percentage}</span>
                 {/if}
+                <span itemprop="price" class="product__price product__price--reduce">{$product.price}</span>
+              {else}
+                <span itemprop="price" class="product__price">{$product.price}</span>
               {/if}
 
               {hook h='displayProductPriceBlock' product=$product type="before_price"}
 
               <span class="sr-only">{l s='Price' d='Shop.Theme.Catalog'}</span>
-              <span itemprop="price" class="product__price">{$product.price}</span>
 
               {hook h='displayProductPriceBlock' product=$product type='unit_price'}
 
