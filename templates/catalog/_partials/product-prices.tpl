@@ -26,16 +26,14 @@
   <div class="product-prices">
     {block name='product_discount'}
       {if $product.has_discount}
-        <div class="">
-          {hook h='displayProductPriceBlock' product=$product type="old_price"}
-          <span class="product__price--old">{$product.regular_price}</span>
-        </div>
+        {hook h='displayProductPriceBlock' product=$product type="old_price"}
+        <span class="product__price--old">{$product.regular_price}</span>
       {/if}
     {/block}
 
     {block name='product_price'}
       <div
-        class="product-price h5 {if $product.has_discount}has-discount{/if}"
+        class="product__price-container {if $product.has_discount}has-discount{/if}"
         itemprop="offers"
         itemscope
         itemtype="https://schema.org/Offer"
@@ -43,7 +41,7 @@
         <link itemprop="availability" href="https://schema.org/InStock"/>
         <meta itemprop="priceCurrency" content="{$currency.iso_code}">
 
-        <div class="current-price">
+        <div class="product__price--inline">
           <span class="product__price" itemprop="price" content="{$product.price_amount}">{$product.price}</span>
 
           {if $product.has_discount}

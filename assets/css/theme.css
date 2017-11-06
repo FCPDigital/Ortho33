@@ -6081,7 +6081,8 @@ button.close {
   .product-variants .input-color + span {
     display: block;
     width: 20px;
-    height: 20px; }
+    height: 20px;
+    border: 1px solid #CCC; }
 
 .btn {
   border: 1px solid black;
@@ -6323,6 +6324,12 @@ button.close {
       color: #e60e0e; }
     .product__price--reduce {
       color: #ea5b0c; }
+    .product__price-container {
+      display: inline-block; }
+      .product__price-container.has-discount .product__price {
+        color: #ea5b0c; }
+    .product__price--inline {
+      display: inline-block; }
   .product--miniature {
     text-align: center;
     padding: 20px 5px;
