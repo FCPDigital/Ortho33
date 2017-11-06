@@ -23,6 +23,8 @@ HeaderManage = {
 		this.burger = document.querySelector("#menu-burger");
 		this.close = document.querySelector("#menu-close");
 		this.menu = document.querySelector("#menu-responsive");
-		this.initEvents();
+		if(this.burger && this.close && this.menu) {
+			this.initEvents();
+		}	
 	}
 }
