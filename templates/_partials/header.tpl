@@ -84,6 +84,7 @@
         </a>
         {hook h='displayTop'}
       </div>
+      
   </div>
   {hook h='displayNavFullWidth'}
 {/block}
