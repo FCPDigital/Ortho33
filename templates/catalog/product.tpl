@@ -80,17 +80,22 @@
         <div class="col-md-8 product__item-block">
           {block name='page_header_container'}
             {block name='page_header'}
-              <h1 class="product__title color-heritance" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+              <h1 class="product__title margin-bottom-medium color-heritance" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
           {/block}
+            
+          {if isset($product.reference_to_display)}
+            <p class="product__ref">Référence : {$product.reference_to_display}</p>
+          {/if}
+
           {block name='product_prices'}
             {include file='catalog/_partials/product-prices.tpl'}
           {/block}
 
           <div class="product-information">
-            {block name='product_description_short'}
+            {*block name='product_description_short'}
               <div id="product-description-short-{$product.id}" itemprop="description">{$product.description_short nofilter}</div>
-            {/block}
+            {/block*}
 
             {if $product.is_customizable && count($product.customizations.fields)}
               {block name='product_customization'}

@@ -89,7 +89,7 @@
 
     {hook h='displayProductPriceBlock' product=$product type="weight" hook_origin='product_sheet'}
 
-    <div class="tax-shipping-delivery-label">
+    <div class="product__tax-container">
       {if $configuration.display_taxes_label}
         {$product.labels.tax_long}
       {/if}

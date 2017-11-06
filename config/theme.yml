@@ -45,6 +45,8 @@ assets:
     all:
       - id: jquery
         path: assets/js/jquery.js
+      - id: 'toggler-thumbnail'
+        path: assets/js/ToggleThumbnail.js
       - id: jquery-ui
         path: assets/js/jquery-ui.min.js
       - id: carousel

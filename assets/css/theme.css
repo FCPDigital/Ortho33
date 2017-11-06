@@ -107,6 +107,9 @@ p {
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 35px; }
+.title--small {
+  font-size: 14px;
+  font-weight: 600; }
 
 .padding-small {
   padding: 10px; }
@@ -6064,7 +6067,21 @@ button.close {
       font-weight: 600; }
 
 .product-variants {
-  display: flex; }
+  display: flex;
+  padding: 15px 0;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  margin: 15px 0; }
+  .product-variants .product-variants-item {
+    margin-right: 20px; }
+    .product-variants .product-variants-item .input-container {
+      margin-right: 10px; }
+      .product-variants .product-variants-item .input-container label {
+        text-align: center; }
+  .product-variants .input-color + span {
+    display: block;
+    width: 20px;
+    height: 20px; }
 
 .btn {
   border: 1px solid black;
@@ -6269,6 +6286,9 @@ button.close {
     display: block; }
   .product__item-block {
     position: static; }
+  .product__ref {
+    font-weight: 600;
+    margin-bottom: 20px; }
   .product__discount {
     position: absolute;
     top: 15px;
@@ -6287,11 +6307,13 @@ button.close {
     -moz-transform: rotate(-20deg);
     transform: rotate(-20deg); }
   .product__title {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 800; }
     .product__title a {
       text-decoration: none;
       color: #000; }
+  .product__tax-container {
+    display: none; }
   .product__price {
     color: #e60e0e;
     font-size: 25px;
@@ -6474,17 +6496,40 @@ button.close {
 .tabs.ui-tabs {
   padding: 0;
   border-radius: 0;
-  border: 0; }
+  border: 1px solid white; }
+  .tabs.ui-tabs .tab-content {
+    padding-top: 20px; }
+    .tabs.ui-tabs .tab-content .img-thumbnail {
+      height: 40px;
+      border: 0;
+      margin-bottom: 10px; }
   .tabs.ui-tabs .nav-tabs {
     padding: 0;
-    border: 0;
+    border: 1px solid white;
     background: white;
     border-radius: 0; }
   .tabs.ui-tabs .ui-tabs-panel {
     padding: 10px 0; }
   .tabs.ui-tabs .nav-item {
-    border: 1px solid #ababab;
-    border-radius: 0; }
+    border: 1px solid white;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .tabs.ui-tabs .nav-item.ui-tabs-active {
+      border-bottom: 1px solid black; }
+    .tabs.ui-tabs .nav-item .nab-link {
+      background-color: white; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active,
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: none !important; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: white; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border: 1px solid white;
+  background-color: white; }
 
 .modal-body figure img {
   width: 100%; }

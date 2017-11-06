@@ -27,7 +27,7 @@
 
     {block name='product_quantity'}
       <div class="product-quantity clearfix">
-        <span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
+        <span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'} : </span>
         <div class="qty">
           <input
             type="text"

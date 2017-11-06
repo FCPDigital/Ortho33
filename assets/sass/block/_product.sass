@@ -7,7 +7,11 @@
 
 	&__item-block
 		position: static
-		
+	
+	&__ref 
+		font-weight: 600
+		margin-bottom: $pad-normal
+
 	&__discount
 		position: absolute
 		top: 15px
@@ -25,11 +29,14 @@
 		@include transform(rotate(-20deg))
 
 	&__title
-		font-size: $font-medium
+		font-size: $font-big
 		font-weight: 800
 		a
 			text-decoration: none
 			color: #000
+	
+	&__tax-container
+		display: none
 
 	&__price
 		color: $red
