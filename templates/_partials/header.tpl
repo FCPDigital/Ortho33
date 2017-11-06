@@ -46,7 +46,7 @@
               </a>  
             </div>
        
-            <div class="inline float-right">
+            <div class="inline float-right margin-top-small margin-right-normal">
               {hook h='displaySearch'}
               {hook h='displayNav2'}
             </div>

@@ -6095,6 +6095,8 @@ button.close {
   border-radius: 0;
   min-width: 45px;
   min-height: 45px; }
+  .btn.active {
+    box-shadow: none; }
   .btn a {
     text-decoration: none; }
   .btn--grey-orange {
@@ -6550,7 +6552,7 @@ header {
   height: 180px; }
 
 .header-top {
-  padding: 20px;
+  padding: 5px 0;
   padding-left: 0;
   position: fixed;
   width: 100%;
