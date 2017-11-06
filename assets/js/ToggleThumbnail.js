@@ -1,16 +1,26 @@
 ToggleThumbnailManage = {
-	init: function(){
+
+	setup: function(){
 		this.els = document.querySelectorAll('.toggle-thumbnail');
 		this.modals = document.querySelectorAll('.js-product-images-modal');
-
 		this.togglers = []
-		
 		for(var i = 0; i < this.els.length; i++) {
 			this.togglers.push(new ToggleThumbnail(this.els[i], 'medium'));
 		}
 		for(var i = 0; i < this.modals.length; i++) {
 			this.togglers.push(new ToggleThumbnail(this.modals[i], 'large'));
 		}
+	},
+
+	init: function(){
+		this.setup();
+		var self = this;
+		prestashop.on('updateProduct', function(){
+			setTimeout(function(){
+				self.setup();
+			}, 1000)
+			
+		})
 	}
 }
 
