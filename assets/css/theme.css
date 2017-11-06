@@ -6561,9 +6561,10 @@ button.close {
     font-size: 25px; }
   .header-top__logo {
     display: inline-block;
-    padding: 20px; }
+    padding: 10px 20px; }
     .header-top__logo img {
-      display: inline-block; }
+      display: inline-block;
+      height: 50px; }
   .header-top--desktop .header-top__logo {
     float: left; }
   .header-top--responsive .header-top__nav2 {
