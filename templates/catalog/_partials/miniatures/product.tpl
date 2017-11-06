@@ -91,9 +91,9 @@
       </div>
 
       {block name='product_flags'}
-        <ul class="product-flags">
+        <ul class="product__flags">
           {foreach from=$product.flags item=flag}
-            <li class="product-flag {$flag.type}">{$flag.label}</li>
+            <li class="product__flag {$flag.type}">{$flag.label}</li>
           {/foreach}
         </ul>
       {/block}

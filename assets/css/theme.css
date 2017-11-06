@@ -6332,6 +6332,10 @@ button.close {
         color: #ea5b0c; }
     .product__price--inline {
       display: inline-block; }
+  .product__flags {
+    display: none; }
+  .product__flag {
+    display: none; }
   .product--miniature {
     text-align: center;
     padding: 20px 5px;
