@@ -6682,5 +6682,15 @@ header {
     border-top: 1px solid black;
     padding: 20px 0 10px 0;
     text-align: center; }
+  .footer__payment {
+    margin-right: 10px;
+    margin-top: 10px; }
+    .footer__payment--fullsize {
+      margin-top: 10px; }
+      .footer__payment--fullsize .footer__payment-cheque {
+        display: inline-block; }
+      .footer__payment--fullsize p {
+        display: inline-block;
+        margin-left: 10px; }
 
 /*# sourceMappingURL=theme.css.map */

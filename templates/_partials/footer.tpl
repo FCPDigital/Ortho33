@@ -62,11 +62,11 @@
       <div class="col-sm-3 footer__section">
         <h3 class="footer__title">Paiement</h3>
         <div class="footer__payments">
-          <img class="footer__payment" src="" alt="Paiement par VISA">
-          <img class="footer__payment" src="" alt="Paiement par Mastercard">
-          <img class="footer__payment" src="" alt="Paiement par Paypal">
+          <img class="footer__payment" src="{$smarty.const._THEME_IMG_DIR_}/icon/picto-visa.png" alt="Paiement par VISA">
+          <img class="footer__payment" src="{$smarty.const._THEME_IMG_DIR_}/icon/picto-mastercard.png" alt="Paiement par Mastercard">
+          <img class="footer__payment" src="{$smarty.const._THEME_IMG_DIR_}/icon/picto-paypal.png" alt="Paiement par Paypal">
           <div class="footer__payment--fullsize">
-            <img class="footer__payment-cheque" src="" alt="Paiement par Chèque">
+            <img class="footer__payment-cheque" src="{$smarty.const._THEME_IMG_DIR_}/icon/picto-cheque.png" alt="Paiement par Chèque">
             <p>Paiement par chèque</p>
           </div>
         </div>
