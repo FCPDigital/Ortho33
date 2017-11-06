@@ -75,15 +75,18 @@
       <div class="header-bottom header-bottom--desktop">
         {hook h='displayTop'}
       </div>
-    
-      <div id="menu-responsive" class="header-responsive header-responsive--hide">
-        <a href=""></a>
-        <a href="" rel="nofollow" id="menu-close">
-          <i class="fa fa-times" aria-hidden="true"></i>
-        </a>
-        <hr>
-        {hook h='displayTop'}
-      </div>
+      
+      {*
+        <div id="menu-responsive" class="header-responsive header-responsive--hide">
+          <a href=""></a>
+          <a href="" rel="nofollow" id="menu-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </a>
+          <hr>
+          {hook h='displayTop'}
+        </div>
+      *}
+      
     </div>
   </div>
   {hook h='displayNavFullWidth'}
