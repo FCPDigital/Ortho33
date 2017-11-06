@@ -50,6 +50,7 @@
               {hook h='displaySearch'}
               {hook h='displayNav2'}
             </div>
+
           </div>
           <!-- Responsive first header -->
           <div class="text-center header-top header-top--responsive">
@@ -76,16 +77,13 @@
         {hook h='displayTop'}
       </div>
       
-      {*
-        <div id="menu-responsive" class="header-responsive header-responsive--hide">
-          <a href=""></a>
-          <a href="" rel="nofollow" id="menu-close">
-            <i class="fa fa-times" aria-hidden="true"></i>
-          </a>
-          <hr>
-          {hook h='displayTop'}
-        </div>
-      *}
+      
+      <div id="menu-responsive" class="header-responsive header-responsive--hide">
+        <a href="" rel="nofollow" id="menu-close">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+        {hook h='displayTop'}
+      </div>
       
     </div>
   </div>
