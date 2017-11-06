@@ -6548,9 +6548,6 @@ button.close {
   .thumb-container .thumb {
     width: 100px; }
 
-header {
-  height: 180px; }
-
 .header-top {
   padding: 5px 0;
   padding-left: 0;
@@ -6589,7 +6586,8 @@ header {
 .header-bottom {
   height: 90px;
   display: block;
-  padding-top: 75px; }
+  padding-top: 75px;
+  box-sizing: content-box; }
   .header-bottom .main-menu {
     height: 90px;
     display: flex;
