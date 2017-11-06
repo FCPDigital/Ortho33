@@ -24,7 +24,7 @@
  *}
 
 {if $homeslider.slides}
-<div class="container">
+<div class="container margin-top-big margin-bottom-big">
   <div id="carousel" data-ride="carousel" class="carousel" data-interval="{$homeslider.speed}" data-wrap="{(string)$homeslider.wrap}" data-pause="{$homeslider.pause}">
     <ul class="carousel__inner" role="listbox">
       {foreach from=$homeslider.slides item=slide name='homeslider'}
