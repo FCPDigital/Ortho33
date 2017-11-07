@@ -1,4 +1,66 @@
 .checkout
+	&__container
+		box-shadow: $shadow
+		padding-bottom: $pad-normal
+	
 	&__section
-		&-title
+		padding: 30px 20px 30px
+		border-bottom: 1px solid #DDD
+		margin-bottom: 0
 
+	&__summary
+		box-shadow: $shadow
+		padding: 30px 20px 30px
+		.cart-total .value
+			font-weight: 700
+			font-size: $font-medium
+			margin-left: $pad-normal
+
+	.cart-summary-products
+		color: grey
+
+	&__edit
+		font-size: $font-small
+		right: $pad-medium
+		position: absolute
+		display: inline-block
+
+	&__title
+		margin-top: 0
+		font-size: $font-medium-big
+		.fa-check
+			font-size: 15px
+			margin-top: 7px
+
+	&__unreachable
+		padding: 15px $pad-normal
+		border-bottom: 1px solid #DDD
+		.checkout__title
+			margin-bottom: 0
+
+	.nav-item
+		display: inline-block
+		&.active 
+			.btn--grey-orange
+				background-color: $orange
+
+	form button.btn
+		height: 34px
+		min-height: 34px
+		padding: 2px 20px
+
+	.custom-checkbox
+		display: inline-block
+		.material-icons
+			display: none
+		label
+			display: inline
+			font-weight: 400
+
+	.form-footer
+		margin-top: $pad-medium
+
+	.js-visible-password ~ .input-group-btn
+		display: none
+	.js-parent-focus
+		width: 100%

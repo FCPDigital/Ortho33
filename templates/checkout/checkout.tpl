@@ -47,23 +47,26 @@
       {include file='_partials/notifications.tpl'}
     {/block}
 
-    <section id="wrapper" class="container">
+    <section id="wrapper" class="container checkout">
       {hook h="displayWrapperTop"}
       <div class="container">
       {block name='content'}
-        <section id="content">
+        <section id="content" class="margin-bottom-big">
           <div class="row">
-            <div class="col-md-8">
-              {block name='cart_summary'}
-                {render file='checkout/checkout-process.tpl' ui=$checkout_process}
-              {/block}
+            <div class="col-md-8 ">
+              <div class="checkout__container">
+                {block name='cart_summary'}
+                  {render file='checkout/checkout-process.tpl' ui=$checkout_process}
+                {/block}
+              </div>
             </div>
+
             <div class="col-md-4">
-
-              {block name='cart_summary'}
-                {include file='checkout/_partials/cart-summary.tpl' cart = $cart}
-              {/block}
-
+              <div class="checkout__summary">
+                {block name='cart_summary'}
+                  {include file='checkout/_partials/cart-summary.tpl' cart = $cart}
+                {/block}
+              </div>
               {hook h='displayReassurance'}
             </div>
           </div>

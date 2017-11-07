@@ -26,7 +26,7 @@
 
 {block name='content'}
 
-  <section id="main">
+  <section id="main" class="margin-bottom-big">
     <div class="cart row">
 
       <!-- Left Block: cart product informations & shpping -->
