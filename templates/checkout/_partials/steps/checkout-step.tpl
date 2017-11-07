@@ -24,22 +24,22 @@
  *}
 {block name='step'}
   <section  id    = "{$identifier}"
-            class = "{[
+            class = "checkout__section {[
                         'checkout-step'   => true,
-                        '-current'        => $step_is_current,
-                        '-reachable'      => $step_is_reachable,
-                        '-complete'       => $step_is_complete,
+                        '--current'        => $step_is_current,
+                        '--reachable'      => $step_is_reachable,
+                        '--complete'       => $step_is_complete,
                         'js-current-step' => $step_is_current
                     ]|classnames}"
   >
-    <h1 class="step-title h3">
-      <i class="material-icons done">&#xE876;</i>
-      <span class="step-number">{$position}</span>
+    <h1 class="checkout__title">
+      <i class="fa fa-check" aria-hidden="true"></i>
+      <span class="checkout__number">{$position}</span>
       {$title}
-      <span class="step-edit text-muted"><i class="material-icons edit">mode_edit</i> {l s='Edit' d='Shop.Theme.Actions'}</span>
+      <span class="checkout__edit text-muted"><i class="fa fa-pencil" aria-hidden="true"></i> {l s='Edit' d='Shop.Theme.Actions'}</span>
     </h1>
 
-    <div class="content">
+    <div class="checkout__content">
       {block name='step_content'}DUMMY STEP CONTENT{/block}
     </div>
   </section>

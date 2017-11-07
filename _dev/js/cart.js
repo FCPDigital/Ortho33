@@ -30,6 +30,8 @@ $(document).ready(() => {
   let productLineInCartSelector = '.js-cart-line-product-quantity';
   let promises = [];
 
+  console.log(productLineInCartSelector)
+
   prestashop.on('updateCart', () => {
     $('.quickview').modal('hide');
   });

@@ -1,0 +1,48 @@
+.cart
+	margin-top: $pad-big
+	&__title
+		margin: 0 0 $pad-normal 0
+		text-transform: uppercase
+		font-size: $pad-normal
+		letter-spacing: 2px
+
+	&__details
+		padding: $pad-normal
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, .4)
+
+	&__continue
+
+	&__shipping
+
+	&__summary
+		padding: $pad-normal
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, .4)
+
+
+.cart-item
+	padding: 20px 0
+	border-bottom: 1px solid #EEE
+
+	&__title
+		font-weight: 600
+		margin-bottom: $pad-small
+		a
+			text-decoration: none
+			color: #000
+
+	&__info
+		font-size: $font-small
+		&-key
+		&-value
+
+	&__remove
+		font-size: $font-medium-big
+		color: black
+		text-decoration: none
+		@include transition(.3s)
+		&:hover 
+			color: $red
+
+	// Override product block
+	.product__price
+		font-size: $font-medium

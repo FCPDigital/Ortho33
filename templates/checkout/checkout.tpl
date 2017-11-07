@@ -47,10 +47,9 @@
       {include file='_partials/notifications.tpl'}
     {/block}
 
-    <section id="wrapper">
+    <section id="wrapper" class="container">
       {hook h="displayWrapperTop"}
       <div class="container">
-
       {block name='content'}
         <section id="content">
           <div class="row">
@@ -76,7 +75,7 @@
 
     <footer id="footer">
       {block name='footer'}
-        {include file='checkout/_partials/footer.tpl'}
+        {include file='_partials/footer.tpl'}
       {/block}
     </footer>
 

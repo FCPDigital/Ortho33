@@ -6084,6 +6084,31 @@ button.close {
     height: 20px;
     border: 1px solid #CCC; }
 
+.bootstrap-touchspin {
+  position: relative; }
+  .bootstrap-touchspin .js-cart-line-product-quantity {
+    height: 40px;
+    width: 60px; }
+  .bootstrap-touchspin .input-group-btn-vertical {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    display: block;
+    width: 20px;
+    z-index: 2; }
+  .bootstrap-touchspin .btn-touchspin {
+    height: 20px;
+    width: 20px;
+    border: 0;
+    min-width: 20px;
+    min-height: 20px;
+    box-sizing: border-box;
+    padding: 0;
+    float: left;
+    background-color: transparent;
+    color: #6cbAdf; }
+
 .btn {
   border: 1px solid black;
   color: black;
@@ -6159,7 +6184,8 @@ button.close {
   padding-bottom: 20px; }
   .carousel__inner {
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    min-height: 350px; }
   .carousel__control {
     width: 70px;
     position: absolute;
@@ -6309,6 +6335,11 @@ button.close {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
     transform: rotate(-20deg); }
+    .product__discount--light {
+      background-color: #ea5b0c;
+      color: white;
+      font-weight: 800;
+      padding: 5px 10px; }
   .product__title {
     font-size: 30px;
     font-weight: 800; }
@@ -6551,6 +6582,43 @@ button.close {
   display: inline-block; }
   .thumb-container .thumb {
     width: 100px; }
+
+.cart {
+  margin-top: 65px; }
+  .cart__title {
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px; }
+  .cart__details {
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); }
+  .cart__summary {
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); }
+
+.cart-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #EEE; }
+  .cart-item__title {
+    font-weight: 600;
+    margin-bottom: 10px; }
+    .cart-item__title a {
+      text-decoration: none;
+      color: #000; }
+  .cart-item__info {
+    font-size: 12px; }
+  .cart-item__remove {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .cart-item__remove:hover {
+      color: #e60e0e; }
+  .cart-item .product__price {
+    font-size: 20px; }
 
 .header-top {
   padding: 5px 0;
