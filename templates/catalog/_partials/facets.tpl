@@ -31,7 +31,7 @@
     {block name='facets_clearall_button'}
       <div id="_desktop_search_filters_clear_all" class="hidden-sm-down clear-all-wrapper">
         <button data-search-url="{$clear_all_link}" class="btn btn-tertiary js-search-filters-clear-all">
-          <i class="material-icons">&#xE14C;</i>
+          <i class="fa fa-times" aria-hidden="true"></i>
           {l s='Clear all' d='Shop.Theme.Actions'}
         </button>
       </div>
@@ -50,8 +50,8 @@
             <h1 class="h6 facet-title">{$facet.label}</h1>
             <span class="float-xs-right">
               <span class="navbar-toggler collapse-icons">
-                <i class="material-icons add">&#xE313;</i>
-                <i class="material-icons remove">&#xE316;</i>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                <i class="fa fa-minus" aria-hidden="true"></i>
               </span>
             </span>
           </div>
@@ -77,7 +77,7 @@
                               {elseif isset($filter.properties.texture)}
                                 <span class="color texture" style="background-image:url({$filter.properties.texture})"></span>
                               {else}
-                              <span {if !$js_enabled} class="ps-shown-by-js" {/if}><i class="material-icons checkbox-checked">&#xE5CA;</i></span>
+                              <span {if !$js_enabled} class="ps-shown-by-js" {/if}><i class="fa fa-check-square-o checkbox-checked" aria-hidden="true"></i></span>
                             {/if}
                           </span>
                         {else}
