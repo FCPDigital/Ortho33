@@ -54,13 +54,13 @@
               <input type="hidden" name="token" value="{$static_token}">
               <input type="hidden" name="addDiscount" value="1">
               <input class="promo-input" type="text" name="discount_name" placeholder="{l s='Promo code' d='Shop.Theme.Checkout'}">
-              <button type="submit" class="btn btn-primary"><span>{l s='Add' d='Shop.Theme.Actions'}</span></button>
+              <button type="submit" class="btn btn--blue-bg"><span>{l s='Add' d='Shop.Theme.Actions'}</span></button>
             </form>
           {/block}
 
           {block name='cart_voucher_notifications'}
             <div class="alert alert-danger js-error" role="alert">
-              <i class="material-icons">&#xE001;</i><span class="ml-1 js-error-text"></span>
+              <i class="fa fa-exclamation-circle" aria-hidden="true"></i><span class="ml-1 js-error-text"></span>
             </div>
           {/block}
         </div>
@@ -72,7 +72,7 @@
           <ul class="js-discount card-block promo-discounts">
           {foreach from=$cart.discounts item=discount}
             <li class="cart-summary-line">
-              <span class="label"><span class="code">{$discount.code}</span> - {$discount.name}</span>
+              <span><span class="code">{$discount.code}</span> - {$discount.name}</span>
             </li>
           {/foreach}
           </ul>

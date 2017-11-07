@@ -66,7 +66,7 @@
             {block name='cart_totals'}
               {include file='checkout/_partials/cart-detailed-totals.tpl' cart=$cart}
             {/block}
-
+            
             {block name='cart_actions'}
               {include file='checkout/_partials/cart-detailed-actions.tpl' cart=$cart}
             {/block}

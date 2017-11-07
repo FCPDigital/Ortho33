@@ -29,7 +29,7 @@
     {foreach from=$cart.subtotals item="subtotal"}
       {if $subtotal.value && $subtotal.type !== 'tax'}
         <div class="cart-summary-line" id="cart-subtotal-{$subtotal.type}">
-          <span class="label{if 'products' === $subtotal.type} js-subtotal{/if}">
+          <span class="{if 'products' === $subtotal.type} js-subtotal{/if}">
             {if 'products' == $subtotal.type}
               {$cart.summary_string}
             {else}
@@ -53,12 +53,12 @@
 
   <div class="card-block">
     <div class="cart-summary-line cart-total">
-      <span class="label">{$cart.totals.total.label} {$cart.labels.tax_short}</span>
+      <span>{$cart.totals.total.label} {$cart.labels.tax_short}</span>
       <span class="value">{$cart.totals.total.value}</span>
     </div>
 
     <div class="cart-summary-line">
-      <small class="label">{$cart.subtotals.tax.label}</small>
+      <small>{$cart.subtotals.tax.label}</small>
       <small class="value">{$cart.subtotals.tax.value}</small>
     </div>
   </div>

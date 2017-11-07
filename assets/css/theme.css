@@ -6153,6 +6153,11 @@ button.close {
     margin-right: 10px;
     font-size: 20px; }
 
+.btn-primary {
+  color: white !important;
+  background-color: #6cbAdf !important;
+  border-color: #6cbAdf !important; }
+
 .search-bar {
   padding: 10px;
   color: #ea5b0c;
@@ -6592,10 +6597,10 @@ button.close {
     letter-spacing: 2px; }
   .cart__details {
     padding: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); }
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); }
   .cart__summary {
     padding: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); }
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); }
 
 .cart-item {
   padding: 20px 0;
@@ -6619,6 +6624,13 @@ button.close {
       color: #e60e0e; }
   .cart-item .product__price {
     font-size: 20px; }
+
+#block-reassurance {
+  padding: 20px;
+  margin-top: 35px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); }
+  #block-reassurance .block-reassurance-item {
+    margin: 10px 0; }
 
 .header-top {
   padding: 5px 0;
