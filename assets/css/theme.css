@@ -163,7 +163,7 @@ p {
   margin: 65px 0; }
 
 .container-w {
-  width: 1300px;
+  max-width: 1300px;
   margin: auto; }
 
 .pad-container {
@@ -322,11 +322,14 @@ p {
   .no-marge-sm {
     margin: 0 !important; }
 
+  .pad-container {
+    padding-left: 0px; }
+
   .title--big {
     font-size: 35px; }
 
   #wrapper {
-    padding-top: 64px;
+    padding-top: 85px;
     margin-top: 0; } }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -6152,7 +6155,8 @@ button.close {
       text-align: right;
       padding-right: 10px;
       color: #6cbAdf;
-      font-weight: 600; }
+      font-weight: 600;
+      margin-bottom: 20px; }
 
 .product-variants {
   display: flex;
@@ -6775,7 +6779,8 @@ button.close {
     .checkout__unreachable .checkout__title {
       margin-bottom: 0; }
   .checkout .nav-item {
-    display: inline-block; }
+    display: inline-block;
+    margin-top: 10px; }
     .checkout .nav-item.active .btn--grey-orange {
       background-color: #ea5b0c; }
   .checkout form button.btn {
@@ -7303,7 +7308,7 @@ button.close {
   width: 100%;
   height: 85px;
   background-color: white;
-  z-index: 2; }
+  z-index: 999; }
   .header-top__burger {
     display: inline-block;
     font-size: 25px; }
