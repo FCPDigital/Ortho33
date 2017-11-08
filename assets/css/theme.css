@@ -317,7 +317,7 @@ p {
 
 @media screen and (max-width: 1080px) {
   .hidden-sm {
-    display: none; }
+    display: none !important; }
 
   .no-marge-sm {
     margin: 0 !important; }
@@ -326,7 +326,8 @@ p {
     font-size: 35px; }
 
   #wrapper {
-    padding-top: 85px; } }
+    padding-top: 64px;
+    margin-top: 0; } }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6617,7 +6618,8 @@ button.close {
       margin-bottom: 35px; }
     .list__item-img {
       display: block;
-      margin: auto; }
+      margin: auto;
+      width: 100%; }
 
 .arianne {
   background-color: transparent;
@@ -7316,14 +7318,23 @@ button.close {
   .header-top--responsive .header-top__nav2 {
     position: absolute;
     right: 20px;
-    top: 20px; }
+    top: 10px; }
 
+@media screen and (max-width: 1080px) {
+  .header-top__logo {
+    height: 20px;
+    float: left; }
+    .header-top__logo img {
+      height: 20px;
+      margin-top: 7px; } }
 @media screen and (max-width: 1080px) {
   .header-top--desktop {
     display: none; }
 
   .header-top--responsive {
-    display: block; } }
+    display: block;
+    height: 65px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); } }
 @media screen and (min-width: 1080px) {
   .header-top--desktop {
     display: block; }
@@ -7437,5 +7448,9 @@ button.close {
       .footer__payment--fullsize p {
         display: inline-block;
         margin-left: 10px; }
+
+@media screen and (max-width: 1080px) {
+  .footer__list-item, .footer__title, .footer__payments {
+    text-align: center; } }
 
 /*# sourceMappingURL=theme.css.map */

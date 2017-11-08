@@ -25,8 +25,17 @@ $header-h: 75px
 	&--responsive .header-top__nav2
 		position: absolute
 		right: $pad-normal
-		top: $pad-normal
+		top: $pad-small	
 
+
+@media screen and (max-width: 1080px)
+	.header-top
+		&__logo 
+			height: $pad-normal
+			float: left
+			img
+				height: 20px
+				margin-top: 7px
 
 
 @media screen and (max-width: $break-point-1)
@@ -34,6 +43,8 @@ $header-h: 75px
 		display: none
 	.header-top--responsive
 		display: block
+		height: 65px
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, .3)
 
 @media screen and (min-width: $break-point-1)
 	.header-top--desktop

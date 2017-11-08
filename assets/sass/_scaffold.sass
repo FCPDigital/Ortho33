@@ -116,7 +116,7 @@ $values: ($pad-small, $pad-normal, $pad-medium, $pad-big)
 
 @media screen and (max-width:$break-point-1)
 	.hidden-sm
-		display: none
+		display: none !important
 	.no-marge-sm
 		margin: 0 !important
 	
@@ -125,4 +125,6 @@ $values: ($pad-small, $pad-normal, $pad-medium, $pad-big)
 			font-size: 35px
 	
 	#wrapper
-		padding-top: 85px
+		padding-top: 64px
+		margin-top: 0
+
