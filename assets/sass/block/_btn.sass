@@ -55,6 +55,20 @@
 		margin-right: $pad-small
 		font-size: 20px
 
+	&--arrow-right, &--arrow-left
+		position: relative
+		i 
+			font-size: 45px
+			position: absolute
+			right: 0
+			top: 50%
+			color: $orange
+			@include transform(translateY(-50%))
+
+	&--arrow-right
+		padding: 12px 45px		
+
+
 .btn-primary
 	color: white !important
 	background-color: $blue !important

@@ -57,6 +57,10 @@ assets:
         path: assets/js/toggler.js
       - id: touchspin
         path: assets/js/jquery.bootstrap-touchspin.min.js
+      - id: form
+        path: assets/js/FormManage.js
+      - id: checkout
+        path: assets/js/checkout.js
       - id: cart
         path: assets/js/cart.js
 

@@ -68,10 +68,37 @@ table {
     height: 12px;
     border-radius: 50%;
     position: absolute;
-    left: 0.125rem;
-    top: 0.125rem; }
+    left: 2px;
+    top: 2px; }
   .custom-radio input[type="radio"]:focus + span {
     border-color: #7A7A7A; }
+
+.input-group.focus {
+  outline: 0.1875rem solid #2fb5d2; }
+.input-group .form-control:focus {
+  outline: none; }
+.input-group .input-group-btn {
+  height: 100%; }
+  .input-group .input-group-btn > .btn {
+    border: 0;
+    box-shadow: none;
+    color: #ffffff;
+    font-size: 0.6875rem;
+    font-weight: normal;
+    margin-left: 0;
+    padding: 0.625rem 1rem;
+    text-transform: uppercase; }
+    .input-group .input-group-btn > .btn[data-action="show-password"] {
+      background: #7A7A7A;
+      height: 100%;
+      min-height: 34px;
+      font-size: 12px; }
+
+.custom-checkbox label, .custom-checkbox .label {
+  text-align: left;
+  display: inline; }
+.custom-checkbox input[type="checkbox"] ~ span .fa-check-square-o {
+  display: none; }
 
 body {
   font-family: "Open Sans"; }
@@ -92,7 +119,7 @@ body {
 label, .label {
   color: #AAAAAA;
   text-align: right;
-  font-size: 1em; }
+  font-size: 12px; }
 
 .form-control-label {
   font-size: 14px !important; }
@@ -110,7 +137,7 @@ label, .label {
 .clr {
   clear: both; }
 
-.float-left {
+.float-left, .float-xs-left {
   float: left; }
 
 .float-right {
@@ -6205,6 +6232,19 @@ button.close {
   .btn--fa i {
     margin-right: 10px;
     font-size: 20px; }
+  .btn--arrow-right, .btn--arrow-left {
+    position: relative; }
+    .btn--arrow-right i, .btn--arrow-left i {
+      font-size: 45px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      color: #ea5b0c;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      transform: translateY(-50%); }
+  .btn--arrow-right {
+    padding: 12px 45px; }
 
 .btn-primary {
   color: white !important;
@@ -6696,6 +6736,8 @@ button.close {
 .checkout__summary {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   padding: 30px 20px 30px; }
+  .checkout__summary .card {
+    box-shadow: none; }
   .checkout__summary .cart-total .value {
     font-weight: 700;
     font-size: 20px;
@@ -6803,22 +6845,31 @@ button.close {
     margin-right: 0; }
 
 /*** Most of the customer accpunt pages ***/
+.page-customer-account th, .page-customer-account td, .page-customer-account .order * {
+  font-size: 14px !important; }
 .page-customer-account #content {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   background: white;
   padding: 1rem;
-  font-size: 0.875rem;
+  font-size: 14px;
   color: #7A7A7A; }
   .page-customer-account #content .order-actions a {
     padding: 0 0.125rem; }
   .page-customer-account #content .forgot-password {
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 12px;
     margin-top: 1rem;
     padding-bottom: 0.9375rem; }
   .page-customer-account #content .no-account {
     text-align: center;
-    font-size: 1rem; }
+    font-size: 14px; }
+.page-customer-account #main {
+  max-width: 1300px;
+  margin: auto; }
+  .page-customer-account #main .page-content {
+    padding: 35px 20px; }
+    .page-customer-account #main .page-content .form-footer {
+      text-align: center; }
 
 /*** Login page ***/
 .page-authentication #content {
@@ -6833,12 +6884,12 @@ button.close {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   background: white;
   margin-bottom: 1.875rem;
-  font-size: 0.875rem;
+  font-size: 12px;
   color: #232323; }
   .page-addresses .address .address-body {
     padding: 1rem; }
     .page-addresses .address .address-body h4 {
-      font-size: 1rem;
+      font-size: 14px;
       font-weight: 700; }
     .page-addresses .address .address-body address {
       min-height: 9rem; }
@@ -6851,9 +6902,9 @@ button.close {
       .page-addresses .address .address-footer a:hover {
         color: #232323; }
       .page-addresses .address .address-footer a i {
-        font-size: 1rem; }
+        font-size: 14px; }
       .page-addresses .address .address-footer a span {
-        font-size: 0.9375rem;
+        font-size: 25px;
         vertical-align: middle; }
 .page-addresses .addresses-footer {
   margin: 0 0.9375rem; }
@@ -6862,15 +6913,15 @@ button.close {
     .page-addresses .addresses-footer a:hover {
       color: #232323; }
     .page-addresses .addresses-footer a i {
-      font-size: 1rem; }
+      font-size: 14px; }
     .page-addresses .addresses-footer a span {
-      font-size: 1rem;
+      font-size: 14px;
       vertical-align: middle;
       margin-top: 0.625rem; }
 
 /*** Order details page ***/
 .page-order-detail {
-  font-size: 0.875rem;
+  font-size: 12px;
   color: #7A7A7A; }
   .page-order-detail .box {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -6878,7 +6929,7 @@ button.close {
     padding: 1rem;
     margin-bottom: 1rem; }
   .page-order-detail h3 {
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     color: #232323;
@@ -6899,7 +6950,7 @@ button.close {
   .page-order-detail .addresses {
     margin: 0 -0.9375rem; }
     .page-order-detail .addresses h4 {
-      font-size: 1rem;
+      font-size: 14px;
       font-weight: 700; }
   .page-order-detail #order-products.return {
     margin-bottom: 1rem; }
@@ -6968,7 +7019,7 @@ button.close {
   .page-my-account #content .links a {
     text-align: center;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     color: #7A7A7A;
@@ -6985,7 +7036,7 @@ button.close {
       font-size: 2.6rem;
       width: 100%;
       color: #232323;
-      padding-bottom: 3.4rem; }
+      padding-bottom: 20px; }
     .page-my-account #content .links a:hover {
       color: #232323; }
       .page-my-account #content .links a:hover i {
@@ -7009,15 +7060,153 @@ button.close {
 
 /*** FOOTER ***/
 .page-footer .account-link {
-  margin-right: 1rem; }
+  margin-top: 20px;
+  margin-right: 1rem;
+  display: inline-block; }
   .page-footer .account-link i {
-    font-size: 1rem; }
+    font-size: 25px;
+    transform: translateY(8px); }
   .page-footer .account-link span {
-    font-size: 0.875rem;
+    font-size: 14px;
     vertical-align: middle; }
 
 .login-form {
   margin-top: 15px; }
+
+.forgotten-password {
+  padding: 4px; }
+  .forgotten-password .form-fields .center-email-fields {
+    display: flex;
+    justify-content: center; }
+    @media (max-width: 767px) {
+      .forgotten-password .form-fields .center-email-fields {
+        flex-direction: column; }
+        .forgotten-password .form-fields .center-email-fields button {
+          margin: 10px;
+          width: calc(100% - 20px); } }
+    .forgotten-password .form-fields .center-email-fields button {
+      height: 38px; }
+  .forgotten-password .form-fields .email {
+    padding-left: 0;
+    padding-right: 0;
+    width: 430px; }
+    @media (max-width: 767px) {
+      .forgotten-password .form-fields .email {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%; } }
+    .forgotten-password .form-fields .email input {
+      height: 38px; }
+  .forgotten-password .form-fields label.required {
+    width: 130px; }
+
+.send-renew-password-link {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.renew-password {
+  margin-left: 10px; }
+  .renew-password .email {
+    padding-bottom: 30px; }
+  .renew-password [type=submit] {
+    margin-left: 50px; }
+
+.contact-rich {
+  color: #7A7A7A;
+  margin-bottom: 2rem;
+  word-wrap: break-word; }
+  .contact-rich h4 {
+    text-transform: uppercase;
+    color: #232323;
+    margin-bottom: 2rem; }
+  .contact-rich .block {
+    height: auto;
+    overflow: hidden; }
+    .contact-rich .block .icon {
+      float: left;
+      width: 3.5rem; }
+      .contact-rich .block .icon i {
+        font-size: 2rem; }
+    .contact-rich .block .data {
+      color: #232323;
+      font-size: 0.875rem;
+      width: auto;
+      overflow: hidden; }
+      .contact-rich .block .data.email {
+        padding-top: 0.375rem; }
+
+.contact-form {
+  background: white;
+  padding: 1rem;
+  color: #7A7A7A;
+  width: 100%; }
+  .contact-form h3 {
+    text-transform: uppercase;
+    color: #232323; }
+
+.sitemap-title {
+  text-transform: capitalize; }
+
+.sitemap {
+  margin-top: 0.9375rem; }
+  .sitemap h2 {
+    color: #232323;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid #7A7A7A;
+    margin-left: -15px;
+    width: 100%;
+    height: 35px; }
+  .sitemap ul {
+    margin-left: -15px;
+    margin-top: 20px; }
+    .sitemap ul.nested {
+      margin-left: 20px; }
+    .sitemap ul li {
+      font-size: 0.9rem;
+      margin-bottom: 1rem; }
+
+@media screen and (max-width: 760px) {
+  .sitemap {
+    margin-top: 0; } }
+.page-addresses #main {
+  max-width: 1300px;
+  margin: auto; }
+.page-addresses .addresses-footer a span {
+  font-size: 14px !important; }
+.page-addresses .addresses-footer a i {
+  font-size: 25px !important;
+  margin-top: -10px;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px); }
+
+.address-body {
+  font-size: 14px; }
+.address h4, .address-title {
+  font-size: 14px !important;
+  font-weight: 700 !important; }
+.address address {
+  font-size: 14px; }
+.address-footer {
+  padding: 15px !important; }
+  .address-footer a {
+    margin-right: 10px; }
+    .address-footer a span {
+      font-size: 14px !important; }
+    .address-footer a i {
+      font-size: 25px !important;
+      margin-top: -10px;
+      -webkit-transform: translateY(7px);
+      -moz-transform: translateY(7px);
+      transform: translateY(7px);
+      margin-right: 5px; }
+
+.add-address i {
+  -webkit-transform: translateY(7px);
+  -moz-transform: translateY(7px);
+  transform: translateY(7px); }
 
 .header-top {
   padding: 5px 0;

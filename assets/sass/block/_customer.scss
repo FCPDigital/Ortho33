@@ -5,7 +5,7 @@
 }
 @mixin customer-area-box {
   @include customer-area-base-box;
-  font-size: $font-size-sm;
+  font-size: $font-normal;
   color: $gray;
 }
 .table-labeled {
@@ -69,6 +69,9 @@
 }
 /*** Most of the customer accpunt pages ***/
 .page-customer-account {
+  th, td, .order * {
+    font-size: $font-normal !important;
+  }
   #content {
     @include customer-area-box;
     .order-actions {
@@ -78,13 +81,22 @@
     }
     .forgot-password {
       text-align: center;
-      font-size: $font-size-sm;
+      font-size: $font-small;
       margin-top: 1rem;
       padding-bottom: 0.9375rem;
     }
     .no-account {
       text-align: center;
-      font-size: $base-font-size;
+      font-size: $font-normal;
+    }
+  }
+  #main {
+    @include container();
+    .page-content {
+      padding: $pad-medium $pad-normal;
+      .form-footer {
+        text-align: center;
+      }
     }
   }
 }
@@ -102,12 +114,12 @@
     box-shadow: $shadow;
     background: white;
     margin-bottom: 1.875rem;
-    font-size: $font-size-sm;
+    font-size: $font-small;
     color: $gray-darker;
     .address-body {
       padding: 1rem;
       h4 {
-        font-size: $base-font-size;
+        font-size: $font-normal;
         font-weight: 700;
       }
       address {
@@ -124,10 +136,10 @@
           color: $gray-darker;
         }
         i {
-          font-size: $base-font-size;
+          font-size: $font-normal;
         }
         span {
-          font-size: $font-size-lg;
+          font-size: $font-medium-big;
           vertical-align: middle;
         }
       }
@@ -141,10 +153,10 @@
         color: $gray-darker;
       }
       i {
-        font-size: $base-font-size;
+        font-size: $font-normal;
       }
       span {
-        font-size: $base-font-size;
+        font-size: $font-normal;
         vertical-align: middle;
         margin-top: $small-space;
       }
@@ -153,14 +165,14 @@
 }
 /*** Order details page ***/
 .page-order-detail {
-  font-size: 0.875rem;
+  font-size: $font-small;
   color: $gray;
   .box {
     @include customer-area-base-box;
     margin-bottom: 1rem;
   }
   h3 {
-    font-size: $base-font-size;
+    font-size: $font-normal;
     font-weight: 700;
     text-transform: uppercase;
     color: $gray-darker;
@@ -192,7 +204,7 @@
   .addresses {
     margin: 0 -0.9375rem;
     h4 {
-      font-size: $base-font-size;
+      font-size: $font-normal;
       font-weight: 700;
     }
   }
@@ -294,7 +306,7 @@
       a {
         text-align: center;
         display: inline-block;
-        font-size: $base-font-size;
+        font-size: $font-normal;
         font-weight: 700;
         text-transform: uppercase;
         color: $gray;
@@ -310,7 +322,7 @@
           font-size: 2.6rem;
           width: 100%;
           color: $gray-darker;
-          padding-bottom: 3.4rem;
+          padding-bottom: $pad-normal;
         }
         &:hover {
           color: $gray-darker;
@@ -351,12 +363,15 @@
 /*** FOOTER ***/
 .page-footer {
   .account-link {
+    margin-top: $pad-normal;
     margin-right: 1rem;
+    display: inline-block;
     i {
-      font-size: $base-font-size;
+      font-size: $font-medium-big;
+      transform: translateY(8px);
     }
     span {
-      font-size: $font-size-sm;
+      font-size: $font-normal;
       vertical-align: middle;
     }
   }

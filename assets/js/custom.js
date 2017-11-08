@@ -10,6 +10,7 @@ window.addEventListener("load", function(){
 	CarouselManage.init();
 	TogglerManage.init();
 	ToggleThumbnailManage.init();
+	FormManage.init();
 	$( function() {
 		$( ".tabs" ).tabs();
 	});
