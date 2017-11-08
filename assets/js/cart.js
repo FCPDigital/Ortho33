@@ -25,6 +25,30 @@ function createSpin()
 
 
 $(document).ready(function(){
+
+  // Cart modal
+  prestashop.blockcart = prestashop.blockcart || {};
+  prestashop.blockcart.showModal = function(html) {
+    function getBlockCartModal() {
+      return $('#blockcart-modal');
+    }
+
+    var $blockCartModal = getBlockCartModal();
+    if ($blockCartModal.length){
+      $blockCartModal.remove();
+    }
+
+    $('body').append(html);
+
+    $blockCartModal = getBlockCartModal();
+    $blockCartModal.modal('show').on('hidden.bs.modal', function(event) {
+      prestashop.emit('updateProduct', {
+        reason: event.currentTarget.dataset
+      });
+    });
+  };
+
+  // Cart page
   var productLineInCartSelector = '.js-cart-line-product-quantity';
   console.log(productLineInCartSelector)
   var promises = [];
