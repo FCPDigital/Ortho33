@@ -54,7 +54,7 @@
 
       <section id="wrapper">
         {hook h="displayWrapperTop"}
-        <div class="container margin-bottom-medium">
+        <div class="container{if $page.page_name == 'index'}-fluid{/if} margin-bottom-medium">
           {block name='breadcrumb'}
             {include file='_partials/breadcrumb.tpl'}
           {/block}
