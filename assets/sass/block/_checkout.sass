@@ -1,4 +1,5 @@
 .checkout
+	margin-top: $pad-medium
 	&__container
 		box-shadow: $shadow
 		padding-bottom: $pad-normal
@@ -66,3 +67,85 @@
 		display: none
 	.js-parent-focus
 		width: 100%
+	
+	.address-selector
+		display: flex
+		flex-wrap: wrap
+		.address-item
+			padding: $pad-small
+			display: inline-block
+			border: 1px solid #DDD
+			flex: 1
+			min-width: 250px
+			margin-top: $pad-small
+			max-width: 300px
+			margin-right: $pad-small
+
+
+
+	#checkout-delivery-step
+		.delivery-option
+			height: $pad-normal
+			border-bottom: 1px solid #DDD
+			padding: $pad-normal 0
+			box-sizing: content-box
+			img
+				height: 40px
+				margin-top: -10px
+
+		.order-options
+			margin: $pad-normal 0
+			label
+				margin-bottom: $pad-small
+
+
+
+/**** ORDER CONFIRMATION *****/
+.page-order-confirmation 
+	#order-details 
+		padding-left: $large-space
+		& > .card-title 
+			margin-bottom: $large-space
+
+		ul
+			margin-bottom: $medium-space
+		li
+			margin-bottom: $small-space
+
+	#order-items 
+		border-right: $gray-light 1px solid
+		hr 
+			border-top-color: $gray-darker
+	  
+		table 
+			width: 100%
+			tr 
+				height: $large-space
+			td 
+				&:last-child 
+					text-align: right
+
+		.order-line 
+			margin-top: 1rem
+	
+		.image 
+			img 
+				width: 100%
+				border: 1px solid gray-lighter
+				margin-bottom: 1rem
+
+		.details 
+			margin-bottom: 1rem
+		.customizations 
+			margin-top: 0.625rem
+		.qty 
+			margin-bottom: 1rem
+	
+	
+	#order-confirmation 
+		#registration-form 
+			width: 50%
+			margin: 0 auto 1rem
+	
+	
+

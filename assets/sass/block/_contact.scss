@@ -6,7 +6,9 @@
     text-transform: uppercase;
     color: $gray-darker;
     margin-bottom: 2rem;
+    font-size: $font-medium;
   }
+
   .block {
     height: auto;
     overflow: hidden;
@@ -19,7 +21,7 @@
     }
     .data {
       color: $gray-darker;
-      font-size: $font-size-sm;
+      font-size: $font-small;
       width: auto;
       overflow: hidden;
       &.email{
@@ -36,5 +38,6 @@
   h3 {
     text-transform: uppercase;
     color: $gray-darker;
+    font-size: $font-medium;
   }
 }

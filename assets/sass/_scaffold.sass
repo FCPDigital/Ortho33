@@ -28,6 +28,9 @@ label, .label
 	text-decoration: none
 	color: black
 
+#wrapper
+	margin-top: $pad-medium
+	
 .cart-preview
 
 .page-index .arianne
@@ -44,6 +47,14 @@ label, .label
 
 .text-center
 	text-align: center
+
+.hidden-sm-up
+	display: none
+
+@media screen and (max-width: 1080px)
+	.hidden-sm-up
+		display: block 
+
 
 // Content 
 p 
@@ -112,4 +123,6 @@ $values: ($pad-small, $pad-normal, $pad-medium, $pad-big)
 	.title
 		&--big
 			font-size: 35px
-
+	
+	#wrapper
+		padding-top: 85px

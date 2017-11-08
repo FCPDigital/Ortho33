@@ -22,8 +22,10 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+{if $breadcrumb.links|count > 1}
 <nav data-depth="{$breadcrumb.count}" class="arianne hidden-sm-down">
   <ul class="container">
+
     {foreach from=$breadcrumb.links item=path name=breadcrumb}
       {block name='arianne_item'}
         <li class="arianne__item">
@@ -37,3 +39,4 @@
     {/foreach}
   </ul>
 </nav>
+{/if}

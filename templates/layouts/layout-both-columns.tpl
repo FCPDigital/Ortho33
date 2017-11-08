@@ -54,7 +54,7 @@
 
       <section id="wrapper">
         {hook h="displayWrapperTop"}
-        <div class="container-fluid">
+        <div class="container margin-bottom-medium">
           {block name='breadcrumb'}
             {include file='_partials/breadcrumb.tpl'}
           {/block}

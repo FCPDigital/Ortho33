@@ -102,10 +102,15 @@
 }
 /*** Login page ***/
 .page-authentication {
+  .page-header {
+    margin-top: $pad-big;
+    text-align: center;
+  }
   #content {
     @include customer-area-base-box;
     max-width: 640px;
     margin: 0 auto;
+    margin-bottom: $pad-big
   }
 }
 /*** Addresses page ***/
@@ -166,7 +171,7 @@
 /*** Order details page ***/
 .page-order-detail {
   font-size: $font-small;
-  color: $gray;
+  color: black;
   .box {
     @include customer-area-base-box;
     margin-bottom: 1rem;
