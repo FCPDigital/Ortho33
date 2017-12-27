@@ -14,8 +14,6 @@ CarouselManage = {
 
 
 
-
-
 function Carousel(el){
 	this.el = el;
 	this.innerEl = this.el.querySelector('.carousel__inner');

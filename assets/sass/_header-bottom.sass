@@ -1,8 +1,15 @@
+=menu_color_section ($bg, $color)
+	background-color: $bg
+	.adtm_column_wrap span.column_wrap_title, .adtm_column_wrap span.column_wrap_title a, .adtm_column_wrap a
+		color: $color
+
+
 .header-bottom
 	height: 90px
 	display: block
 	padding-top: 85px
 	box-sizing: content-box
+
 	.main-menu
 		height: 90px
 		display: flex
@@ -21,25 +28,26 @@
 			&--small
 				flex: 1
 			&--home
-				background-color:white
+				background-color: white
 			&:nth-child(1)
 				flex: 1
 				background-color: transparent
 				box-shadow: none
 				a 
 					color: $orange
+
 			&:nth-child(2)
-				background-color: $purple
+				@include menu_color_section($purple, white)
 			&:nth-child(3)
-				background-color: $blue
+				@include menu_color_section($blue, white)
 			&:nth-child(4)
-				background-color: $green
+				@include menu_color_section($green, white)
 			&:nth-child(5)
-				background-color: $purple2
+				@include menu_color_section($purple2, white)
 			&:nth-child(6)
-				background-color: $blue2
+				@include menu_color_section($blue2, white)
 			&:nth-child(7)
-				background-color: $green2
+				@include menu_color_section($green2, white)
 
 		&__link
 			padding: 20px
@@ -49,6 +57,14 @@
 			&:hover
 				color: white
 
+	#adtm_menu ul#menu li div.adtm_sub
+		top: 85px
+		background: #8c4d83
+		padding-top: 10px
+		width: 100vw
+		margin-left: -15px
+		border: 0
+		box-shadow: none
 
 
 
