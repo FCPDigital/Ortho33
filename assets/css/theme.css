@@ -6638,20 +6638,35 @@ button.close {
     display: inline-block;
     margin: 0 5px; }
 
-.category_default .color-heritance {
-  color: #000000 !important; }
-.category_default .border-heritance {
-  border-color: #000000 !important; }
+.category_confort_quotidien .color-heritance {
+  color: #af60a2 !important; }
+.category_confort_quotidien .border-heritance {
+  border-color: #af60a2 !important; }
 
-.category_women .color-heritance {
-  color: #FF0000 !important; }
-.category_women .border-heritance {
-  border-color: #FF0000 !important; }
+.category_hygienesoin .color-heritance {
+  color: #6cbAdf !important; }
+.category_hygienesoin .border-heritance {
+  border-color: #6cbAdf !important; }
 
-.category_test .color-heritance {
-  color: #4234FF !important; }
-.category_test .border-heritance {
-  border-color: #4234FF !important; }
+.category_mobilite .color-heritance {
+  color: #00a94d !important; }
+.category_mobilite .border-heritance {
+  border-color: #00a94d !important; }
+
+.category_professioneldesante .color-heritance {
+  color: #6455a0 !important; }
+.category_professioneldesante .border-heritance {
+  border-color: #6455a0 !important; }
+
+.category_incontinence .color-heritance {
+  color: #006F9E !important; }
+.category_incontinence .border-heritance {
+  border-color: #006F9E !important; }
+
+.category_complementsalimentaires .color-heritance {
+  color: #95c11f !important; }
+.category_complementsalimentaires .border-heritance {
+  border-color: #95c11f !important; }
 
 .tabs.ui-tabs {
   padding: 0;
