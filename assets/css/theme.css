@@ -7445,11 +7445,19 @@ button.close {
   min-height: 100vh;
   background-color: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-  z-index: 2; }
+  z-index: 1000; }
   .header-responsive--display {
     left: 0; }
   .header-responsive--hide {
     left: -430px; }
+  .header-responsive #adtm_menu ul#menu li div.adtm_sub {
+    position: static;
+    max-height: 0;
+    overflow: hidden;
+    min-height: 0;
+    transition: 0.4s; }
+  .header-responsive #adtm_menu ul#menu .li-niveau1:hover div.adtm_sub {
+    max-height: 1000px; }
   .header-responsive #menu-close {
     position: absolute;
     top: 20px;

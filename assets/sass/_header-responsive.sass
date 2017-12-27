@@ -9,11 +9,19 @@ $sidebar-w: 400px
 	min-height: 100vh
 	background-color: white
 	box-shadow: $shadow
-	z-index: 2
+	z-index: 1000
 	&--display
 		left: 0
 	&--hide
 		left: -430px
+	#adtm_menu ul#menu li div.adtm_sub
+		position: static
+		max-height: 0
+		overflow: hidden
+		min-height: 0
+		transition: .4s
+	#adtm_menu ul#menu .li-niveau1:hover div.adtm_sub
+		max-height: 1000px
 
 	#menu-close
 		position: absolute
