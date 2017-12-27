@@ -7468,10 +7468,11 @@ button.close {
     box-shadow: none;
     padding: 30px 50px; }
     .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub .adtm_column_wrap {
-      padding: 10px 30px 30px 30px !important; }
-      .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub .adtm_column_wrap span.column_wrap_title {
-        font-size: 19px; }
-      .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub .adtm_column_wrap a {
+      padding: 10px 30px 30px 30px !important;
+      line-height: 20px; }
+      .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub .adtm_column_wrap span.column_wrap_title a {
+        font-size: 14px; }
+      .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub .adtm_column_wrap .adtm_elements a {
         font-size: 14px; }
   .header-bottom #adtm_menu ul#menu li.li-niveau1:nth-child(3) div.adtm_sub {
     background: #af60a2; }
