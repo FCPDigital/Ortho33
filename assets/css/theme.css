@@ -7444,9 +7444,32 @@ button.close {
       font-weight: 600; }
       .header-bottom .main-menu__link:hover {
         color: white; }
+  .header-bottom #adtm_menu ul#menu li:nth-child(2) {
+    background-color: #af60a2; }
+    .header-bottom #adtm_menu ul#menu li:nth-child(2) .adtm_column_wrap span.column_wrap_title, .header-bottom #adtm_menu ul#menu li:nth-child(2) .adtm_column_wrap span.column_wrap_title a, .header-bottom #adtm_menu ul#menu li:nth-child(2) .adtm_column_wrap a {
+      color: white; }
+  .header-bottom #adtm_menu ul#menu li:nth-child(3) {
+    background-color: #6cbAdf; }
+    .header-bottom #adtm_menu ul#menu li:nth-child(3) .adtm_column_wrap span.column_wrap_title, .header-bottom #adtm_menu ul#menu li:nth-child(3) .adtm_column_wrap span.column_wrap_title a, .header-bottom #adtm_menu ul#menu li:nth-child(3) .adtm_column_wrap a {
+      color: white; }
+  .header-bottom #adtm_menu ul#menu li:nth-child(4) {
+    background-color: #00a94d; }
+    .header-bottom #adtm_menu ul#menu li:nth-child(4) .adtm_column_wrap span.column_wrap_title, .header-bottom #adtm_menu ul#menu li:nth-child(4) .adtm_column_wrap span.column_wrap_title a, .header-bottom #adtm_menu ul#menu li:nth-child(4) .adtm_column_wrap a {
+      color: white; }
+  .header-bottom #adtm_menu ul#menu li:nth-child(5) {
+    background-color: #6455a0; }
+    .header-bottom #adtm_menu ul#menu li:nth-child(5) .adtm_column_wrap span.column_wrap_title, .header-bottom #adtm_menu ul#menu li:nth-child(5) .adtm_column_wrap span.column_wrap_title a, .header-bottom #adtm_menu ul#menu li:nth-child(5) .adtm_column_wrap a {
+      color: white; }
+  .header-bottom #adtm_menu ul#menu li:nth-child(6) {
+    background-color: #006F9E; }
+    .header-bottom #adtm_menu ul#menu li:nth-child(6) .adtm_column_wrap span.column_wrap_title, .header-bottom #adtm_menu ul#menu li:nth-child(6) .adtm_column_wrap span.column_wrap_title a, .header-bottom #adtm_menu ul#menu li:nth-child(6) .adtm_column_wrap a {
+      color: white; }
+  .header-bottom #adtm_menu ul#menu li:nth-child(7) {
+    background-color: #95c11f; }
+    .header-bottom #adtm_menu ul#menu li:nth-child(7) .adtm_column_wrap span.column_wrap_title, .header-bottom #adtm_menu ul#menu li:nth-child(7) .adtm_column_wrap span.column_wrap_title a, .header-bottom #adtm_menu ul#menu li:nth-child(7) .adtm_column_wrap a {
+      color: white; }
   .header-bottom #adtm_menu ul#menu li div.adtm_sub {
     top: 85px;
-    background: #8c4d83;
     padding-top: 10px;
     width: 100vw;
     margin-left: -15px;
