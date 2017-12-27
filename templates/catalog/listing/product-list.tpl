@@ -32,11 +32,13 @@
     {/block}
 
     <section id="list" class="margin-bottom-big">
+      
       {if isset($subcategories) && $subcategories|count} 
         
         {* Listes des catégories enfante *}
         {block name="subcategories_list"}{/block}
       
+
       {elseif $listing.products|count}
 
         

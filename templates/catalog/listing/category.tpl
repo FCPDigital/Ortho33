@@ -24,7 +24,9 @@
  *}
 {extends file='catalog/listing/product-list.tpl'}
 
-{block name='body_classes'}{$category.rootCategory}{/block}
+{block name='body_classes'}
+{if $category.rootCategory}{$category.rootCategory}{/if}
+{/block}
 
 {block name='product_list_header'}
   <div class="text-sm-center hidden-md-up">

@@ -7332,6 +7332,38 @@ button.close {
     .header-top__logo img {
       height: 20px;
       margin-top: 7px; } }
+@media screen and (max-width: 1390px) {
+  .header-top__logo img {
+    margin-top: 5px; }
+  .header-top .blockcart {
+    border-width: 1px;
+    margin-top: 0 !important; }
+    .header-top .blockcart .fa {
+      margin-right: 5px; }
+    .header-top .blockcart span {
+      display: none;
+      border: 1px solid #6cbAdf; }
+  .header-top .btn {
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 10px 5px; }
+    .header-top .btn.btn--size-xl {
+      font-size: 20px; }
+  .header-top .user-info {
+    display: flex;
+    flex-flow: column-reverse;
+    text-align: center;
+    top: 10px;
+    margin-left: 20px;
+    position: relative; }
+    .header-top .user-info .logout .fa {
+      display: none; }
+    .header-top .user-info .btn {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 12px;
+      min-height: 20px; } }
 @media screen and (max-width: 1080px) {
   .header-top--desktop {
     display: none; }
@@ -7339,7 +7371,12 @@ button.close {
   .header-top--responsive {
     display: block;
     height: 65px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); } }
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); }
+
+  .header-top .user-info {
+    top: 5px; }
+    .header-top .user-info .account {
+      font-size: 25px; } }
 @media screen and (min-width: 1080px) {
   .header-top--desktop {
     display: block; }

@@ -38,6 +38,42 @@ $header-h: 75px
 				margin-top: 7px
 
 
+// Fixe bug responsive with rigth navbar 
+@media screen and (max-width: 1390px)
+	.header-top
+		&__logo img
+			margin-top: 5px
+		.blockcart
+			border-width: 1px 
+			margin-top: 0 !important
+			.fa 
+				margin-right: 5px
+			span
+				display: none
+				border: 1px solid $blue 
+		.btn
+			font-size: 15px
+			margin-top: 10px
+			padding: 10px 5px
+			&.btn--size-xl
+				font-size: 20px
+		.user-info
+			display: flex
+			flex-flow: column-reverse
+			text-align: center
+			top: 10px
+			margin-left: 20px
+			position: relative
+			.logout .fa 
+				display: none
+			.btn 
+				margin: 0
+				padding: 0
+				border: 0
+				font-size: 12px
+				min-height: 20px
+		
+
 @media screen and (max-width: $break-point-1)
 	.header-top--desktop
 		display: none
@@ -45,6 +81,13 @@ $header-h: 75px
 		display: block
 		height: 65px
 		box-shadow: 0px 5px 15px rgba(0, 0, 0, .3)
+
+	// Cancel 
+	.header-top
+		.user-info
+			top: 5px
+			.account
+				font-size: 25px
 
 @media screen and (min-width: $break-point-1)
 	.header-top--desktop

@@ -45,7 +45,7 @@
   {/if}
 {/block}
 
-{block name='body_classes'}{$rootCategory}{/block}
+{block name='body_classes'}{if $rootCategory}{$rootCategory}{/if}{/block}
 
 {block name='content'}
 
