@@ -7503,8 +7503,8 @@ button.close {
     display: none; }
   .header-responsive .li-niveau1 {
     margin: 0px -5px; }
-  .header-responsive #adtm_menu .adtm_column ul.adtm_elements li a {
-    padding: 5px 0 5px 10px; }
+  .header-responsive #adtm_menu .adtm_column_wrap a {
+    margin: 0px !important; }
   .header-responsive #adtm_menu ul#menu {
     position: relative;
     left: 5px; }
