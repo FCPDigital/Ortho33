@@ -7459,6 +7459,21 @@ button.close {
       font-weight: 600; }
       .header-bottom .main-menu__link:hover {
         color: white; }
+  .header-bottom #adtm_menu ul#menu li.li-niveau1 .advtm_menu_span {
+    margin: 0; }
+  .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub {
+    top: 85px;
+    width: 100vw;
+    margin-left: -15px;
+    border: 0;
+    box-shadow: none;
+    padding: 30px 50px; }
+    .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub .adtm_column_wrap {
+      padding: 10px 30px 30px 30px !important; }
+      .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub .adtm_column_wrap span.column_wrap_title {
+        font-size: 19px; }
+      .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub .adtm_column_wrap a {
+        font-size: 14px; }
   .header-bottom #adtm_menu ul#menu li.li-niveau1:nth-child(3) div.adtm_sub {
     background: #af60a2; }
     .header-bottom #adtm_menu ul#menu li.li-niveau1:nth-child(3) div.adtm_sub .adtm_column_wrap span.column_wrap_title, .header-bottom #adtm_menu ul#menu li.li-niveau1:nth-child(3) div.adtm_sub .adtm_column_wrap span.column_wrap_title a, .header-bottom #adtm_menu ul#menu li.li-niveau1:nth-child(3) div.adtm_sub .adtm_column_wrap a {
@@ -7483,15 +7498,6 @@ button.close {
     background: #95c11f; }
     .header-bottom #adtm_menu ul#menu li.li-niveau1:nth-child(8) div.adtm_sub .adtm_column_wrap span.column_wrap_title, .header-bottom #adtm_menu ul#menu li.li-niveau1:nth-child(8) div.adtm_sub .adtm_column_wrap span.column_wrap_title a, .header-bottom #adtm_menu ul#menu li.li-niveau1:nth-child(8) div.adtm_sub .adtm_column_wrap a {
       color: white; }
-  .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub {
-    top: 85px;
-    padding-top: 10px;
-    width: 100vw;
-    margin-left: -15px;
-    border: 0;
-    box-shadow: none; }
-    .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub .adtm_column_wrap {
-      padding: 10px 30px 30px 30px !important; }
 
 @media screen and (max-width: 1080px) {
   .header-bottom {
