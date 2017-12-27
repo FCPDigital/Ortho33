@@ -7442,14 +7442,20 @@ button.close {
   top: 0;
   left: 0;
   width: 400px;
-  min-height: 100vh;
+  height: 100vh;
   background-color: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-  z-index: 1000; }
+  z-index: 1000;
+  overflow: hidden;
+  overflow-y: scroll; }
   .header-responsive--display {
     left: 0; }
   .header-responsive--hide {
     left: -430px; }
+  .header-responsive::-webkit-scrollbar {
+    display: none; }
+  .header-responsive .li-niveau1 {
+    margin: 0px -5px; }
   .header-responsive #adtm_menu ul#menu li div.adtm_sub {
     position: static;
     max-height: 0;

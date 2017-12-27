@@ -6,14 +6,21 @@ $sidebar-w: 400px
 	top: 0
 	left: 0
 	width: 400px
-	min-height: 100vh
+	height: 100vh
 	background-color: white
 	box-shadow: $shadow
 	z-index: 1000
+	overflow: hidden
+	overflow-y: scroll
 	&--display
 		left: 0
 	&--hide
 		left: -430px
+	&::-webkit-scrollbar
+		display: none 
+	.li-niveau1 
+		margin: 0px -5px
+
 	#adtm_menu ul#menu li div.adtm_sub
 		position: static
 		max-height: 0
