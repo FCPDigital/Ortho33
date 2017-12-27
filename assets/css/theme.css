@@ -7447,6 +7447,7 @@ button.close {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   overflow: hidden;
+  overflow: -moz-scrollbars-none;
   overflow-y: scroll; }
   .header-responsive--display {
     left: 0; }
@@ -7456,14 +7457,17 @@ button.close {
     display: none; }
   .header-responsive .li-niveau1 {
     margin: 0px -5px; }
-  .header-responsive #adtm_menu ul#menu li div.adtm_sub {
-    position: static;
-    max-height: 0;
-    overflow: hidden;
-    min-height: 0;
-    transition: 0.4s; }
-  .header-responsive #adtm_menu ul#menu .li-niveau1:hover div.adtm_sub {
-    max-height: 1000px; }
+  .header-responsive #adtm_menu ul#menu {
+    position: relative;
+    left: 5px; }
+    .header-responsive #adtm_menu ul#menu li div.adtm_sub {
+      position: static;
+      max-height: 0;
+      overflow: hidden;
+      min-height: 0;
+      transition: 0.4s; }
+    .header-responsive #adtm_menu ul#menu .li-niveau1:hover div.adtm_sub {
+      max-height: 1000px; }
   .header-responsive #menu-close {
     position: absolute;
     top: 20px;
