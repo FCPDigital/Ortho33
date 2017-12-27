@@ -7441,14 +7441,15 @@ button.close {
   position: fixed;
   top: 0;
   left: 0;
-  width: 400px;
   height: 100vh;
   background-color: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   overflow: hidden;
   overflow: -moz-scrollbars-none;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  width: 100%;
+  max-width: 400px; }
   .header-responsive--display {
     left: 0; }
   .header-responsive--hide {
