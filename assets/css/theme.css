@@ -7463,8 +7463,7 @@ button.close {
     margin: 0; }
   .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub {
     top: 85px;
-    width: 100vw;
-    margin-left: -15px;
+    width: 99.5%;
     border: 0;
     box-shadow: none;
     padding: 30px 50px; }
