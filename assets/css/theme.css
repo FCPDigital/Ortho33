@@ -6160,12 +6160,14 @@ button.close {
 
 .product-variants {
   display: flex;
-  padding: 15px 0;
+  padding: 0;
   border-top: 1px solid #E0E0E0;
   border-bottom: 1px solid #E0E0E0;
   margin: 15px 0; }
   .product-variants .product-variants-item {
-    margin-right: 20px; }
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
     .product-variants .product-variants-item .input-container {
       margin-right: 10px; }
       .product-variants .product-variants-item .input-container label {
@@ -7459,6 +7461,8 @@ button.close {
       font-weight: 600; }
       .header-bottom .main-menu__link:hover {
         color: white; }
+  .header-bottom #adtm_menu ul#menu li.li-niveau1 a, .header-bottom #adtm_menu ul#menu li.li-niveau1 a:hover {
+    text-decoration: none; }
   .header-bottom #adtm_menu ul#menu li.li-niveau1 .advtm_menu_span {
     margin: 0; }
   .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub {

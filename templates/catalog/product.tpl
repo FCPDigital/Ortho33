@@ -152,7 +152,7 @@
             {/block*}
 
             {block name='product_tabs'}
-              <div class="tabs margin-top-medium">
+              <div class="tabs margin-top-small">
                 <ul class="nav nav-tabs" role="tablist">
                   {if $product.description}
                     <li class="nav-item">
