@@ -26,7 +26,11 @@
   <div class="products row">
     {foreach from=$listing.products item="product"}
       {block name='product_miniature'}
-        {include file='catalog/_partials/miniatures/product.tpl' product=$product type=$type}
+        {if !isset($style) }
+          {assign "style" "classic"}
+        {/if}
+        {include file='catalog/_partials/miniatures/product.tpl' product=$product type=$type style=$style}
+        
       {/block}
     {/foreach}
   </div>

@@ -6484,6 +6484,9 @@ button.close {
     display: none; }
   .product__flag {
     display: none; }
+  .product--border {
+    border-width: 1px;
+    border-style: solid; }
   .product--miniature {
     text-align: center;
     padding: 20px 5px;

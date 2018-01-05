@@ -56,7 +56,7 @@
 
         {* Listes des produits *}
         {block name='product_list'}
-          {include file='catalog/_partials/products.tpl' listing=$listing type="miniature"}
+          {include file='catalog/_partials/products.tpl' listing=$listing type="miniature" style="border"}
         {/block}
         
         {* Affichage bas de pages *}
