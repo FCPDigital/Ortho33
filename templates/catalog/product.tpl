@@ -68,7 +68,7 @@
               {block name='product_cover_thumbnails'}
                 {include file='catalog/_partials/product-cover-thumbnails.tpl'}
               {/block}
-              <div class="scroll-box-arrows">
+              <div class="scroll-box-arrows hide">
                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
               </div>

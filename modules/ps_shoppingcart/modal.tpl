@@ -33,7 +33,7 @@
       </div>
       <div class="modal-body">
         <div class="row">
-          <div class="col-md-5 divide-right">
+          <div class="col-md-7 divide-right">
             <div class="row">
               <div class="col-md-6">
                 <img class="product-image" src="{$product.cover.medium.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" itemprop="image">
@@ -49,7 +49,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-5">
             <div class="cart-content">
               {if $cart.products_count > 1}
                 <p class="cart-products-count">{l s='There are %products_count% items in your cart.' sprintf=['%products_count%' => $cart.products_count] d='Shop.Theme.Checkout'}</p>
@@ -62,9 +62,9 @@
               	<p><strong>{$cart.subtotals.tax.label}</strong>&nbsp;{$cart.subtotals.tax.value}</p>
               {/if}
               <p><strong>{l s='Total:' d='Shop.Theme.Checkout'}</strong>&nbsp;{$cart.totals.total.value} {$cart.labels.tax_short}</p>
-              <div class="cart-content-btn">
+              <div class="cart-content-btn margin-top-small">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
-                <a href="{$cart_url}" class="btn btn-primary"><i class="material-icons">&#xE876;</i>{l s='Proceed to checkout' d='Shop.Theme.Actions'}</a>
+                <a href="{$cart_url}" class="btn btn-primary margin-top-small"><i class="material-icons">&#xE876;</i>{l s='Proceed to checkout' d='Shop.Theme.Actions'}</a>
               </div>
             </div>
           </div>
