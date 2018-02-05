@@ -35,7 +35,7 @@
     <article class="product product--{$type} {if $style==='border'}product--border border-heritance{/if}" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
     <div class="product__thumbnail-container {if $type==='list-item'}row{/if}">
       {block name='product_thumbnail'}
-        <a href="{$product.url}">
+        <a rel="canonical" href="{$product.url}">
           <img
             class="product__thumbnail {if $type==='list-item'}col-sm-3{/if}"
             src = "{$product.cover.bySize.home_default.url}"
