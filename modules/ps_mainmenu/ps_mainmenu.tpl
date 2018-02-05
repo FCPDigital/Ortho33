@@ -33,7 +33,7 @@
     {/if}
 {/function}
 
-<div class="menu  col-sm-12" id="_desktop_top_menu">
+<div class="menu  col-sm-12">
     {menu nodes=$menu.children}
     <div class="clearfix"></div>
 </div>

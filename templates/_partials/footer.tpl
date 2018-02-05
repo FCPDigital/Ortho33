@@ -29,7 +29,7 @@
     {/block}
   </div>
 </div>
-<footer class="footer">
+<div class="footer">
   <div class="container">
     <div class="row">
       <div class="col-sm-3 footer__section">

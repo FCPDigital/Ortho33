@@ -24,7 +24,7 @@
  *}
 
 {foreach $javascript.external as $js}
-  <script type="text/javascript" src="{$js.uri}" {$js.attribute}></script>
+  <script src="{$js.uri}" {$js.attribute}></script>
 {/foreach}
 {foreach $javascript.inline as $js}
   <script type="text/javascript">
@@ -39,4 +39,4 @@
     {/foreach}
   </script>
 {/if}
- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
