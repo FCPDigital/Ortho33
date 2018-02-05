@@ -7335,6 +7335,23 @@ button.close {
   padding: 10px;
   border: 1px solid #DDD; }
 
+.pagination .page-list {
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+  .pagination .page-list li {
+    padding: 0 10px;
+    font-size: 18px; }
+    .pagination .page-list li.current {
+      background-color: #6cbAdf;
+      border-radius: 10px; }
+      .pagination .page-list li.current a {
+        color: white; }
+    .pagination .page-list li .fa-arrow-left {
+      margin-right: 5px; }
+    .pagination .page-list li .fa-arrow-right {
+      margin-left: 5px; }
+
 .header-top {
   padding: 5px 0;
   padding-left: 0;

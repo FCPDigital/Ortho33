@@ -39,9 +39,9 @@
         {block name="subcategories_list"}{/block}
       
 
-      {elseif $listing.products|count}
+      {/if}
 
-        
+      {if  $listing.products|count}
         {* Outils de sélection de filtres *}
         {*block name='product_list_top'}
           {include file='catalog/_partials/products-top.tpl' listing=$listing}
