@@ -15,7 +15,7 @@ function tableClean(selector, target){
 window.addEventListener("load", function(){
 	HeaderManage.init();
 	CarouselManage.init();
-	//TogglerManage.init();
+	TogglerManage.init();
 	ToggleThumbnailManage.init();
 	FormManage.init();
 	tableClean(".header-responsive", "div");
