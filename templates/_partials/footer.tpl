@@ -82,7 +82,7 @@
       
     </div><!-- End Row -->
   </div><!-- End Container -->
-</footer>
+</div>
     
  
     
