@@ -6534,10 +6534,10 @@ button.close {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   font-size: 6em;
   color: white;
-  cursor: zoom;
+  cursor: zoom-in;
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
