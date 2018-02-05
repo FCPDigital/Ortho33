@@ -1,0 +1,21 @@
+.product-cover
+	position: relative
+
+.layer
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	text-align: center
+	display: flex
+	flex-direction: column
+	justify-content: center
+	background-color: rgba(0, 0, 0, .6)
+	font-size: 6em
+	color: white
+	cursor: zoom
+	opacity: 0
+	@include transition(.3s)
+	&:hover 
+		opacity: 1
