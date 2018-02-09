@@ -56,9 +56,11 @@ $header-h: 75px
 			font-size: 15px
 			margin-top: 10px
 			padding: 10px 5px
+			&.account
+				margin-top: 0
 			&.btn--size-xl
 				font-size: 20px
-		.user-info
+/* 		.user-info
 			display: flex
 			flex-flow: column-reverse
 			text-align: center
@@ -72,7 +74,7 @@ $header-h: 75px
 				padding: 0
 				border: 0
 				font-size: 12px
-				min-height: 20px
+				min-height: 20px */
 		
 
 @media screen and (max-width: $break-point-1)
@@ -84,11 +86,28 @@ $header-h: 75px
 		box-shadow: 0px 5px 15px rgba(0, 0, 0, .3)
 
 	// Cancel 
+	.user-info
+		display: flex
+		flex-flow: column-reverse
+		text-align: center
+		top: 10px
+		margin-left: 20px
+		position: relative
+		.logout .fa 
+			display: none
+		.btn 
+			margin: 0
+			padding: 0
+			border: 0
+			font-size: 12px
+			min-height: 20px
+
 	.header-top
 		.user-info
 			top: 5px
 			.account
 				font-size: 25px
+				margin-top: 0 !important
 
 @media screen and (min-width: $break-point-1)
 	.header-top--desktop
