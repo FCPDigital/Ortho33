@@ -1,14 +1,14 @@
 {extends file='page.tpl'}
 
 {block name='page_content_container' prepend}
-    <section id="content-hook_order_confirmation" class="card container margin-bottom-medium">
+    <section id="content-hook_order_confirmation" class="card">
       <div class="card-block">
         <div class="row">
           <div class="col-md-12">
 
             {block name='order_confirmation_header'}
               <h3 class="h1 card-title">
-                {l s='Your order is confirmed' d='Shop.Theme.Checkout'}
+                <i class="material-icons done">&#xE876;</i>{l s='Your order is confirmed' d='Shop.Theme.Checkout'}
               </h3>
             {/block}
 
@@ -38,7 +38,7 @@
 {/block}
 
 {block name='page_content_container'}
-  <section id="content" class="page-content page-order-confirmation card container margin-bottom-medium">
+  <section id="content" class="page-content page-order-confirmation card">
     <div class="card-block">
       <div class="row">
 
@@ -75,7 +75,7 @@
 
   {block name='hook_payment_return'}
     {if ! empty($HOOK_PAYMENT_RETURN)}
-    <section id="content-hook_payment_return" class="card definition-list container margin-bottom-medium">
+    <section id="content-hook_payment_return" class="card definition-list">
       <div class="card-block">
         <div class="row">
           <div class="col-md-12">

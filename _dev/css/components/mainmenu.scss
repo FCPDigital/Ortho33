@@ -41,6 +41,7 @@
     min-width: calc(100% - 30px);
     z-index: 18;
     display: none;
+    margin-top: 15px;
     ul[data-depth="1"] > li {
       float: left;
       margin: 0 1.25rem;

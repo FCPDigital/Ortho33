@@ -22,12 +22,16 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+
 {foreach $stylesheets.external as $stylesheet}
   <link rel="stylesheet" href="{$stylesheet.uri}" type="text/css" media="{$stylesheet.media}">
 {/foreach}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
 
 {foreach $stylesheets.inline as $stylesheet}
   <style>
     {$stylesheet.content}
   </style>
 {/foreach}
+

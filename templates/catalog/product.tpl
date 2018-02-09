@@ -45,57 +45,50 @@
   {/if}
 {/block}
 
-{block name='body_classes'}{if $rootCategory}{$rootCategory}{/if}{/block}
-
 {block name='content'}
 
-  <section id="main" class="product container margin-bottom-medium" itemscope itemtype="https://schema.org/Product">
+  <section id="main" itemscope itemtype="https://schema.org/Product">
     <meta itemprop="url" content="{$product.url}">
-    
+
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-6">
         {block name='page_content_container'}
           <section class="page-content" id="content">
             {block name='page_content'}
-              {*block name='product_flags'}
+              {block name='product_flags'}
                 <ul class="product-flags">
                   {foreach from=$product.flags item=flag}
                     <li class="product-flag {$flag.type}">{$flag.label}</li>
                   {/foreach}
                 </ul>
-              {/block*}
+              {/block}
 
               {block name='product_cover_thumbnails'}
                 {include file='catalog/_partials/product-cover-thumbnails.tpl'}
               {/block}
-              <div class="scroll-box-arrows hide">
-                <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              <div class="scroll-box-arrows">
+                <i class="material-icons left">&#xE314;</i>
+                <i class="material-icons right">&#xE315;</i>
               </div>
 
             {/block}
           </section>
         {/block}
         </div>
-        <div class="col-md-8 product__item-block">
+        <div class="col-md-6">
           {block name='page_header_container'}
             {block name='page_header'}
-              <h1 class="product__title margin-bottom-medium color-heritance" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+              <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
           {/block}
-            
-          {if isset($product.reference_to_display)}
-            <p class="product__ref">Référence : {$product.reference_to_display}</p>
-          {/if}
-
           {block name='product_prices'}
             {include file='catalog/_partials/product-prices.tpl'}
           {/block}
 
           <div class="product-information">
-            {*block name='product_description_short'}
+            {block name='product_description_short'}
               <div id="product-description-short-{$product.id}" itemprop="description">{$product.description_short nofilter}</div>
-            {/block*}
+            {/block}
 
             {if $product.is_customizable && count($product.customizations.fields)}
               {block name='product_customization'}
@@ -147,12 +140,12 @@
 
             </div>
 
-            {*block name='hook_display_reassurance'}
+            {block name='hook_display_reassurance'}
               {hook h='displayReassurance'}
-            {/block*}
+            {/block}
 
             {block name='product_tabs'}
-              <div class="tabs margin-top-small">
+              <div class="tabs">
                 <ul class="nav nav-tabs" role="tablist">
                   {if $product.description}
                     <li class="nav-item">
@@ -238,29 +231,20 @@
       </div>
     </div>
 
-   </section>
- {block name='product_accessories'}
+    {block name='product_accessories'}
       {if $accessories}
-      <section class="section">
-        <h2 class="title--section pad-container container-w">
-          {l s='You might also like' d='Shop.Theme.Catalog'}
-        </h2>
-        <div class="products products--orange row">
-          <div class="container">
-            <div class="row">
-             {foreach from=$accessories item="product_accessory"}
+        <section class="product-accessories clearfix">
+          <h3 class="h5 text-uppercase">{l s='You might also like' d='Shop.Theme.Catalog'}</h3>
+          <div class="products">
+            {foreach from=$accessories item="product_accessory"}
               {block name='product_miniature'}
                 {include file='catalog/_partials/miniatures/product.tpl' product=$product_accessory}
               {/block}
             {/foreach}
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
       {/if}
     {/block}
-    
-
 
     {block name='product_footer'}
       {hook h='displayFooterProduct' product=$product category=$category}
@@ -277,4 +261,6 @@
         {/block}
       </footer>
     {/block}
+  </section>
+
 {/block}

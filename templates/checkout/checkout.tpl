@@ -39,7 +39,7 @@
 
     <header id="header">
       {block name='header'}
-        {include file='_partials/header.tpl'}
+        {include file='checkout/_partials/header.tpl'}
       {/block}
     </header>
 
@@ -47,26 +47,24 @@
       {include file='_partials/notifications.tpl'}
     {/block}
 
-    <section id="wrapper" class="container checkout">
+    <section id="wrapper">
       {hook h="displayWrapperTop"}
       <div class="container">
-      {block name='content'}
-        <section id="content" class="margin-bottom-big">
-          <div class="row">
-            <div class="col-md-8 ">
-              <div class="checkout__container">
-                {block name='cart_summary'}
-                  {render file='checkout/checkout-process.tpl' ui=$checkout_process}
-                {/block}
-              </div>
-            </div>
 
+      {block name='content'}
+        <section id="content">
+          <div class="row">
+            <div class="col-md-8">
+              {block name='cart_summary'}
+                {render file='checkout/checkout-process.tpl' ui=$checkout_process}
+              {/block}
+            </div>
             <div class="col-md-4">
-              <div class="checkout__summary">
-                {block name='cart_summary'}
-                  {include file='checkout/_partials/cart-summary.tpl' cart = $cart}
-                {/block}
-              </div>
+
+              {block name='cart_summary'}
+                {include file='checkout/_partials/cart-summary.tpl' cart = $cart}
+              {/block}
+
               {hook h='displayReassurance'}
             </div>
           </div>
@@ -78,7 +76,7 @@
 
     <footer id="footer">
       {block name='footer'}
-        {include file='_partials/footer.tpl'}
+        {include file='checkout/_partials/footer.tpl'}
       {/block}
     </footer>
 

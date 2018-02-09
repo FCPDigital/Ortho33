@@ -23,21 +23,11 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {block name='product_miniature_item'}
-  {$type = (isset($type) && $type == 'list-item') ? 'list-item' : 'miniature' }
-  {$style = (isset($style) && $style == 'border') ? 'border' : 'none' }
-  {if $type === 'list-item'}
-    {$size = 12}
-  {elseif $type === 'miniature'}
-    {$size = 3}
-  {/if}
-  
-  <div class="col-sm-{$size}">
-    <article class="product product--{$type} {if $style==='border'}product--border border-heritance{/if}" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
-    <div class="product__thumbnail-container {if $type==='list-item'}row{/if}">
+  <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
+    <div class="thumbnail-container">
       {block name='product_thumbnail'}
-        <a rel="canonical" href="{$product.url}">
+        <a href="{$product.url}" class="thumbnail product-thumbnail">
           <img
-            class="product__thumbnail {if $type==='list-item'}col-sm-3{/if}"
             src = "{$product.cover.bySize.home_default.url}"
             alt = "{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
             data-full-size-image-url = "{$product.cover.large.url}"
@@ -45,32 +35,28 @@
         </a>
       {/block}
 
-      {if $type==='list-item'}<div class="product__item-block col-sm-9">{/if}
-
-      <div class="product__description">
+      <div class="product-description">
         {block name='product_name'}
-          <h3 class="product__title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h3>
+          <h1 class="h3 product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h1>
         {/block}
 
         {block name='product_price_and_shipping'}
           {if $product.show_price}
-            <div class="product-price-and-shipping margin-bottom-small">
+            <div class="product-price-and-shipping">
               {if $product.has_discount}
                 {hook h='displayProductPriceBlock' product=$product type="old_price"}
 
                 <span class="sr-only">{l s='Regular price' d='Shop.Theme.Catalog'}</span>
-                <span class="product__price product__price--old">{$product.regular_price}</span>
+                <span class="regular-price">{$product.regular_price}</span>
                 {if $product.discount_type === 'percentage'}
-                  <span class="product__discount">{$product.discount_percentage}</span>
+                  <span class="discount-percentage">{$product.discount_percentage}</span>
                 {/if}
-                <span itemprop="price" class="product__price product__price--reduce">{$product.price}</span>
-              {else}
-                <span itemprop="price" class="product__price">{$product.price}</span>
               {/if}
 
               {hook h='displayProductPriceBlock' product=$product type="before_price"}
 
               <span class="sr-only">{l s='Price' d='Shop.Theme.Catalog'}</span>
+              <span itemprop="price" class="price">{$product.price}</span>
 
               {hook h='displayProductPriceBlock' product=$product type='unit_price'}
 
@@ -78,30 +64,25 @@
             </div>
           {/if}
         {/block}
-        
-        {if $type === 'list-item'}
-        <div class="product__content">
-          {$product.description_short nofilter}  
-        </div>
-        {/if}
-        
-        
+
         {block name='product_reviews'}
           {hook h='displayProductListReviews' product=$product}
         {/block}
       </div>
 
       {block name='product_flags'}
-        <ul class="product__flags">
+        <ul class="product-flags">
           {foreach from=$product.flags item=flag}
-            <li class="product__flag {$flag.type}">{$flag.label}</li>
+            <li class="product-flag {$flag.type}">{$flag.label}</li>
           {/foreach}
         </ul>
       {/block}
-      
+
       <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down">
         {block name='quick_view'}
-          <a class="btn btn--grey-orange" href="{$product.url}">Voir</a>
+          <a class="quick-view" href="#" data-link-action="quickview">
+            <i class="material-icons search">&#xE8B6;</i> {l s='Quick view' d='Shop.Theme.Actions'}
+          </a>
         {/block}
 
         {block name='product_variants'}
@@ -111,9 +92,6 @@
         {/block}
       </div>
 
-      {if $type==='list-item'}</div>{/if}
-    
     </div>
   </article>
-</div>
 {/block}

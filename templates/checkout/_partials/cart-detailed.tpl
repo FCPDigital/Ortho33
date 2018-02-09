@@ -25,7 +25,7 @@
 {block name='cart_detailed_product'}
   <div class="cart-overview js-cart" data-refresh-url="{url entity='cart' params=['ajax' => true, 'action' => 'refresh']}">
     {if $cart.products}
-    <ul>
+    <ul class="cart-items">
       {foreach from=$cart.products item=product}
         <li class="cart-item">
           {block name='cart_detailed_product_line'}

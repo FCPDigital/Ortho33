@@ -32,11 +32,10 @@
 
   {else}
 
-
-    <ul class="nav margin-top-medium margin-bottom-medium" role="tablist">
+    <ul class="nav nav-inline my-2" role="tablist">
       <li class="nav-item">
         <a
-          class="nav-link checkout__login-type btn btn--grey-orange {if !$show_login_form}active{/if}"
+          class="nav-link {if !$show_login_form}active{/if}"
           data-toggle="tab"
           href="#checkout-guest-form"
           role="tab"
@@ -50,12 +49,14 @@
           {/if}
         </a>
       </li>
-      
-      <span href="nav-separator"> ou </span>
+
+      <li class="nav-item">
+        <span href="nav-separator"> | </span>
+      </li>
 
       <li class="nav-item">
         <a
-          class="nav-link checkout__login-type btn btn--grey-orange {if $show_login_form}active{/if}"
+          class="nav-link {if $show_login_form}active{/if}"
           data-link-action="show-login-form"
           data-toggle="tab"
           href="#checkout-login-form"
@@ -67,7 +68,7 @@
         </a>
       </li>
     </ul>
-    <hr class="separator">
+
     <div class="tab-content">
       <div class="tab-pane {if !$show_login_form}active{/if}" id="checkout-guest-form" role="tabpanel" {if $show_login_form}aria-hidden="true"{/if}>
         {render file='checkout/_partials/customer-form.tpl' ui=$register_form guest_allowed=$guest_allowed}

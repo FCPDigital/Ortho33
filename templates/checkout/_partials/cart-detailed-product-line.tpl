@@ -22,45 +22,49 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="cart-item__container">
+<div class="product-line-grid">
   <!--  product left content: image-->
-  <div class="cart-item__thumbnail-container col-md-3 col-xs-4">
-    <img class="cart-item__thumbnail" src="{$product.cover.bySize.cart_default.url}" alt="{$product.name|escape:'quotes'}">
+  <div class="product-line-grid-left col-md-3 col-xs-4">
+    <span class="product-image media-middle">
+      <img src="{$product.cover.bySize.cart_default.url}" alt="{$product.name|escape:'quotes'}">
+    </span>
   </div>
 
   <!--  product left body: description -->
-  <div class="cart-item__description col-md-4 col-xs-8">
-    <div class="cart-item__title">
-      <a href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
+  <div class="product-line-grid-body col-md-4 col-xs-8">
+    <div class="product-line-info">
+      <a class="label" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
     </div>
 
-    <div class="cart-item__price product__price-container margin-bottom-small {if $product.has_discount}has-discount{/if}">
+    <div class="product-line-info product-price h5 {if $product.has_discount}has-discount{/if}">
       {if $product.has_discount}
-        <div class="product-discount margin-bottom-small">
-          <span class="product__price--old">{$product.regular_price}</span>
+        <div class="product-discount">
+          <span class="regular-price">{$product.regular_price}</span>
           {if $product.discount_type === 'percentage'}
-            <span class="product__discount--light">
+            <span class="discount discount-percentage">
                 -{$product.discount_percentage_absolute}
               </span>
           {else}
-            <span class="product__discount--light">
+            <span class="discount discount-amount">
                 -{$product.discount_to_display}
               </span>
           {/if}
         </div>
       {/if}
       <div class="current-price">
-        <span class="product__price">{$product.price}</span>
+        <span class="price">{$product.price}</span>
         {if $product.unit_price_full}
-          <div class="product__price">{$product.unit_price_full}</div>
+          <div class="unit-price-cart">{$product.unit_price_full}</div>
         {/if}
       </div>
     </div>
 
+    <br/>
+
     {foreach from=$product.attributes key="attribute" item="value"}
-      <div class="cart-item__info">
-        <span class="cart-item__info-key">{$attribute}:</span>
-        <span class="cart-item__info-value">{$value}</span>
+      <div class="product-line-info">
+        <span class="label">{$attribute}:</span>
+        <span class="value">{$value}</span>
       </div>
     {/foreach}
 
@@ -145,7 +149,7 @@
       <div class="col-md-2 col-xs-2 text-xs-right">
         <div class="cart-line-product-actions">
           <a
-              class                       = "cart-item__remove"
+              class                       = "remove-from-cart"
               rel                         = "nofollow"
               href                        = "{$product.remove_from_cart_url}"
               data-link-action            = "delete-from-cart"
@@ -154,7 +158,7 @@
               data-id-customization   	  = "{$product.id_customization|escape:'javascript'}"
           >
             {if !isset($product.is_gift) || !$product.is_gift}
-              <i class="fa fa-trash" aria-hidden="true"></i>
+            <i class="material-icons float-xs-left">delete</i>
             {/if}
           </a>
 

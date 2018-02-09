@@ -8,19 +8,18 @@
     display: block;
   }
   .product-title a {
-    color: $gray;
-    font-size: $font-size-sm;
+    color: black;
     text-decoration: none;
     text-align: center;
-    font-weight: 400;
+    font-weight: bold;
+    font-size: 17px;
   }
   .thumbnail-container {
     position: relative;
-    margin-bottom: 1.563rem;
+    margin-bottom: 2rem;
     height: 318px;
     width: 257px;
     background: white;
-    @include box-shadow;
     &:hover, &:focus {
       .highlighted-informations {
         bottom: 5.5rem;
@@ -44,17 +43,24 @@
   }
   .products-section-title {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin: 3rem 0;
+    color: $brand-secondary;
+    letter-spacing: 1px;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $brand-secondary;
   }
   .product-title {
     text-align: center;
     text-transform: capitalize;
     margin-top: 1rem;
+    padding: 0 20px;
+    color: black;
   }
   .product-price-and-shipping {
-    color: $gray-darker;
+    color: $brand-success;
     font-weight: 700;
     text-align: center;
+    font-size: 22px;
   }
   .variant-links {
     position: relative;
@@ -74,7 +80,7 @@
     text-align: center;
     width: 257px;
     height: 3.125rem;
-    box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.2);
+    
     transition: bottom .3s;
     .quick-view {
       color: $gray;
@@ -91,7 +97,8 @@
     background: white;
     width: 257px;
     bottom: 0;
-    height: 70px;
+    bottom: -30px;
+    height: 100px;
   }
   img {
     margin-left: 4px;

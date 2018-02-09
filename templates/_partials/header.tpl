@@ -30,41 +30,35 @@
 
 {block name='header_nav'}
   <nav class="header-nav">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-          <!-- Desktop first header -->
-          <div class="header-top header-top--desktop">
-            <div class="float-left inline">
-              <a class="header-top__logo" href="{$urls.base_url}">
-                <img class="" src="{$shop.logo}" alt="{$shop.name}">
-              </a>
-              <a href="tel:+556344605" class="btn btn--no-border btn--green btn--fa btn--size-xl">
-                <i class="fa fa-phone" aria-hidden="true"></i>05 56 34 46 05
-              </a>
-              <a href="{$urls.pages.contact}" class="btn btn--no-border btn--green btn--fa">
-                <i class="fa fa-envelope" aria-hidden="true"></i><span class="underline">Contactez-nous ici</span>
-              </a>  
+          <!-- <div class="hidden-sm-down"> -->
+            <div class="col-sm-3 hidden-sm-down header-nav__part float-down">
+              <p class="header-phone">
+                <i class="material-icons d-inline">phone</i> 
+                05 56 34 46 05
+              </p>
             </div>
-       
-            <div class="inline float-right margin-top-small margin-right-normal">
-              {hook h='displaySearch'}
-              {hook h='displayNav2'}
+          <!-- </div> -->
+          <div class="col-md-6 header-nav__part float-down">
+            <div id="_desktop_logo">
+              <a href="{$urls.base_url}">
+                <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+              </a>
             </div>
-
+            {hook h='displaySearch'}
           </div>
-          <!-- Responsive first header -->
-          <div class="text-center header-top header-top--responsive">
-            <div class="header-top__burger float-left padding-small" id="menu-burger">
-              <i class="fa fa-bars" aria-hidden="true"></i>
+          <div id="log-part" class="col-sm-3 header-nav__part float-down">
+            {hook h='displayNav2'}
+          </div>
+          <div class="hidden-md-up text-sm-center mobile">
+            <div class="float-xs-left" id="menu-icon">
+              <i class="material-icons d-inline">&#xE5D2;</i>
             </div>
-            <a class="header-top__logo" href="{$urls.base_url}">
-              <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
-            </a>
-            <div class="inline header-top__nav2">
-              {hook h='displayNav2'}
-            </div>
-            
-            <div class="clearfix"></div>
+      <!--       <div class="float-xs-right" id="_mobile_cart"></div>
+            <div class="float-xs-right" id="_mobile_user_info"></div>
+            <div class="top-logo" id="_mobile_logo"></div>
+            <div class="clearfix"></div> -->
           </div>
         </div>
     </div>
@@ -72,19 +66,26 @@
 {/block}
 
 {block name='header_top'}
-  <div class="header-bottom-container">
-      <div class="header-bottom header-bottom--desktop">
-        {hook h='displayTop'}
+  <div class="header-top">
+    <div class="container">
+       <div class="row">
+        
+        <div class="position-static">
+          <div class="row">
+            {hook h='displayTop'}
+            <div class="clearfix"></div>
+          </div>
+        </div>
       </div>
-      
-      
-      <div id="menu-responsive" class="header-responsive header-responsive--hide">
-        <a href="" rel="nofollow" id="menu-close">
-          <i class="fa fa-times" aria-hidden="true"></i>
-        </a>
-        {hook h='displayTop'}
+      <div id="mobile_top_menu_wrapper" class="row" style="display:none;">
+        <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
+        <div class="js-top-menu-bottom">
+          <div id="_mobile_currency_selector"></div>
+          <div id="_mobile_language_selector"></div>
+          <div id="_mobile_contact_link"></div>
+        </div>
       </div>
-      
+    </div>
   </div>
   {hook h='displayNavFullWidth'}
 {/block}

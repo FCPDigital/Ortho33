@@ -29,74 +29,28 @@
     {/block}
   </div>
 </div>
-<div class="footer">
+<div class="footer-container">
   <div class="container">
     <div class="row">
-      <div class="col-sm-3 footer__section">
-        <h3 class="footer__title">Plan du site</h3>
-        <ul class="footer__list">
-          <li class="footer__list-item"><a href="">Produits</a></li>
-          <li class="footer__list-item"><a href="">A propos</a></li>
-          <li class="footer__list-item"><a href="">Contactez-nous</a></li>
-        </ul>
-      </div>
-
-      <div class="col-sm-3 footer__section">
-        <h3 class="footer__title">Compte</h3>
-        <ul class="footer__list">
-          <li class="footer__list-item"><a href="">Mon Compte</a></li>
-          <li class="footer__list-item"><a href="">Mes commandes</a></li>
-          <li class="footer__list-item"><a href="">Mon panier</a></li>
-        </ul>
-      </div>
-
-      <div class="col-sm-3 footer__section">
-        <h3 class="footer__title">Contact</h3>
-        <ul class="footer__list">
-          <li class="footer__list-item"><a href="">Mérignac</a></li>
-          <li class="footer__list-item"><a href="">Bordeaux</a></li>
-          <li class="footer__list-item"><a href="">La-Teste-de-Buch</a></li>
-        </ul>
-      </div>
-
-      <div class="col-sm-3 footer__section">
-        <h3 class="footer__title">Paiement</h3>
-        <div class="footer__payments">
-          <img class="footer__payment" src="{$smarty.const._THEME_IMG_DIR_}/icon/picto-visa.png" alt="Paiement par VISA">
-          <img class="footer__payment" src="{$smarty.const._THEME_IMG_DIR_}/icon/picto-mastercard.png" alt="Paiement par Mastercard">
-          <img class="footer__payment" src="{$smarty.const._THEME_IMG_DIR_}/icon/picto-paypal.png" alt="Paiement par Paypal">
-          <div class="footer__payment--fullsize">
-            <img class="footer__payment-cheque" src="{$smarty.const._THEME_IMG_DIR_}/icon/picto-cheque.png" alt="Paiement par Chèque">
-            <p>Paiement par chèque</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 footer__copyright">
-        <p>
-          <a class="link-invisible" href="">Mention légales</a> | 
-          <a class="link-invisible" href="">Conditions générales de vente</a> | 
-          <a class="link-invisible" href="">@ 2017 Ortho 33</a> |
-          <a class="link-invisible" href="">FCP Digital</a>
+      {block name='hook_footer'}
+        {hook h='displayFooter'}
+      {/block}
+    </div>
+    <div class="row">
+      {block name='hook_footer_after'}
+        {hook h='displayFooterAfter'}
+      {/block}
+    </div>
+    <div class="row">
+      <div class="col-md-12 mt-1">
+        <p class="text-sm-center">
+          {block name='copyright_link'}
+            <a class="_blank" href="http://www.prestashop.com" target="_blank">
+              {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
+            </a>
+          {/block}
         </p>
       </div>
-      
-    </div><!-- End Row -->
-  </div><!-- End Container -->
+    </div>
+  </div>
 </div>
-    
- 
-    
-
-{*block name='hook_footer'}
-  {hook h='displayFooter'}
-{/block*}
-
-{*block name='hook_footer_after'}
-  {hook h='displayFooterAfter'}
-{/block*}
-
-{*block name='copyright_link'}
-  <a class="_blank" href="http://www.prestashop.com" target="_blank">
-    {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
-  </a>
-{/block*}

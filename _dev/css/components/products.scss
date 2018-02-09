@@ -6,8 +6,19 @@
   }
 }
 .product-price {
-  color: $brand-primary;
+  color: $brand-success;
+  font-size: 32px;
   display: inline-block;
+}
+.product-miniature {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0);
+  transform: translateX(0) translateY(0);
+  transition: all .4s;
+  margin-bottom: 50px !important;
+  &:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(5px) translateY(5px);
+  }
 }
 #product-description-short {
   color: $gray-darker;
@@ -71,6 +82,7 @@
     padding-top: 0.625rem;
     .material-icons {
       line-height: inherit;
+      float: left;
     }
   }
 }
@@ -409,6 +421,8 @@
   font-weight: 700;
   .material-icons {
     line-height: inherit;
+    float: left;
+    margin-right: 10px;
   }
   .product-available {
     color: $brand-success;

@@ -26,11 +26,7 @@
   <div class="products row">
     {foreach from=$listing.products item="product"}
       {block name='product_miniature'}
-        {if !isset($style) }
-          {assign "style" "classic"}
-        {/if}
-        {include file='catalog/_partials/miniatures/product.tpl' product=$product type=$type style=$style}
-        
+        {include file='catalog/_partials/miniatures/product.tpl' product=$product}
       {/block}
     {/foreach}
   </div>
@@ -42,7 +38,7 @@
   <div class="hidden-md-up text-xs-right up">
     <a href="#header" class="btn btn-secondary">
       {l s='Back to top' d='Shop.Theme.Actions'}
-      <i class="fa fa-arrow-up margin-left-small" aria-hidden="true"></i>
+      <i class="material-icons">&#xE316;</i>
     </a>
   </div>
 </div>

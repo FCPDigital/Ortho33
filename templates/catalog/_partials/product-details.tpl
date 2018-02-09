@@ -18,16 +18,22 @@
         {/if}
       </div>
     {/if}
+    {if isset($product.reference_to_display)}
+      <div class="product-reference">
+        <label class="label">{l s='Reference' d='Shop.Theme.Catalog'} </label>
+        <span itemprop="sku">{$product.reference_to_display}</span>
+      </div>
+    {/if}
   {/block}
 
-  {*block name='product_quantities'}
+  {block name='product_quantities'}
     {if $product.show_quantities}
       <div class="product-quantities">
         <label class="label">{l s='In stock' d='Shop.Theme.Catalog'}</label>
         <span data-stock="{$product.quantity}" data-allow-oosp="{$product.allow_oosp}">{$product.quantity} {$product.quantity_label}</span>
       </div>
     {/if}
-  {/block*}
+  {/block}
 
   {block name='product_availability_date'}
     {if $product.availability_date}
@@ -47,7 +53,7 @@
   {block name='product_features'}
     {if $product.features}
       <section class="product-features">
-        <h3 class="title title--small">Caractéristiques</h3>
+        <h3 class="h6">{l s='Data sheet' d='Shop.Theme.Catalog'}</h3>
         <dl class="data-sheet">
           {foreach from=$product.features item=feature}
             <dt class="name">{$feature.name}</dt>

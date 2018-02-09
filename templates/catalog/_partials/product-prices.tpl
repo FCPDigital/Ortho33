@@ -26,14 +26,16 @@
   <div class="product-prices">
     {block name='product_discount'}
       {if $product.has_discount}
-        {hook h='displayProductPriceBlock' product=$product type="old_price"}
-        <span class="product__price--old">{$product.regular_price}</span>
+        <div class="product-discount">
+          {hook h='displayProductPriceBlock' product=$product type="old_price"}
+          <span class="regular-price">{$product.regular_price}</span>
+        </div>
       {/if}
     {/block}
 
     {block name='product_price'}
       <div
-        class="product__price-container {if $product.has_discount}has-discount{/if}"
+        class="product-price h5 {if $product.has_discount}has-discount{/if}"
         itemprop="offers"
         itemscope
         itemtype="https://schema.org/Offer"
@@ -41,14 +43,14 @@
         <link itemprop="availability" href="https://schema.org/InStock"/>
         <meta itemprop="priceCurrency" content="{$currency.iso_code}">
 
-        <div class="product__price--inline">
-          <span class="product__price" itemprop="price" content="{$product.price_amount}">{$product.price}</span>
+        <div class="current-price">
+          <span itemprop="price" content="{$product.price_amount}">{$product.price}</span>
 
           {if $product.has_discount}
             {if $product.discount_type === 'percentage'}
-              <span class="product__discount">{$product.discount_percentage_absolute}</span>
+              <span class="discount discount-percentage">{l s='Save %percentage%' d='Shop.Theme.Catalog' sprintf=['%percentage%' => $product.discount_percentage_absolute]}</span>
             {else}
-              <span class="product__discount">
+              <span class="discount discount-amount">
                   {l s='Save %amount%' d='Shop.Theme.Catalog' sprintf=['%amount%' => $product.discount_to_display]}
               </span>
             {/if}
@@ -87,7 +89,7 @@
 
     {hook h='displayProductPriceBlock' product=$product type="weight" hook_origin='product_sheet'}
 
-    <div class="product__tax-container">
+    <div class="tax-shipping-delivery-label">
       {if $configuration.display_taxes_label}
         {$product.labels.tax_long}
       {/if}

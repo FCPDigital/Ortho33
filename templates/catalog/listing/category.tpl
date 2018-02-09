@@ -24,34 +24,19 @@
  *}
 {extends file='catalog/listing/product-list.tpl'}
 
-{block name='body_classes'}
-{if $category.rootCategory}{$category.rootCategory}{/if}
-{/block}
-
 {block name='product_list_header'}
-  <div class="text-sm-center hidden-md-up">
-    <h1 class="list__title color-heritance">{$category.name}</h1>
-  </div>
-
-  {if $category.description}
-
-  <div id="category-description" class="list__description">
-    {$category.description nofilter}
-  </div>
-  {/if}
-
-{/block}
-
-{block name="subcategories_list"}
-  <div class="row list">
-    {foreach from=$subcategories item=category}
-
-      <a href="{$category.url}" class="list__item-link col-sm-3">
-        <div class="list__item border-heritance">
-          <h3 class="list__item-title color-heritance">{$category.name}</h3>
-          <img class="list__item-img" src="{$category.image.large.url}" alt="{$category.image.legend}">
+    <div class="block-category card card-block hidden-sm-down">
+      <h1 class="h1">{$category.name}</h1>
+      {if $category.description}
+        <div id="category-description" class="text-muted">{$category.description nofilter}</div>
+      {/if}
+      {if $category.image.large.url}
+        <div class="category-cover">
+          <img src="{$category.image.large.url}" alt="{$category.image.legend}">
         </div>
-      </a>
-    {/foreach}
-  </div>
+      {/if}
+    </div>
+    <div class="text-sm-center hidden-md-up">
+      <h1 class="h1">{$category.name}</h1>
+    </div>
 {/block}

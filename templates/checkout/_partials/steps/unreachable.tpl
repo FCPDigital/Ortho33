@@ -23,9 +23,9 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {block name='step'}
-  <section class="checkout__unreachable" id="{$identifier}">
-    <h2 class="checkout__title h3">
-      <span class="checkout__number">{$position}</span> {$title}
-    </h2>
+  <section class="checkout-step -unreachable" id="{$identifier}">
+    <h1 class="step-title h3">
+      <span class="step-number">{$position}</span> {$title}
+    </h1>
   </section>
 {/block}

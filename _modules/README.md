@@ -1,0 +1,1 @@
+This folder contain all the modules developped for Seniornaute Theme. The folders has to be placed in the core module directory.

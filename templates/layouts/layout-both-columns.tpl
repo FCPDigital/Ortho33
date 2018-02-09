@@ -31,7 +31,7 @@
     {/block}
   </head>
 
-  <body id="{$page.page_name}" class="{$page.body_classes|classnames} {block name='body_classes'}category_default{/block}">
+  <body id="{$page.page_name}" class="{$page.body_classes|classnames}">
 
     {block name='hook_after_body_opening_tag'}
       {hook h='displayAfterBodyOpeningTag'}
@@ -54,7 +54,7 @@
 
       <section id="wrapper">
         {hook h="displayWrapperTop"}
-        <div class="container{if $page.page_name == 'index'}-fluid{/if} margin-bottom-medium">
+        <div class="{block name='wrapper-type'}container{/block}">
           {block name='breadcrumb'}
             {include file='_partials/breadcrumb.tpl'}
           {/block}

@@ -24,10 +24,10 @@
  *}
 <div class="product-add-to-cart">
   {if !$configuration.is_catalog}
+    <span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
 
     {block name='product_quantity'}
       <div class="product-quantity clearfix">
-        <span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'} : </span>
         <div class="qty">
           <input
             type="text"
@@ -42,14 +42,14 @@
 
         <div class="add">
           <button
-            class="btn btn--blue-bg btn--fa"
+            class="btn btn-primary add-to-cart"
             data-button-action="add-to-cart"
             type="submit"
             {if !$product.add_to_cart_url}
               disabled
             {/if}
           >
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <i class="material-icons shopping-cart">&#xE547;</i>
             {l s='Add to cart' d='Shop.Theme.Actions'}
           </button>
         </div>
@@ -57,18 +57,18 @@
     {/block}
 
     {block name='product_availability'}
-      <p id="product-availability" class="margin-top-medium">
+      <span id="product-availability">
         {if $product.show_availability && $product.availability_message}
           {if $product.availability == 'available'}
-            <i class="fa fa-check" aria-hidden="true"></i>
+            <i class="material-icons product-available">&#xE5CA;</i>
           {elseif $product.availability == 'last_remaining_items'}
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <i class="material-icons product-last-items">&#xE002;</i>
           {else}
-            <i class="fa fa-times" aria-hidden="true"></i>
+            <i class="material-icons product-unavailable">&#xE14B;</i>
           {/if}
           {$product.availability_message}
         {/if}
-      </p>
+      </span>
     {/block}
     
     {block name='product_minimal_quantity'}

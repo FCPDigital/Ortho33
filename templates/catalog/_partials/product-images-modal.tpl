@@ -49,11 +49,8 @@
           {/block}
           {if $imagesCount > 5}
             <div class="arrows js-modal-arrows">
-              <i class="fa fa-chevron-up arrow-up js-modal-arrow-up" aria-hidden="true"></i>
-              <i class="fa fa-chevron-down arrow-down js-modal-arrow-down" aria-hidden="true"></i>
-
-              <!-- <i class="material-icons arrow-up js-modal-arrow-up">&#xE5C7;</i>
-              <i class="material-icons arrow-down js-modal-arrow-down">&#xE5C5;</i> -->
+              <i class="material-icons arrow-up js-modal-arrow-up">&#xE5C7;</i>
+              <i class="material-icons arrow-down js-modal-arrow-down">&#xE5C5;</i>
             </div>
           {/if}
         </aside>

@@ -22,12 +22,12 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="images-container toggle-thumbnail">
+<div class="images-container">
   {block name='product_cover'}
     <div class="product-cover">
-      <img class="js-medium-product-cover" src="{$product.cover.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
-      <div class="layer hidden-sm-down float-left" data-toggle="modal" data-target="#product-modal">
-        <i class="fa fa-search-plus" aria-hidden="true"></i>
+      <img class="js-qv-product-cover" src="{$product.cover.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
+      <div class="layer hidden-sm-down" data-toggle="modal" data-target="#product-modal">
+        <i class="material-icons zoom-in">&#xE8FF;</i>
       </div>
     </div>
   {/block}

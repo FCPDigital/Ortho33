@@ -22,11 +22,10 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 {foreach $javascript.external as $js}
-  <script src="{$js.uri}" {$js.attribute}></script>
+  <script type="text/javascript" src="{$js.uri}" {$js.attribute}></script>
 {/foreach}
+
 {foreach $javascript.inline as $js}
   <script type="text/javascript">
     {$js.content nofilter}
@@ -40,5 +39,3 @@
     {/foreach}
   </script>
 {/if}
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

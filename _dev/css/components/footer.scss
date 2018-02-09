@@ -146,26 +146,45 @@
 }
 .footer-container {
   margin-top: $medium-space;
-  padding-top: $medium-space;
+  padding-top: 3.25rem;
   overflow: hidden;
   box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.3);
+  background-color: $brand-secondary;
+  p {
+    color: white;
+  }
+  h1, h2, h3 {
+    color: white;
+  }
   li {
     margin-bottom: 0.3125rem;
   }
   li a {
-    color: $gray;
+    color: white;
     cursor: pointer;
     font-size: $font-size-sm;
     &:hover {
       color: $brand-primary;
     }
   }
+  a {
+    color: white;
+  }
   .links {
     .collapse {
       display: inherit;
     }
   }
-}
+  #block_myaccount_infos .myaccount-title a {
+    color: white;
+  }
+  .block-contact {
+    color: white;
+  }
+  .block-contact-title, .linklist .blockcms-title a {
+    color: white;
+  }
+} 
 
 @include media-breakpoint-down(sm) {
   .block_newsletter {
@@ -183,6 +202,9 @@
       .h3 {
         line-height: 1.5;
         font-size: 1rem;
+        color: white;
+        font-weight: normal;
+        margin-left: 20px;
       }
       .title {
         padding: 0.625rem;
@@ -203,6 +225,8 @@
       .navbar-toggler {
         display: inline-block;
         padding: 0;
+        float: right;
+        color: white;
       }
       .collapse {
         display: none;
