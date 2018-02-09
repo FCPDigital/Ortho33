@@ -1,0 +1,281 @@
+$header-h: 75px
+
+.header-top
+	padding: 5px 0
+	padding-left: 0
+	position: fixed
+	width: 100%
+	height: 85px
+	background-color: white
+	z-index: 999
+
+	&__burger 
+		display: inline-block
+		font-size: 25px
+
+	&__logo 
+		display: inline-block
+		padding: $pad-small $pad-normal
+		img
+			display: inline-block
+			height: 50px
+
+	&--desktop .header-top__logo
+		float: left
+
+	&--responsive .header-top__nav2
+		position: absolute
+		right: $pad-normal
+		top: $pad-small	
+
+
+@media screen and (max-width: 1080px)
+	.header-top
+		&__logo 
+			height: $pad-normal
+			float: left
+			img
+				height: 20px
+				margin-top: 7px
+
+
+// Fixe bug responsive with rigth navbar 
+@media screen and (max-width: 1390px)
+	.header-top
+		&__logo img
+			margin-top: 5px
+		.blockcart
+			border-width: 1px 
+			margin-top: 0 !important
+			.fa 
+				margin-right: 5px
+			span
+				display: none
+				border: 1px solid $blue 
+		.btn
+			font-size: 15px
+			margin-top: 10px
+			padding: 10px 5px
+			&.btn--size-xl
+				font-size: 20px
+		.user-info
+			display: flex
+			flex-flow: column-reverse
+			text-align: center
+			top: 10px
+			margin-left: 20px
+			position: relative
+			.logout .fa 
+				display: none
+			.btn 
+				margin: 0
+				padding: 0
+				border: 0
+				font-size: 12px
+				min-height: 20px
+		
+
+@media screen and (max-width: $break-point-1)
+	.header-top--desktop
+		display: none
+	.header-top--responsive
+		display: block
+		height: 65px
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, .3)
+
+	// Cancel 
+	.header-top
+		.user-info
+			top: 5px
+			.account
+				font-size: 25px
+
+@media screen and (min-width: $break-point-1)
+	.header-top--desktop
+		display: block
+	.header-top--responsive
+		display: none
+
+
+=menu_color_section ($bg, $color)
+	div.adtm_sub
+		background: $bg
+		.adtm_column_wrap span.column_wrap_title, .adtm_column_wrap span.column_wrap_title a, .adtm_column_wrap a
+			color: $color
+
+
+.header-bottom
+	height: 90px
+	display: block
+	padding-top: 85px
+	box-sizing: content-box
+
+	.main-menu
+		height: 90px
+		display: flex
+		justify-content: space-between
+		&__item
+			max-width: 175px
+			text-align: center
+			background-color: red
+			padding: 0
+			flex: 2
+			color: white
+			display: flex
+			justify-content: center
+			flex-direction: column
+			box-shadow: $shadow
+			&--small
+				flex: 1
+			&--home
+				background-color: white
+			&:nth-child(1)
+				flex: 1
+				background-color: transparent
+				box-shadow: none
+				a 
+					color: $orange
+
+			&:nth-child(2)
+				@include menu_color_section($purple, white)
+			&:nth-child(3)
+				@include menu_color_section($blue, white)
+			&:nth-child(4)
+				@include menu_color_section($green, white)
+			&:nth-child(5)
+				@include menu_color_section($purple2, white)
+			&:nth-child(6)
+				@include menu_color_section($blue2, white)
+			&:nth-child(7)
+				@include menu_color_section($green2, white)
+
+		&__link
+			padding: 20px
+			text-decoration: none
+			color: white
+			font-weight: 600
+			&:hover
+				color: white
+	
+
+	
+	#adtm_menu ul#menu li.li-niveau1
+		a, a:hover
+			text-decoration: none
+		.advtm_menu_span
+			margin: 0
+
+		div.adtm_sub
+			top: 85px
+			width: 99.5%
+			border: 0
+			box-shadow: none
+			padding: 30px 50px
+			.adtm_column_wrap
+				padding: 10px 30px 30px 30px !important
+				line-height: 20px
+				span.column_wrap_title 
+					margin-bottom: 15px
+					a
+						font-size: 19px
+				ul.adtm_elements
+					li
+						line-height: 20px
+					a
+						font-size: 14px
+
+
+		&:nth-child(3)
+			@include menu_color_section($purple, white)
+		&:nth-child(4)
+			@include menu_color_section($blue, white)
+		&:nth-child(5)
+			@include menu_color_section($green, white)
+		&:nth-child(6)
+			@include menu_color_section($purple2, white)
+		&:nth-child(7)
+			@include menu_color_section($blue2, white)
+		&:nth-child(8)
+			@include menu_color_section($green2, white)	
+
+
+
+
+@media screen and (max-width: $break-point-1)
+	.header-bottom
+		display: none
+
+
+
+$sidebar-w: 400px
+
+.header-responsive
+	@include transition(all .4s)
+	position: fixed
+	top: 0
+	left: 0
+	height: 100vh
+	background-color: white
+	box-shadow: $shadow
+	z-index: 1000
+	overflow: hidden
+	overflow: -moz-scrollbars-none
+	overflow-y: scroll
+	width: 100%
+	max-width: 400px
+	&--display
+		left: 0
+	&--hide
+		left: -430px
+	&::-webkit-scrollbar
+		display: none 
+	.li-niveau1 
+		margin: 0px -5px
+	
+	#adtm_menu .adtm_column_wrap a
+		margin: 0px !important
+
+	#adtm_menu ul#menu 
+		position: relative
+		left: 5px
+		li div.adtm_sub
+			position: static
+			max-height: 0
+			overflow: hidden
+			min-height: 0
+			transition: .4s
+		.li-niveau1:hover div.adtm_sub
+			max-height: 1000px
+
+	#menu-close
+		position: absolute
+		top: 20px
+		right: 20px
+		font-size: 25px
+		padding: 10px
+		z-index: 2
+
+	.main-menu
+		&__item 
+			padding: $pad-normal 0
+
+@media screen and (min-width: $break-point-1)
+	.header-responsive
+		left: -430px
+
+
+
+.main-menu
+	display: flex
+	justify-content: space-between
+	&__item
+		padding: 0
+		flex: 2
+		color: white
+		&--small
+			flex: 1
+		&--home
+			background-color:white
+
+	&__link
+		padding: 20px
