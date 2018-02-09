@@ -26,15 +26,7 @@
   <div class="user-info">
     {if $logged}
       <a
-        class="logout hidden-sm btn btn--orange btn--fa"
-        href="{$logout_url}"
-        rel="nofollow"
-      >
-        <i class="fa fa-user no-marge-sm" aria-hidden="true"></i>
-        {l s='Sign out' d='Shop.Theme.Actions'}
-      </a>
-      <a
-        class="account"
+        class="account  btn btn--orange "
         href="{$my_account_url}"
         title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}"
         rel="nofollow"

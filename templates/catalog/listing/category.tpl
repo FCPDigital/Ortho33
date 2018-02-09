@@ -49,7 +49,9 @@
       <a href="{$category.url}" class="list__item-link col-sm-3">
         <div class="list__item border-heritance">
           <h3 class="list__item-title color-heritance">{$category.name}</h3>
-          <img class="list__item-img" src="{$category.image.large.url}" alt="{$category.image.legend}">
+          {if $category.image} 
+            <img class="list__item-img" src="{$category.image.large.url}" alt="{$category.image.legend}">
+          {/if}
         </div>
       </a>
     {/foreach}
