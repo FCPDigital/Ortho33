@@ -6212,14 +6212,14 @@ button.close {
     box-shadow: none; }
   .btn a {
     text-decoration: none; }
-  .btn--grey-orange {
-    background-color: #f4f4f4;
-    border-color: #ea5b0c;
+  .btn--orange-alpha {
+    background-color: rgba(234, 91, 12, 0.6);
     color: black;
+    border-color: transparent;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
-    .btn--grey-orange.active, .btn--grey-orange:hover {
+    .btn--orange-alpha.active, .btn--orange-alpha:hover {
       background-color: #ea5b0c; }
   .btn--green {
     color: #00a94d;
@@ -6497,7 +6497,7 @@ button.close {
       font-size: 20px;
       min-height: 50px; }
     .product--miniature .product__price {
-      font-size: 14px; }
+      font-size: 20px; }
       .product--miniature .product__price--old {
         font-size: 12px; }
   .product--list-item {

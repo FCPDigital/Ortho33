@@ -101,7 +101,7 @@
       
       <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down">
         {block name='quick_view'}
-          <a class="btn btn--grey-orange" href="{$product.url}">Voir</a>
+          <a class="btn btn--orange-alpha" href="{$product.url}">Voir</a>
         {/block}
 
         {block name='product_variants'}

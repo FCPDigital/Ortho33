@@ -36,7 +36,7 @@
     <ul class="nav margin-top-medium margin-bottom-medium" role="tablist">
       <li class="nav-item">
         <a
-          class="nav-link checkout__login-type btn btn--grey-orange {if !$show_login_form}active{/if}"
+          class="nav-link checkout__login-type btn btn--orange-alpha {if !$show_login_form}active{/if}"
           data-toggle="tab"
           href="#checkout-guest-form"
           role="tab"
@@ -55,7 +55,7 @@
 
       <li class="nav-item">
         <a
-          class="nav-link checkout__login-type btn btn--grey-orange {if $show_login_form}active{/if}"
+          class="nav-link checkout__login-type btn btn--orange-alpha {if $show_login_form}active{/if}"
           data-link-action="show-login-form"
           data-toggle="tab"
           href="#checkout-login-form"
