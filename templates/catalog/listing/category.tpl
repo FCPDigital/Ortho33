@@ -47,7 +47,7 @@
     {foreach from=$subcategories item=category}
 
       <a href="{$category.url}" class="list__item-link col-sm-3">
-        <div class="list__item border-heritance">
+        <div class="list__item border-heritance bg-hover-heritance">
           <h3 class="list__item-title color-heritance">{$category.name}</h3>
           {if $category.image} 
             <img class="list__item-img" src="{$category.image.large.url}" alt="{$category.image.legend}">

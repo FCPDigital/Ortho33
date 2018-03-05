@@ -6670,31 +6670,73 @@ button.close {
   color: #af60a2 !important; }
 .category_confort_quotidien .border-heritance {
   border-color: #af60a2 !important; }
+.category_confort_quotidien .bg-hover-heritance {
+  transition: 0.4s ease-in;
+  background-color: transparent !important; }
+  .category_confort_quotidien .bg-hover-heritance:hover {
+    background-color: #af60a2 !important; }
+    .category_confort_quotidien .bg-hover-heritance:hover .color-heritance {
+      color: white !important; }
 
 .category_hygienesoin .color-heritance {
   color: #6cbAdf !important; }
 .category_hygienesoin .border-heritance {
   border-color: #6cbAdf !important; }
+.category_hygienesoin .bg-hover-heritance {
+  transition: 0.4s ease-in;
+  background-color: transparent !important; }
+  .category_hygienesoin .bg-hover-heritance:hover {
+    background-color: #6cbAdf !important; }
+    .category_hygienesoin .bg-hover-heritance:hover .color-heritance {
+      color: white !important; }
 
 .category_mobilite .color-heritance {
   color: #00a94d !important; }
 .category_mobilite .border-heritance {
   border-color: #00a94d !important; }
+.category_mobilite .bg-hover-heritance {
+  transition: 0.4s ease-in;
+  background-color: transparent !important; }
+  .category_mobilite .bg-hover-heritance:hover {
+    background-color: #00a94d !important; }
+    .category_mobilite .bg-hover-heritance:hover .color-heritance {
+      color: white !important; }
 
 .category_professioneldesante .color-heritance {
   color: #6455a0 !important; }
 .category_professioneldesante .border-heritance {
   border-color: #6455a0 !important; }
+.category_professioneldesante .bg-hover-heritance {
+  transition: 0.4s ease-in;
+  background-color: transparent !important; }
+  .category_professioneldesante .bg-hover-heritance:hover {
+    background-color: #6455a0 !important; }
+    .category_professioneldesante .bg-hover-heritance:hover .color-heritance {
+      color: white !important; }
 
 .category_incontinence .color-heritance {
   color: #006F9E !important; }
 .category_incontinence .border-heritance {
   border-color: #006F9E !important; }
+.category_incontinence .bg-hover-heritance {
+  transition: 0.4s ease-in;
+  background-color: transparent !important; }
+  .category_incontinence .bg-hover-heritance:hover {
+    background-color: #006F9E !important; }
+    .category_incontinence .bg-hover-heritance:hover .color-heritance {
+      color: white !important; }
 
 .category_complementsalimentaires .color-heritance {
   color: #95c11f !important; }
 .category_complementsalimentaires .border-heritance {
   border-color: #95c11f !important; }
+.category_complementsalimentaires .bg-hover-heritance {
+  transition: 0.4s ease-in;
+  background-color: transparent !important; }
+  .category_complementsalimentaires .bg-hover-heritance:hover {
+    background-color: #95c11f !important; }
+    .category_complementsalimentaires .bg-hover-heritance:hover .color-heritance {
+      color: white !important; }
 
 .tabs.ui-tabs {
   padding: 0;
