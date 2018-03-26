@@ -7430,6 +7430,16 @@ button.close {
   .header-top__burger {
     display: inline-block;
     font-size: 25px; }
+  .header-top .blockcart {
+    transition: 0.4s; }
+    .header-top .blockcart:hover {
+      background-color: #6cbAdf;
+      color: white !important; }
+  .header-top .user-info .btn {
+    transition: 0.4s; }
+    .header-top .user-info .btn:hover {
+      background-color: #ea5b0c;
+      color: white !important; }
   .header-top__logo {
     display: inline-block;
     padding: 10px 20px; }
@@ -7586,6 +7596,8 @@ button.close {
     text-decoration: none; }
     .header-bottom #adtm_menu ul#menu li.li-niveau1 a:hover {
       text-decoration: underline; }
+    .header-bottom #adtm_menu ul#menu li.li-niveau1 a .a-niveau1 {
+      text-decoration: none !important; }
   .header-bottom #adtm_menu ul#menu li.li-niveau1 .advtm_menu_span {
     margin: 0; }
   .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub {
