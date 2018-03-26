@@ -23,10 +23,13 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <section class="section">
-
-  <h2 class="title--section pad-container container-w">
-    {l s='Best Sellers' d='Shop.Theme.Catalog'}
-  </h2>
+  
+  <div class="container">
+    <h2 class="title--section container-w">
+      {l s='Best Sellers' d='Shop.Theme.Catalog'}
+    </h2>
+  </div>
+  
 
   <div class="products products--orange row">
     <div class="container">
