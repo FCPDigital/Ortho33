@@ -38,10 +38,10 @@
               <a class="header-top__logo" href="{$urls.base_url}">
                 <img class="" src="{$shop.logo}" alt="{$shop.name}">
               </a>
-              <a href="tel:+556344605" class="btn btn--no-border btn--green btn--fa btn--size-xl">
+              <a href="tel:+556344605" class="btn btn--no-border btn--no-bg btn--green btn--fa btn--size-xl">
                 <i class="fa fa-phone" aria-hidden="true"></i>05 56 34 46 05
               </a>
-              <a href="{$urls.pages.contact}" class="btn btn--no-border btn--green btn--fa">
+              <a href="{$urls.pages.contact}" class="btn btn--no-border btn--no-bg btn--green btn--fa">
                 <i class="fa fa-envelope" aria-hidden="true"></i><span class="underline">Contactez-nous ici</span>
               </a>  
             </div>

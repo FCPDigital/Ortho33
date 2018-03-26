@@ -9,6 +9,14 @@
 	border-radius: 0
 	min-width: 45px
 	min-height: 45px
+	transition: .4s
+	&:hover
+		background-color: black
+		color: white
+		&.btn--no-bg
+			background-color: transparent 
+			color: black
+
 	&.active
 		box-shadow: none
 	
@@ -27,21 +35,46 @@
 	&--green 
 		color: $green
 		border-color: $green
+		
+		&:hover
+			background-color: $green
+			color: white
+			&.btn--no-bg
+				background-color: transparent
+				color: $green
 	
 	&--orange
 		color: $orange
 		border-color: $orange
+		&:hover
+			background-color: $orange
+			color: white
+			&.btn--no-bg
+				background-color: transparent !important
+				color: $orange
 	
 	&--blue
 		color: $blue
 		border-color: $blue
+		&:hover
+			background-color: $blue
+			color: white
+
 		&-bg, 
 			color: white
 			background-color: $blue
 			border-color: $blue
+			&:hover
+				background-color: transparent
+				color: $blue
 
 	&--no-border
 		border-width: 0
+
+	&--no-bg
+		background-color: transparent !important
+		&:hover
+			text-decoration: underline
 	
 	&--size
 		&-sm
@@ -73,4 +106,6 @@
 	color: white !important
 	background-color: $blue !important
 	border-color: $blue !important
-	
+	&:hover 
+		background-color: transparent !important
+		color: $blue !important

@@ -181,7 +181,7 @@ p {
   text-transform: none !important; }
 
 .title--big {
-  font-size: 55px;
+  font-size: 50px;
   color: black;
   font-weight: 700;
   margin-bottom: 35px;
@@ -6207,7 +6207,14 @@ button.close {
   text-decoration: none;
   border-radius: 0;
   min-width: 45px;
-  min-height: 45px; }
+  min-height: 45px;
+  transition: 0.4s; }
+  .btn:hover {
+    background-color: black;
+    color: white; }
+    .btn:hover.btn--no-bg {
+      background-color: transparent;
+      color: black; }
   .btn.active {
     box-shadow: none; }
   .btn a {
@@ -6224,18 +6231,40 @@ button.close {
   .btn--green {
     color: #00a94d;
     border-color: #00a94d; }
+    .btn--green:hover {
+      background-color: #00a94d;
+      color: white; }
+      .btn--green:hover.btn--no-bg {
+        background-color: transparent;
+        color: #00a94d; }
   .btn--orange {
     color: #ea5b0c;
     border-color: #ea5b0c; }
+    .btn--orange:hover {
+      background-color: #ea5b0c;
+      color: white; }
+      .btn--orange:hover.btn--no-bg {
+        background-color: transparent !important;
+        color: #ea5b0c; }
   .btn--blue {
     color: #6cbAdf;
     border-color: #6cbAdf; }
+    .btn--blue:hover {
+      background-color: #6cbAdf;
+      color: white; }
     .btn--blue-bg {
       color: white;
       background-color: #6cbAdf;
       border-color: #6cbAdf; }
+      .btn--blue-bg:hover {
+        background-color: transparent;
+        color: #6cbAdf; }
   .btn--no-border {
     border-width: 0; }
+  .btn--no-bg {
+    background-color: transparent !important; }
+    .btn--no-bg:hover {
+      text-decoration: underline; }
   .btn--size-sm {
     font-size: 14px; }
   .btn--size-md {
@@ -6263,6 +6292,9 @@ button.close {
   color: white !important;
   background-color: #6cbAdf !important;
   border-color: #6cbAdf !important; }
+  .btn-primary:hover {
+    background-color: transparent !important;
+    color: #6cbAdf !important; }
 
 .search-bar {
   padding: 10px;
