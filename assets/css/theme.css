@@ -7427,8 +7427,6 @@ button.close {
   height: 85px;
   background-color: white;
   z-index: 999; }
-  .header-top a:hover {
-    text-decoration: underline !important; }
   .header-top__burger {
     display: inline-block;
     font-size: 25px; }
@@ -7582,9 +7580,12 @@ button.close {
       color: white;
       font-weight: 600; }
       .header-bottom .main-menu__link:hover {
-        color: white; }
-  .header-bottom #adtm_menu ul#menu li.li-niveau1 a, .header-bottom #adtm_menu ul#menu li.li-niveau1 a:hover {
+        color: white;
+        text-decoration: underline; }
+  .header-bottom #adtm_menu ul#menu li.li-niveau1 a {
     text-decoration: none; }
+    .header-bottom #adtm_menu ul#menu li.li-niveau1 a:hover {
+      text-decoration: underline; }
   .header-bottom #adtm_menu ul#menu li.li-niveau1 .advtm_menu_span {
     margin: 0; }
   .header-bottom #adtm_menu ul#menu li.li-niveau1 div.adtm_sub {
