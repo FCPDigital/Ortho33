@@ -35,27 +35,27 @@
       <div class="col-sm-3 footer__section">
         <h3 class="footer__title">Plan du site</h3>
         <ul class="footer__list">
-          <li class="footer__list-item"><a href="">Produits</a></li>
-          <li class="footer__list-item"><a href="">A propos</a></li>
-          <li class="footer__list-item"><a href="">Contactez-nous</a></li>
+          <li class="footer__list-item"><a href="/">Produits</a></li>
+          <li class="footer__list-item"><a href="/content/4-a-propos">A propos</a></li>
+          <li class="footer__list-item"><a href="/nous-contacter">Contactez-nous</a></li>
         </ul>
       </div>
 
       <div class="col-sm-3 footer__section">
         <h3 class="footer__title">Compte</h3>
         <ul class="footer__list">
-          <li class="footer__list-item"><a href="">Mon Compte</a></li>
-          <li class="footer__list-item"><a href="">Mes commandes</a></li>
-          <li class="footer__list-item"><a href="">Mon panier</a></li>
+          <li class="footer__list-item"><a href="/mon-compte">Mon Compte</a></li>
+          <li class="footer__list-item"><a href="/historique-commandes">Mes commandes</a></li>
+          <li class="footer__list-item"><a href="/panier?action=show">Mon panier</a></li>
         </ul>
       </div>
 
       <div class="col-sm-3 footer__section">
         <h3 class="footer__title">Contact</h3>
         <ul class="footer__list">
-          <li class="footer__list-item"><a href="">Mérignac</a></li>
-          <li class="footer__list-item"><a href="">Bordeaux</a></li>
-          <li class="footer__list-item"><a href="">La-Teste-de-Buch</a></li>
+          <li class="footer__list-item"><a href="/content/6-contact/#contact-merignac">Mérignac</a></li>
+          <li class="footer__list-item"><a href="/content/6-contact/#contact-bordeaux">Bordeaux</a></li>
+          <li class="footer__list-item"><a href="/content/6-contact/#contact-la-teste">La-Teste-de-Buch</a></li>
         </ul>
       </div>
 
@@ -73,10 +73,10 @@
       </div>
       <div class="col-sm-12 footer__copyright">
         <p>
-          <a class="link-invisible" href="">Mention légales</a> | 
-          <a class="link-invisible" href="">Conditions générales de vente</a> | 
-          <a class="link-invisible" href="">@ 2017 Ortho 33</a> |
-          <a class="link-invisible" href="">FCP Digital</a>
+          <a class="link-invisible" href="/content/2-mentions-legales">Mention légales</a> | 
+          <a class="link-invisible" href="/content/3-conditions-utilisation">Conditions générales de vente</a> | 
+          <a class="link-invisible" href="/content/2-mentions-legales">@ 2017 Ortho 33</a> |
+          <a class="link-invisible" href="http://www.fcp-digital.com/">FCP Digital</a>
         </p>
       </div>
       
