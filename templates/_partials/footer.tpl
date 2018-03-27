@@ -53,9 +53,9 @@
       <div class="col-sm-3 footer__section">
         <h3 class="footer__title">Contact</h3>
         <ul class="footer__list">
-          <li class="footer__list-item"><a href="/content/6-contact/#contact-merignac">Mérignac</a></li>
-          <li class="footer__list-item"><a href="/content/6-contact/#contact-bordeaux">Bordeaux</a></li>
-          <li class="footer__list-item"><a href="/content/6-contact/#contact-la-teste">La-Teste-de-Buch</a></li>
+          <li class="footer__list-item"><a href="/content/6-contact#contact-merignac">Mérignac</a></li>
+          <li class="footer__list-item"><a href="/content/6-contact#contact-bordeaux">Bordeaux</a></li>
+          <li class="footer__list-item"><a href="/content/6-contact#contact-la-teste">La-Teste-de-Buch</a></li>
         </ul>
       </div>
 

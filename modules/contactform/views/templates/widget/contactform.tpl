@@ -42,10 +42,13 @@
           <div class="col-md-9 col-md-offset-3">
             <h3>{l s='Contact us' d='Shop.Theme.Global'}</h3>
           </div>
+          <div class="col-md-9 col-md-offset-3">
+            <p class="small">Les champs marquées d'un * sont obligatoires.</p>
+          </div>
         </div>
 
         <div class="form-group row">
-          <label class="col-md-3 form-control-label">{l s='Subject' d='Shop.Forms.Labels'}</label>
+          <label class="col-md-3 form-control-label">{l s='Subject' d='Shop.Forms.Labels'} *</label>
           <div class="col-md-6">
             <select name="id_contact" class="form-control form-control-select">
               {foreach from=$contact.contacts item=contact_elt}
@@ -56,7 +59,7 @@
         </div>
 
         <div class="form-group row">
-          <label class="col-md-3 form-control-label">{l s='Email address' d='Shop.Forms.Labels'}</label>
+          <label class="col-md-3 form-control-label">{l s='Email address' d='Shop.Forms.Labels'} *</label>
           <div class="col-md-6">
             <input
               class="form-control"
@@ -79,9 +82,6 @@
                 {/foreach}
               </select>
             </div>
-            <span class="col-md-3 form-control-comment">
-              {l s='optional' d='Shop.Forms.Help'}
-            </span>
           </div>
         {/if}
 
@@ -91,14 +91,11 @@
             <div class="col-md-6">
               <input type="file" name="fileUpload" class="filestyle" data-buttonText="{l s='Choose file' d='Shop.Theme.Actions'}">
             </div>
-            <span class="col-md-3 form-control-comment">
-              {l s='optional' d='Shop.Forms.Help'}
-            </span>
           </div>
         {/if}
 
         <div class="form-group row">
-          <label class="col-md-3 form-control-label">{l s='Message' d='Shop.Forms.Labels'}</label>
+          <label class="col-md-3 form-control-label">{l s='Message' d='Shop.Forms.Labels'} *</label>
           <div class="col-md-9">
             <textarea
               class="form-control"
