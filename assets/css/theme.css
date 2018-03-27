@@ -7493,9 +7493,24 @@ button.close {
     font-size: 25px; }
   .header-top .blockcart {
     transition: 0.4s; }
-    .header-top .blockcart:hover {
-      background-color: #6cbAdf;
-      color: white !important; }
+    .header-top .blockcart.inactive .btn {
+      background-color: white;
+      color: #333;
+      cursor: auto;
+      position: relative; }
+      .header-top .blockcart.inactive .btn:hover::after {
+        content: "Panier inaccessible, \a ajouter un produit d'abord";
+        position: absolute;
+        font-size: 12px;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        display: block;
+        white-space: pre;
+        line-height: 14px;
+        color: #686868; }
   .header-top .user-info .btn {
     transition: 0.4s; }
     .header-top .user-info .btn:hover {

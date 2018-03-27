@@ -23,15 +23,13 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="inline">
-  <div class="blockcart cart-preview btn btn--blue btn--no-border btn--fa {if $cart.products_count > 0}active{else}inactive{/if}" data-refresh-url="{$refresh_url}">
-    {if $cart.products_count > 0}
-      <a rel="nofollow" href="{$cart_url}">
-    {/if}
+  <div class="blockcart cart-preview {if $cart.products_count > 0}active{else}inactive{/if}" data-refresh-url="{$refresh_url}">
+    
+      <a class="btn btn--blue btn--no-border btn--fa" rel="nofollow" href="{if $cart.products_count > 0}{$cart_url}{else}#{/if}">
+    
     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
     <span class="hidden-sm">{l s='Cart' d='Shop.Theme.Checkout'}</span>
     <span class="cart-products-count">({$cart.products_count})</span>
-    {if $cart.products_count > 0}
     </a>
-    {/if}
   </div>
 </div>

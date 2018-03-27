@@ -54,9 +54,15 @@
           </div>
         {/block}
 
+        {if !isset($subcategories) || count($subcategories) < 1  }
+        {assign var="typeProduct" value="list-item"}
+        {else}
+        {assign var="typeProduct" value="miniature"}
+        {/if}
+
         {* Listes des produits *}
         {block name='product_list'}
-          {include file='catalog/_partials/products.tpl' listing=$listing type="miniature" style="border"}
+          {include file='catalog/_partials/products.tpl' listing=$listing type=$typeProduct style="border"}
         {/block}
         
         {* Affichage bas de pages *}

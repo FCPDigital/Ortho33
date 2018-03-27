@@ -18,9 +18,25 @@ $header-h: 75px
 	
 	.blockcart
 		transition: .4s
-		&:hover
-			background-color: $blue
-			color: white !important
+		&.inactive .btn
+			background-color: white
+			color: #333
+			cursor: auto
+			position: relative
+			&:hover::after
+				content: "Panier inaccessible, \A ajouter un produit d'abord"
+				position: absolute
+				font-size: 12px
+				bottom: -20px
+				left: 0
+				width: 100%
+				text-align: center
+				height: auto
+				display: block
+				white-space: pre
+				line-height: 14px
+				color: #686868
+
 	.user-info .btn
 		transition: .4s
 		&:hover
