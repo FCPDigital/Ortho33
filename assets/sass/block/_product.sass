@@ -1,6 +1,18 @@
 .product
 	background-color: #FFF
 	position: relative
+	
+	.qty .input-group.bootstrap-touchspin .input-group-btn-vertical
+		display: flex
+		flex-direction: column
+		height: 45px
+		.btn-touchspin
+			flex: 1
+			
+	&-quantity
+		#quantity_wanted
+			padding-right: 30px
+
 	// Default settings ( Product detail )
 	&__img
 		display: block

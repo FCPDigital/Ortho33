@@ -6184,7 +6184,7 @@ button.close {
     height: 40px;
     display: block;
     width: 20px;
-    z-index: 2; }
+    z-index: 999; }
   .bootstrap-touchspin .btn-touchspin {
     height: 20px;
     width: 20px;
@@ -6456,6 +6456,14 @@ button.close {
 .product {
   background-color: #FFF;
   position: relative; }
+  .product .qty .input-group.bootstrap-touchspin .input-group-btn-vertical {
+    display: flex;
+    flex-direction: column;
+    height: 45px; }
+    .product .qty .input-group.bootstrap-touchspin .input-group-btn-vertical .btn-touchspin {
+      flex: 1; }
+  .product-quantity #quantity_wanted {
+    padding-right: 30px; }
   .product__img {
     display: block; }
   .product__item-block {
