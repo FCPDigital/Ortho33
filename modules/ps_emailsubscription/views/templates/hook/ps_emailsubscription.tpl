@@ -36,12 +36,6 @@
               type="submit"
               value="{l s='Subscribe' d='Shop.Theme.Actions'}"
             >
-            <input
-              class="btn btn-primary float-xs-right hidden-sm-up"
-              name="submitNewsletter"
-              type="submit"
-              value="{l s='OK' d='Shop.Theme.Actions'}"
-            >
             <div class="input-wrapper">
               <input
                 name="email"

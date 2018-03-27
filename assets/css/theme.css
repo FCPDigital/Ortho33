@@ -6234,7 +6234,8 @@ button.close {
     -o-transition: 0.3s;
     transition: 0.3s; }
     .btn--orange-alpha.active, .btn--orange-alpha:hover {
-      background-color: #ea5b0c; }
+      background-color: #ea5b0c !important;
+      color: black; }
   .btn--green {
     color: #00a94d;
     border-color: #00a94d; }
@@ -7445,6 +7446,12 @@ button.close {
 .page-order-confirmation table th, .page-order-confirmation table td {
   padding: 10px;
   border: 1px solid #DDD; }
+
+.carrier__name {
+  font-size: 15px; }
+.carrier__logo img {
+  width: 40px;
+  height: auto; }
 
 .pagination .page-list {
   text-align: center;

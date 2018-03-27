@@ -30,7 +30,8 @@
 		border-color: transparent
 		@include transition(.3s)
 		&.active, &:hover
-			background-color: $orange
+			background-color: $orange !important // Important because of  .nav > li > a:hover in tabs.sass
+			color: black
 
 	&--green 
 		color: $green
