@@ -73,6 +73,9 @@ table {
   .custom-radio input[type="radio"]:focus + span {
     border-color: #7A7A7A; }
 
+.font-weight-bold {
+  font-weight: bold; }
+
 .input-group.focus {
   outline: 0.1875rem solid #2fb5d2; }
 .input-group .form-control:focus {
@@ -6295,6 +6298,11 @@ button.close {
       transform: translateY(-50%); }
   .btn--arrow-right {
     padding: 12px 45px; }
+  .btn--icon {
+    padding-left: 40px; }
+    .btn--icon i {
+      position: absolute;
+      left: 20px; }
 
 .btn-primary {
   color: white !important;
@@ -6963,9 +6971,6 @@ button.close {
     border-bottom: 1px solid #DDD;
     padding: 20px 0;
     box-sizing: content-box; }
-    .checkout #checkout-delivery-step .delivery-option img {
-      height: 40px;
-      margin-top: -10px; }
   .checkout #checkout-delivery-step .order-options {
     margin: 20px 0; }
     .checkout #checkout-delivery-step .order-options label {
@@ -7448,10 +7453,12 @@ button.close {
   border: 1px solid #DDD; }
 
 .carrier__name {
-  font-size: 15px; }
+  font-size: 14px;
+  color: #333333; }
 .carrier__logo img {
-  width: 40px;
-  height: auto; }
+  width: 85px;
+  height: auto;
+  margin-top: 0; }
 
 .pagination .page-list {
   text-align: center;

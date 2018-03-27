@@ -30,6 +30,10 @@
   }
 }
 
+.font-weight-bold {
+  font-weight: bold;
+}
+
 .input-group {
   &.focus {
     outline: 0.1875rem solid $brand-primary;

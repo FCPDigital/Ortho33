@@ -29,7 +29,7 @@
     {/block}
   </div>
 
-  <div class="col-md-6 offset-md-2 pr-0">
+  <div class="col-md-4 offset-md-2 pr-0">
     {block name='pagination_page_list'}
      {if $pagination.should_be_displayed}
         <ul class="page-list clearfix text-sm-center">

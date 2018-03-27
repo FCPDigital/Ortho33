@@ -39,7 +39,7 @@
                 <img class="product-image" src="{$product.cover.medium.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" itemprop="image">
               </div>
               <div class="col-md-6">
-                <h6 class="h6 product-name">{$product.name}</h6>
+                <p class="product-name font-weight-bold">{$product.name}</p>
                 <p>{$product.price}</p>
                 {hook h='displayProductPriceBlock' product=$product type="unit_price"}
                 {foreach from=$product.attributes item="property_value" key="property"}
@@ -64,7 +64,10 @@
               <p><strong>{l s='Total:' d='Shop.Theme.Checkout'}</strong>&nbsp;{$cart.totals.total.value} {$cart.labels.tax_short}</p>
               <div class="cart-content-btn margin-top-small">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
-                <a href="{$cart_url}" class="btn btn-primary margin-top-small"><i class="material-icons">&#xE876;</i>{l s='Proceed to checkout' d='Shop.Theme.Actions'}</a>
+                <a href="{$cart_url}" class="btn btn-primary btn--icon margin-top-small">
+                  <i class="material-icons">&#xE876;</i>
+                {l s='Proceed to checkout' d='Shop.Theme.Actions'}
+                </a>
               </div>
             </div>
           </div>
