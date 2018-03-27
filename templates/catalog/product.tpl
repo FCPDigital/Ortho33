@@ -242,7 +242,7 @@
  {block name='product_accessories'}
       {if $accessories}
       <section class="section">
-        <h2 class="title--section pad-container container-w">
+        <h2 class="title--sub-section">
           {l s='You might also like' d='Shop.Theme.Catalog'}
         </h2>
         <div class="products products--orange row">

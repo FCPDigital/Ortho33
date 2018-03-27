@@ -25,7 +25,7 @@
 
 <section class="section">
   
-  <h2 class="title--section pad-container container-w">
+  <h2 class="title--sub-section container-w">
     {l s='Customers who bought this product also bought:' d='Modules.Crossselling.Shop'}
   </h2>
 
