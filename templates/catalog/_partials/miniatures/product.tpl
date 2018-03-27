@@ -33,15 +33,17 @@
   
   <div class="col-sm-{$size}">
     <article class="product product--{$type} {if $style==='border'}product--border border-heritance{/if}" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
-    <div class="product__thumbnail-container {if $type==='list-item'}row{/if}">
+    <div class="{if $type==='list-item'}row product__container{else}product__thumbnail-container{/if}">
       {block name='product_thumbnail'}
         <a rel="canonical" href="{$product.url}">
+          {if $type==='list-item'}<div class="col-sm-3 product__thumbnail-container">{/if}
           <img
-            class="product__thumbnail {if $type==='list-item'}col-sm-3{/if}"
+            class="product__thumbnail"
             src = "{$product.cover.bySize.home_default.url}"
             alt = "{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
             data-full-size-image-url = "{$product.cover.large.url}"
           >
+          {if $type==='list-item'}</div>{/if}
         </a>
       {/block}
 
