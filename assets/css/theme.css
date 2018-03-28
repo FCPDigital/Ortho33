@@ -6299,10 +6299,11 @@ button.close {
   .btn--arrow-right {
     padding: 12px 45px; }
   .btn--icon {
-    padding-left: 40px; }
+    padding-left: 40px;
+    position: relative; }
     .btn--icon i {
       position: absolute;
-      left: 20px; }
+      left: 10px; }
 
 .btn-primary {
   color: white !important;
@@ -6848,12 +6849,33 @@ button.close {
   .modal-body figure img {
     width: 100%; }
 .modal .product-image {
-  width: 100%; }
+  width: 100%;
+  max-width: 300px; }
+.modal-dialog {
+  width: calc(100% - 20px);
+  max-width: 900px; }
 
+@media screen and (max-width: 768px) {
+  .modal-dialog {
+    margin: 10px auto; }
+    .modal-dialog .product-name {
+      font-size: 24px;
+      margin-top: 20px;
+      color: #6cbadf; }
+      .modal-dialog .product-name + p {
+        font-size: 17px;
+        color: #AAA;
+        letter-spacing: 1px; }
+    .modal-dialog .cart-content {
+      border-top: 1px solid grey;
+      margin: 10px 0;
+      padding-top: 20px; } }
 .thumb-container {
   display: inline-block; }
   .thumb-container .thumb {
     width: 100px; }
+    .thumb-container .thumb.js-thumb.selected {
+      border: 2px solid #1a9e57; }
 
 .cart__title {
   margin: 0 0 20px 0;
