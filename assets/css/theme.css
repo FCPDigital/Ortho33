@@ -6854,6 +6854,12 @@ button.close {
 .modal-dialog {
   width: calc(100% - 20px);
   max-width: 900px; }
+.modal .modal-header {
+  background-color: #00a94d;
+  color: white; }
+  .modal .modal-header .close {
+    color: white;
+    opacity: 0.8; }
 
 @media screen and (max-width: 768px) {
   .modal-dialog {

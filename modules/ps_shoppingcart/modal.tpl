@@ -62,9 +62,9 @@
               	<p><strong>{$cart.subtotals.tax.label}</strong>&nbsp;{$cart.subtotals.tax.value}</p>
               {/if}
               <p><strong>{l s='Total:' d='Shop.Theme.Checkout'}</strong>&nbsp;{$cart.totals.total.value} {$cart.labels.tax_short}</p>
-              <div class="cart-content-btn margin-top-small">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
-                <a href="{$cart_url}" class="btn btn-primary btn--icon margin-top-small">
+              <div class="cart-content-btn margin-top-medium">
+                <button type="button" class="btn btn-secondary margin-bottom-small " data-dismiss="modal">{l s='Continue shopping' d='Shop.Theme.Actions'}</button>
+                <a href="{$cart_url}" class="btn btn-primary btn--icon">
                   <i class="material-icons">&#xE876;</i>
                 {l s='Proceed to checkout' d='Shop.Theme.Actions'}
                 </a>
