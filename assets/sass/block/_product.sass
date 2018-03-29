@@ -114,11 +114,12 @@
 		border: 1px solid black
 
 		.product
-		
+			
 			&__thumbnail
 				margin: auto
 				display: block
 				max-height: 200px
+				max-width: 100%
 				&-container
 		
 			&__container
@@ -133,3 +134,14 @@
 				&--old 
 					font-size: $font-normal
 					margin-right: $pad-small
+
+
+@media screen and (max-width: 768px) 
+	.product--list-item
+		.product
+			&__item-block
+				padding: 20px 52px
+			&__title
+				border-top: 1px solid grey
+				margin-top: 10px
+				padding-top: 20px

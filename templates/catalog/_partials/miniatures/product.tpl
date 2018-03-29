@@ -82,8 +82,12 @@
         {/block}
         
         {if $type === 'list-item'}
-        <div class="product__content">
-          {$product.description_short nofilter}  
+        <div class="product__content padding-right-big">
+          {if $product.description_short}
+          {$product.description_short nofilter}
+          {else}
+          {$product.description|truncate:250:'...' nofilter}
+          {/if}
         </div>
         {/if}
         
