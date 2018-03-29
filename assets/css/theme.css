@@ -6480,7 +6480,9 @@ button.close {
     .product .qty .input-group.bootstrap-touchspin .input-group-btn-vertical .btn-touchspin {
       flex: 1; }
   .product-quantity #quantity_wanted {
-    padding-right: 30px; }
+    padding-right: 20px;
+    text-align: left;
+    width: 60px; }
   .product__img {
     display: block; }
   .product__item-block {
