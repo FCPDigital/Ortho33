@@ -6162,6 +6162,11 @@ button.close {
       font-weight: 600;
       margin-bottom: 20px; }
 
+.product .input-group.form-control[name="qty"] {
+  display: none; }
+  .product .input-group.form-control[name="qty"] + .btn {
+    margin-top: 10px; }
+
 .product-variants {
   display: flex;
   padding: 0;

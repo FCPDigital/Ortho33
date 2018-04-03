@@ -109,6 +109,13 @@
         {block name='quick_view'}
           <a class="btn btn--orange-alpha" href="{$product.url}">Voir</a>
         {/block}
+        
+        <form action="{$urls.pages.cart}" method="post">
+          <input type="hidden" name="token" value="{$static_token}">
+          <input type="hidden" value="{$product.id_product}" name="id_product">
+          <input type="number" class="input-group form-control" name="qty" value="1">
+          <button data-button-action="add-to-cart" class="btn btn-primary">{l s='Add to cart' d='Shop.Theme.Actions'}</button>
+        </form>
 
         {block name='product_variants'}
           {if $product.main_variants}
@@ -118,7 +125,7 @@
       </div>
 
       {if $type==='list-item'}</div>{/if}
-    
+       
     </div>
   </article>
 </div>
