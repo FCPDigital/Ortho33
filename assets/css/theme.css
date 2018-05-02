@@ -7056,6 +7056,14 @@ button.close {
   width: 50%;
   margin: 0 auto 1rem; }
 
+.js-payment-atos {
+  margin-top: 10px;
+  display: none; }
+  .js-payment-atos.disabled {
+    filter: grayscale(100%); }
+    .js-payment-atos.disabled input {
+      pointer-events: none; }
+
 #block-reassurance {
   padding: 20px;
   margin-top: 35px;
