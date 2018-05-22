@@ -29,6 +29,7 @@
 {/block}
 
 {block name='header_nav'}
+{$urls.base_url eq $urls.current_url}
   <nav class="header-nav">
     <div class="container-fluid">
         <div class="row">
@@ -36,7 +37,9 @@
           <div class="header-top header-top--desktop">
             <div class="float-left inline">
               <a class="header-top__logo" href="{$urls.base_url}">
+                {if $urls.base_url eq $urls.current_url}<h1 style="margin: 0; padding:0;">{/if}
                 <img class="" src="{$shop.logo}" alt="{$shop.name}">
+                {if $urls.base_url eq $urls.current_url}</h1>{/if}
               </a>
               <a href="tel:+556344605" class="btn btn--no-border btn--no-bg btn--green btn--fa btn--size-xl">
                 <i class="fa fa-phone" aria-hidden="true"></i>05 56 34 46 05
