@@ -29,7 +29,6 @@
 {/block}
 
 {block name='header_nav'}
-{$urls.base_url eq $urls.current_url}
   <nav class="header-nav">
     <div class="container-fluid">
         <div class="row">
