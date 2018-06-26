@@ -208,6 +208,12 @@ p {
   font-weight: 600;
   font-family: Poppins; }
 
+#custom-text .container h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px; }
+#custom-text .container p {
+  margin-bottom: 30px; }
+
 .padding-small {
   padding: 10px; }
 
